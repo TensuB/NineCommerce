@@ -11183,11 +11183,11 @@
   "project": {
     "version": "4.3.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Data\\Nop.Data.csproj",
+      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Data\\Nop.Data.csproj",
       "projectName": "Nop.Data",
-      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Data\\Nop.Data.csproj",
+      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Data\\Nop.Data.csproj",
       "packagesPath": "C:\\Users\\tensa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Data\\obj\\",
+      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -11208,8 +11208,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Core\\Nop.Core.csproj"
+            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Core\\Nop.Core.csproj"
             }
           }
         }
@@ -11254,12 +11254,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11268,7 +11262,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

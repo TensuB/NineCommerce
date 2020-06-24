@@ -12818,11 +12818,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
+      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
       "projectName": "Nop.Plugin.Tax.Avalara",
-      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
+      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
       "packagesPath": "C:\\Users\\tensa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.Tax.Avalara\\obj\\",
+      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.Tax.Avalara\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -12843,8 +12843,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj": {
-              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj"
+            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj"
             }
           }
         }
@@ -12873,12 +12873,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -12887,7 +12881,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

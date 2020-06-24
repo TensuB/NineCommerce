@@ -13834,11 +13834,11 @@
   "project": {
     "version": "4.3.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Tests\\Nop.Web.MVC.Tests\\Nop.Web.MVC.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Tests\\Nop.Web.MVC.Tests\\Nop.Web.MVC.Tests.csproj",
       "projectName": "Nop.Web.MVC.Tests",
-      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Tests\\Nop.Web.MVC.Tests\\Nop.Web.MVC.Tests.csproj",
+      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Tests\\Nop.Web.MVC.Tests\\Nop.Web.MVC.Tests.csproj",
       "packagesPath": "C:\\Users\\tensa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Tests\\Nop.Web.MVC.Tests\\obj\\",
+      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Tests\\Nop.Web.MVC.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -13859,11 +13859,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj": {
-              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj"
+            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Presentation\\Nop.Web\\Nop.Web.csproj"
             },
-            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Tests\\Nop.Tests\\Nop.Tests.csproj": {
-              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Tests\\Nop.Tests\\Nop.Tests.csproj"
+            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Tests\\Nop.Tests\\Nop.Tests.csproj": {
+              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Tests\\Nop.Tests\\Nop.Tests.csproj"
             }
           }
         }
@@ -13902,12 +13902,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -13916,7 +13910,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -12413,11 +12413,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.ExchangeRate.EcbExchange\\Nop.Plugin.ExchangeRate.EcbExchange.csproj",
+      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.ExchangeRate.EcbExchange\\Nop.Plugin.ExchangeRate.EcbExchange.csproj",
       "projectName": "Nop.Plugin.ExchangeRate.EcbExchange",
-      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.ExchangeRate.EcbExchange\\Nop.Plugin.ExchangeRate.EcbExchange.csproj",
+      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.ExchangeRate.EcbExchange\\Nop.Plugin.ExchangeRate.EcbExchange.csproj",
       "packagesPath": "C:\\Users\\tensa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.ExchangeRate.EcbExchange\\obj\\",
+      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.ExchangeRate.EcbExchange\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -12438,8 +12438,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Libraries\\Nop.Services\\Nop.Services.csproj"
+            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Libraries\\Nop.Services\\Nop.Services.csproj"
             }
           }
         }
@@ -12462,12 +12462,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -12476,7 +12470,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

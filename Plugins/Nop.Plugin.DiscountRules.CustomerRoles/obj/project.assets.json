@@ -12759,11 +12759,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.DiscountRules.CustomerRoles\\Nop.Plugin.DiscountRules.CustomerRoles.csproj",
+      "projectUniqueName": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.DiscountRules.CustomerRoles\\Nop.Plugin.DiscountRules.CustomerRoles.csproj",
       "projectName": "Nop.Plugin.DiscountRules.CustomerRoles",
-      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.DiscountRules.CustomerRoles\\Nop.Plugin.DiscountRules.CustomerRoles.csproj",
+      "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.DiscountRules.CustomerRoles\\Nop.Plugin.DiscountRules.CustomerRoles.csproj",
       "packagesPath": "C:\\Users\\tensa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Plugins\\Nop.Plugin.DiscountRules.CustomerRoles\\obj\\",
+      "outputPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Plugins\\Nop.Plugin.DiscountRules.CustomerRoles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -12784,8 +12784,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+            "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+              "projectPath": "C:\\Users\\tensa\\source\\repos\\TensuB\\NineCommerce\\NineCommerce\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
             }
           }
         }
@@ -12808,12 +12808,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -12822,7 +12816,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
