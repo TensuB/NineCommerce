@@ -1,9 +1,4 @@
-
-
-/*********** CSS RESET **********/
-
-
-* {
+﻿* {/*********** CSS RESET **********/
 	margin: 0;
 	outline: none;
 	padding: 0;
@@ -749,7 +744,7 @@ label, label + * {
 	z-index: 10;
 	width: 95%;
 	margin: auto;
-	text-align: center;
+	text-align: center; 
 }
 .header-upper {
 	position: relative;
@@ -5710,7 +5705,7 @@ pre {
     margin: 10px auto;
 }
 .search-box input.search-box-text {
-	width: 280px;
+	width: 200px;
 }
 .ui-autocomplete {
 	width: 280px !important;
@@ -6551,10 +6546,11 @@ pre {
 /*** HEADER ***/
 
 
-.header {
-	width: 980px;
-	margin: auto;
-}
+	.header {
+		width: 980px;
+		margin: auto;
+		padding: 1em 0em;
+	}
 .header-upper:after {
 	content: "";
 	display: block;
@@ -6727,8 +6723,8 @@ pre {
 	z-index: 5;
 	width: 980px;
 	margin: 0 auto 30px;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	/*border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;*/
 	padding: 25px 0;
 	text-align: center;
 }
@@ -7296,7 +7292,7 @@ pre {
 	width: 1200px;
 }
 .header-menu > ul > li {
-	padding: 0 20px;
+	padding: 0 12px;
 }
 .header-menu > ul > li > a,
 .header-menu > ul > li > span {

@@ -1,0 +1,72 @@
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://127.0.0.1:12271
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1748.6023ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1806.1221ms - NotFound
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 15701.8768ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 16247.4513ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 21457.2119ms 200 text/html; charset=utf-8
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 246.4977ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 246.8764ms - NotFound
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 162.9903ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 155.1236ms 404 
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 419.3567ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 419.8023ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 241.1335ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 241.3866ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 406.1852ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 406.4603ms - NotFound

@@ -1,0 +1,735 @@
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://127.0.0.1:23875
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1214.0773ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1298.9787ms - NotFound
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 15345.0521ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 16144.4628ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 23757.6452ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/rest_theme_css.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/rest_theme_styles.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/css/style.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/css/vendor.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/rest_theme_css.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\rest_theme_css.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 573.5403ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/styles.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\styles.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 545.8998ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery/jquery-3.4.1.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-ui\jquery-ui-1.12.1.custom\jquery-ui.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 578.844ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery/jquery-3.4.1.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery\jquery-3.4.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 96.0134ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/css/vendor.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\css\vendor.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 496.2489ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/rest_theme_styles.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\rest_theme_styles.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 763.639ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-validate/jquery.validate-v1.19.1/jquery.validate.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate/jquery-migrate-3.1.0.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-validate/jquery.validate.unobtrusive-v3.2.11/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validate/jquery.validate-v1.19.1/jquery.validate.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-validate\jquery.validate-v1.19.1\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 261.6679ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validate/jquery.validate.unobtrusive-v3.2.11/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-validate\jquery.validate.unobtrusive-v3.2.11\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 328.2342ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/css/style.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\css\style.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 851.584ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.countryselect.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate/jquery-migrate-3.1.0.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-migrate\jquery-migrate-3.1.0.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 371.6964ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 34.1422ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.countryselect.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\public.countryselect.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 39.5335ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-ui\jquery-ui-1.12.1.custom\jquery-ui.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 435.2933ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 208.7305ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/script.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/js/vendor.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/js/app.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/images/logo.png  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/core.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/images/logo.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\images\logo.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 19.079ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/js/script.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\js\script.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 133.9879ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/js/bootstrap.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\js\bootstrap.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 38.6279ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/js/app.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\js\app.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 409.6826ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/js/core.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\js\core.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1481.0411ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/images/loading.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/images/loading.gif'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\images\loading.gif'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 108.6478ms 200 image/gif
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/js/vendor.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\js\vendor.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2193.2304ms 200 application/javascript
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 348.0186ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 348.3008ms - NotFound
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 182.5467ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 240.975ms 404 
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 457.1878ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 457.8469ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 834.0585ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 834.2582ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 415.26ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 415.4648ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 561.9416ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 562.1272ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 276.7455ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 276.9351ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 437.9802ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 438.2291ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 289.0902ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 289.2703ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 472.9547ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 473.1463ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 303.7112ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 303.9217ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 252.9662ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 253.1316ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 248.9715ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 249.0914ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 442.3447ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 442.5233ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 297.0948ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 297.2489ms - NotFound
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 759.4692ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1307.0476ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 456.7309ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 458.2627ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 737.526ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/site.webmanifest  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons_0/site.webmanifest'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\site.webmanifest'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 34.941ms 200 application/manifest+json
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons/icons_0/favicon.ico'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 68.6307ms 200 image/x-icon
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 455.7743ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 455.945ms - NotFound
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Plugins/Widgets.NivoSlider/Content/nivoslider/nivo-slider.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Widgets.NivoSlider/Content/nivoslider/nivo-slider.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\nivo-slider.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3.0549ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Plugins/Widgets.NivoSlider/Content/nivoslider/themes/custom/custom.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Widgets.NivoSlider/Content/nivoslider/themes/custom/custom.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\themes\custom\custom.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 8.2565ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/bootstrap.min.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/bootstrap.min.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\bootstrap.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 258.1745ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 224.9525ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 212.317ms 404 
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 257.5744ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 257.8477ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 476.4361ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 476.6373ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 308.3257ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 308.5283ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 273.3846ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 273.4885ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 528.8245ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 528.9444ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 259.1715ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 259.6363ms - NotFound
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 520.4441ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 597.3955ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1279.3682ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 180.0033ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 181.228ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons/icons_0/favicon.ico'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2.57ms 200 image/x-icon
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 413.5329ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 413.7246ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 256.8251ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 257.0159ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 283.1118ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 283.3855ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 254.7111ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 254.8069ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 420.7953ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 420.9387ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 263.4988ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 263.6207ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 483.5643ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 483.6829ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 267.7736ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 267.9068ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 451.9901ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 452.1414ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 252.2107ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 252.3121ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 256.8994ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 256.9839ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 495.3622ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 495.4943ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 245.569ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 245.6955ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 443.5181ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 443.5777ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 257.9375ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 258.1375ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 371.3821ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 371.499ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 240.9705ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 241.0568ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 418.2924ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 418.3772ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 638.6909ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 638.8522ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 474.4787ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 474.5928ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 246.0382ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 246.1838ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 580.8072ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 580.9726ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 315.544ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 315.5984ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 244.0638ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 244.177ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 452.1722ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 452.2513ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 247.3651ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 247.4848ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 514.0545ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 514.1268ms - NotFound
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

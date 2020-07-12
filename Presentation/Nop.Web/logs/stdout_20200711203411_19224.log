@@ -1,0 +1,258 @@
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 771.3128ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 822.8993ms - NotFound
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://127.0.0.1:6868
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 16768.4596ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 17201.806ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 21898.0697ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/rest_theme_css.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/bootstrap.min.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/css/style.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/css/vendor.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/rest_theme_css.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\rest_theme_css.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 123.6215ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/bootstrap.min.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\bootstrap.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 82.8007ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/rest_theme_styles.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Plugins/Widgets.NivoSlider/Content/nivoslider/nivo-slider.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Widgets.NivoSlider/Content/nivoslider/nivo-slider.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\nivo-slider.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2.364ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/css/vendor.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\css\vendor.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 237.3577ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-ui\jquery-ui-1.12.1.custom\jquery-ui.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 56.9209ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Plugins/Widgets.NivoSlider/Content/nivoslider/themes/custom/custom.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Widgets.NivoSlider/Content/nivoslider/themes/custom/custom.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\themes\custom\custom.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2.68ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery/jquery-3.4.1.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-validate/jquery.validate-v1.19.1/jquery.validate.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/styles.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\styles.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 840.5404ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-validate/jquery.validate.unobtrusive-v3.2.11/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate/jquery-migrate-3.1.0.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validate/jquery.validate-v1.19.1/jquery.validate.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-validate\jquery.validate-v1.19.1\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 38.8048ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate/jquery-migrate-3.1.0.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-migrate\jquery-migrate-3.1.0.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 24.0552ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validate/jquery.validate.unobtrusive-v3.2.11/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-validate\jquery.validate.unobtrusive-v3.2.11\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 60.5528ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery/jquery-3.4.1.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery\jquery-3.4.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 526.095ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.countryselect.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 20.6426ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/script.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/js/script.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\js\script.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 28.8689ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/core.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.countryselect.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\public.countryselect.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 80.9186ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 96.5747ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/js/vendor.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/js/bootstrap.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\js\bootstrap.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 24.6171ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/css/style.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\css\style.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 971.1794ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/js/app.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-ui\jquery-ui-1.12.1.custom\jquery-ui.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 188.5558ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/js/app.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\js\app.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 209.7239ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/css/rest_theme_styles.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\css\rest_theme_styles.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1133.1948ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/images/logo.png  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000013_restaurant-image.png  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Plugins/Widgets.NivoSlider/Scripts/jquery.nivo.slider.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000009_slider_image_one.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Widgets.NivoSlider/Scripts/jquery.nivo.slider.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Scripts\jquery.nivo.slider.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3.673ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000012_slider_image_two.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/images/logo.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\images\logo.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 37.7746ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/js/core.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\js\core.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 869.0631ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/images/loading.gif  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Plugins/Widgets.NivoSlider/Content/nivoslider/themes/custom/loading.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Widgets.NivoSlider/Content/nivoslider/themes/custom/loading.gif'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\themes\custom\loading.gif'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1.386ms 200 image/gif
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000012_slider_image_two.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000012_slider_image_two.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 316.0515ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/js/vendor.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\js\vendor.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1020.5805ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/images/loading.gif'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\images\loading.gif'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 157.9781ms 200 image/gif
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000013_restaurant-image.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000013_restaurant-image.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 498.5532ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000009_slider_image_one.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000009_slider_image_one.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 658.8505ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/fonts/fontawesome-webfont.woff2?v=4.5.0  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/fonts/icomoon.ttf?q2xewv  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\fonts\fontawesome-webfont.woff2'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 314.7446ms 200 font/woff2
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/fonts/icomoon.ttf'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\fonts\icomoon.ttf'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 436.3967ms 200 application/x-font-ttf
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/site.webmanifest  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons/icons_0/favicon.ico'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 17.495ms 200 image/x-icon
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons_0/site.webmanifest'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\site.webmanifest'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 46.1015ms 200 application/manifest+json
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/js/vendor.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/assets/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/css/style.css.map'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\css\style.css.map'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 365.5352ms 200 text/plain
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1180.499ms 404 
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/MukeraCleanTheme/Content/assets/js/vendor.js.map'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Themes\MukeraCleanTheme\Content\assets\js\vendor.js.map'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1190.7648ms 200 text/plain
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1351.2964ms 404 
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 280.1016ms - NotFound
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 280.4788ms - NotFound

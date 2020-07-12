@@ -1,0 +1,218 @@
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://127.0.0.1:14620
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1026.023ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1078.5798ms - InternalServerError
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 22499.6325ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 22829.9993ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 27891.275ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 166.7749ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/logo-170x172.png  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 163.4596ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 178.4562ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 156.101ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/bootstrap.min.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 151.5659ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 152.1966ms 404 
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 170.0105ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 170.3375ms - InternalServerError
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 19.5123ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 20.894ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 299.4292ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/logo-170x172.png  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 147.8516ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 157.5428ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/bootstrap.min.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 177.6835ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 157.9553ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons/icons_0/favicon.ico'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 81.0614ms 200 image/x-icon
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 280.2535ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/js/bootstrap.min.js.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 173.8994ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 173.453ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/bootstrap.min.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/MukeraCleanTheme/Content/css/style.css.map  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 149.9418ms 404 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 161.4683ms 404 
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 332.7898ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 333.0235ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 169.5555ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 170.0219ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 333.3484ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 333.5658ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 167.7708ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 168.0662ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 163.4758ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 163.9972ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 333.9308ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 334.328ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 168.0232ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 168.2356ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 640.1496ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 640.3606ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 168.1983ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 168.4125ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 169.2284ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 169.5234ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 176.8812ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 177.031ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://joysmarter2staff-099-site1.btempurl.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 331.687ms - InternalServerError
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 331.8099ms - InternalServerError

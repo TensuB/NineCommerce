@@ -1,0 +1,140 @@
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.<>c__DisplayClass6_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.get_Connection()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen()
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.Exists(String template, Object[] args)
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.TableExists(String schemaName, String tableName)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+info: FluentMigrator.Runner.MigrationRunner[1000]
+      VersionMigration migrating
+crit: Microsoft.AspNetCore.Hosting.Diagnostics[6]
+      Application startup exception
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating ?:Nop.Core.Domain.Common.CommonSettings -> Nop.Data.Migrations.MigrationManager -> ?:FluentMigrator.Runner.IVersionLoader.
+ ---> System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.<>c__DisplayClass6_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.get_Connection()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.BeginTransaction()
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.BeginTransaction()
+   at FluentMigrator.Runner.TransactionalMigrationScope..ctor(IMigrationProcessor processor, Action disposalAction)
+   at FluentMigrator.Runner.MigrationScopeHandler.BeginScope()
+   at FluentMigrator.Runner.MigrationScopeHandler.CreateOrWrapMigrationScope(Boolean transactional)
+   at FluentMigrator.Runner.MigrationRunner.ApplyMigrationUp(IMigrationInfo migrationInfo, Boolean useTransaction)
+   at FluentMigrator.Runner.MigrationRunner.Up(IMigration migration)
+   at FluentMigrator.Runner.VersionLoader.LoadVersionInfo()
+   at FluentMigrator.Runner.VersionLoader..ctor(IProcessorAccessor processorAccessor, IConventionSet conventionSet, IMigrationRunnerConventions conventions, IVersionTableMetaData versionTableMetaData, IMigrationRunner runner)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance[T](IServiceProvider provider, Object[] parameters)
+   at Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.<>c.<AddFluentMigratorCore>b__0_6(IServiceProvider sp)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass3_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.<>c__DisplayClass7_0.<Execute>b__0()
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Nop.Core.Infrastructure.NopEngine.Resolve(Type type) in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Libraries\Nop.Core\Infrastructure\NopEngine.cs:line 219
+   at Nop.Core.Infrastructure.NopEngine.Resolve[T]() in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Libraries\Nop.Core\Infrastructure\NopEngine.cs:line 206
+   at Nop.Web.Framework.Infrastructure.Extensions.ApplicationBuilderExtensions.UseNopResponseCompression(IApplicationBuilder application) in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web.Framework\Infrastructure\Extensions\ApplicationBuilderExtensions.cs:line 202
+   at Nop.Web.Framework.Infrastructure.NopCommonStartup.Configure(IApplicationBuilder application) in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web.Framework\Infrastructure\NopCommonStartup.cs:line 64
+   at Nop.Core.Infrastructure.NopEngine.ConfigureRequestPipeline(IApplicationBuilder application) in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Libraries\Nop.Core\Infrastructure\NopEngine.cs:line 195
+   at Nop.Web.Framework.Infrastructure.Extensions.ApplicationBuilderExtensions.ConfigureRequestPipeline(IApplicationBuilder application) in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web.Framework\Infrastructure\Extensions\ApplicationBuilderExtensions.cs:line 45
+   at Nop.Web.Startup.Configure(IApplicationBuilder application) in C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\Startup.cs:line 63
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://127.0.0.1:10921
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 265.1954ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 77.7885ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 13.2928ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 23.5166ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 11.4444ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 19.9254ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 10.706ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 12.4688ms 500 text/html; charset=utf-8

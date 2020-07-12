@@ -1,8 +1,7 @@
 ﻿<div class="header">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderBefore })
     <div class="header-upper">
-        <div class="header-selectors-wrapper">
-           
+        <div class="header-selectors-wrapper">           
             @await Component.InvokeAsync("TaxTypeSelector")
             @await Component.InvokeAsync("CurrencySelector")
             @await Component.InvokeAsync("LanguageSelector")

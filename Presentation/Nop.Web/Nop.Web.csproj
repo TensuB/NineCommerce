@@ -41,6 +41,18 @@
     <Content Include="Plugins\bin\placeholder.txt" CopyToPublishDirectory="PreserveNewest" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Home\Index.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\TopicBlock\Default.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\TopMenu\Default.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\_CategoryLine.TopMenu.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\_Header.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\_Root.Head.cshtml" />
     <None Include="Plugins\**" CopyToPublishDirectory="PreserveNewest" />
 
     <Content Include="Themes\**" CopyToPublishDirectory="PreserveNewest" Exclude="Themes\**\*.config;Themes\**\*.cshtml;Themes\**\*.json" />
@@ -48,9 +60,11 @@
 
     <!-- We copy the \Logs directory -->
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="Themes\MukeraCleanTheme\Content\assets\scss\components\_navbar.scss" />
+    <None Remove="Themes\MukeraCleanTheme\Content\assets\scss\components\_navbar.scss" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\print.css" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\styles.css" />
-    <None Remove="Themes\MukeraCleanTheme\Content\css\styles.rtl.css" />
     <None Remove="Themes\MukeraCleanTheme\Content\images\ajax-loader-small.gif" />
     <None Remove="Themes\MukeraCleanTheme\Content\images\back-button.png" />
     <None Remove="Themes\MukeraCleanTheme\Content\images\calendar-next.png" />
@@ -102,6 +116,12 @@
     <None Remove="Themes\MukeraCleanTheme\Content\images\wishlist-button.png" />
     <None Remove="Themes\MukeraCleanTheme\preview.jpg" />
     <None Remove="Themes\MukeraCleanTheme\Views\Home\Index.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\TopicBlock\Default.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\TopMenu\Default.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\_CategoryLine.TopMenu.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\_Header.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\_Root.Head.cshtml" />
 
     <None Update="Areas\Admin\sitemap.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -122,10 +142,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bundleconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Themes\DefaultClean\Content\images\logo.png">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Home\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\Components\TopicBlock\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\Components\TopMenu\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\_CategoryLine.TopMenu.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\_Header.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\_Root.Head.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
