@@ -6,7 +6,8 @@
 @await Html.PartialAsync("_JavaScriptDisabledWarning")
 @await Html.PartialAsync("_OldInternetExplorerWarning")
 
-<header class="header-sticky header-dark headroom headroom--top headroom--not-bottom" > <!--style="background-color: ghostwhite !important; color: #0f0d0d !important;"  -->
+
+<header class="header-sticky header-dark headroom headroom--top headroom--not-bottom" >
     @await Component.InvokeAsync("TopMenu")
 </header>
 
@@ -15,22 +16,6 @@
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentBefore })
 @if (IsSectionDefined("Breadcrumb"))
 {
- <!--
-<section class="breadcrumb-classic context-dark">
-    <div data-on="false" data-md-on="true" class="rd-parallax">
-        <div data-speed="0.35" data-type="media" data-url="images/parallax-breadcrumbs.jpg" class="rd-parallax-layer"></div>
-        <div data-speed="0.08" data-type="html" class="rd-parallax-layer">
-        <div class="shell section-30 section-sm-top-70 section-sm-bottom-60">
-            <h1 class="veil reveal-sm-block">Terms of Use</h1>
-            <div class="offset-sm-top-35">
-                RenderSection("Breadcrumb") 
-            </div>
-        </div>
-        </div>
-    </div>
-</section>
--->
-
     <section class="hero hero-with-header separator-bottom">
       <div class="container">
         <div class="row">
@@ -42,64 +27,66 @@
         </div>
       </div>    
     </section>
-
 }           
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentAfter })         
     
+
+<!-- The Main Page body section - start -->
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentBefore })
     @RenderBody()   
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentAfter }) 
-<!-- The Main Page boy section - end -->
+<!-- The Main Page body section - end -->
 
 
 <!-- footer -->
-<section class="component separator-top" style="width:100% !important; max-width:100% !important; padding:0em; sepa">
-   <footer class="bg-light text-gray">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center"><h2>Subscribe to get best offers.</h2>
-                <form class="form form-cta mt-2">
-                    <div class="form-group">
-                        <div class="row gutter-0">
-                            <div class="col-8">
-                                <input type="email" class="form-control form-control-rounded" id="exampleInputEmail1" placeholder="Insert your email">
-                            </div>
-                            <div class="col">
-                                <button type="submit" class="btn btn-primary btn-rounded btn-block">Subscribe</button>
+<footer class="bg-light text-gray">
+    <section class="component separator-top" style="width:100% !important; max-width:100% !important; padding:0em;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Sign up for our free newsletter.</h2>
+                    <form class="form form-cta mt-2">
+                        <div class="form-group">
+                            <div class="row" style="padding:1em;">
+                                <div class="col-8" style="padding-top:0.5em;">
+                                    <input type="email" class="form-control form-control-rounded" id="exampleInputEmail1" placeholder="Insert your email">
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-primary btn-rounded btn-block">Subscribe</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="separator-top">
-        <div class="container py-5">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-5 text-center text-md-left">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Legal Information</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 text-center">
-                    <img class="logo-sm" src="Themes/MukeraCleanTheme/Content/images/logo.png" alt="Logo">
-                </div>
-                <div class="col-md-5 text-center text-md-right">
-                    <ul class="socials">
-                        <li><a href="" class="icon-facebook text-facebook fs-20"></a></li>
-                        <li><a href="" class="icon-instagram text-instagram fs-20"></a></li>
-                        <li><a href="" class="icon-twitter text-twitter fs-20"></a></li>
-                        <li><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
-                    </ul>
+        <div class="separator-top">
+            <div class="container py-5">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-5 text-center text-md-left">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Legal Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img class="logo-sm" src="Themes/MukeraCleanTheme/Content/images/logo.png" alt="Logo">
+                    </div>
+                    <div class="col-md-5 text-center text-md-right">
+                        <ul class="socials">
+                            <li><a href="" class="icon-facebook text-facebook fs-20"></a></li>
+                            <li><a href="" class="icon-instagram text-instagram fs-20"></a></li>
+                            <li><a href="" class="icon-twitter text-twitter fs-20"></a></li>
+                            <li><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>        
-</section>
+    </section>
+</footer>    
 <!-- / footer -->
 
 <div id="form-output-global" class="snackbars"></div>

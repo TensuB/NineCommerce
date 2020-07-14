@@ -4,41 +4,43 @@
    <section class="bg-light separator-top section-cover" id="newsSectonBackground">
         <div class="container">
             <div class="row justify-content-center" >
-                <div class="col-12 mt-10 text-center">
-                     <h2>@T("Writings")</h2>                   
+                <div class="col-12 text-center">
+                     <h2 style="background-color:aliceblue; padding:0.75em;" class="btn-rounded">@T("Writings")</h2>                   
                 </div>
 
-
                 <div class="col-12 mt-10 text-center">
-                    @foreach(var item in Model.NewsItems.ToList().Take(3))
-                    {
-                        <div class="col-md-6 col-lg-4" style="margin-bottom: 1em;">
-                          <div class="card">
-                            <div class="card-body">
-                              <h4 class="card-title">@item.Title</h4> 
-                                <span class="news-date">@item.CreatedOn.ToString("D")</span>                              
-                                <p> @Html.Raw(item.Short)</p>
-                            </div>
-                            <div class="card-footer">
-                              <a href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })"
-                                 class="btn btn-lg btn-green btn-block">@T("News.MoreInfo")
-                               </a>
+                    @{
+                        var fadeEffectList = new List<string>(){"fade-right", "fade-up", "fade-left"};
+                        var index = 0;
+
+                        foreach (var item in Model.NewsItems.ToList().Take(3))
+                        {
+                            <div class="col-md-4" data-aos="@fadeEffectList.ElementAt(index)" style="margin-bottom: 5px;">
+                            <div class="card card-price-1 rising">
+                              <div class="card-body">
+                                <h4 class="card-title font-weight-bold text-purple">@item.Title</h4>
+                                    <span class="news-date">@item.CreatedOn.ToString("D")</span>                              
+                                    <p> @Html.Raw(item.Short)</p>
+                              </div>
+                              <div class="card-footer">
+                                <a href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })"
+                                     class="btn btn-lg btn-green btn-block">@T("News.MoreInfo")                                 
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
+                            index = index + 1;
+                        }
                     }
+
                 </div>
-                 <!--
-                    <div class="view-all">
-                        <a href="Url.RouteUrl("NewsArchive")">T("News.ViewAll")</a>
-                    </div>                      
-                  --> 
+
                 <div class="col-12 mt-10 text-center">
                    <div class="boxed bg-lightest p-5 text-dark">
                       <div class="row justify-content-between align-items-center text-center text-md-left">
                         <div class="col-md-9 mt-1 mt-md-">
 
-                            <h3>Read more about: <span id="typed"></span></h3>
+                            <h3><strong>Read more about </strong>: <span id="typed"></span></h3>
                             <div id="typed-strings">
                                 <p>plant-based nutrition.</p>
                                 <p>healthy plant-based meal.</p>

@@ -9,12 +9,13 @@
     var themeName = themeContext.WorkingThemeName;     
 
     //add jQuery UI css file  
-     Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/rest_theme_styles.css");    
+     Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/rest_theme_styles.css"); 
+    Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/rest_theme_css.css");   
+    
     Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap.min.css"); 
+
     Html.AppendCssFileParts($"~/Themes/{themeName}/Content/assets/css/style.css"); 
     Html.AppendCssFileParts($"~/Themes/{themeName}/Content/assets/css/vendor.css");  
-
-    Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/rest_theme_css.css"); 
                      
     Html.AppendCssFileParts("~/lib/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.min.css"); 
 
