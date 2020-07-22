@@ -85,11 +85,16 @@
         </form>
     </div>
 }
-<div class="page topic-page" id="ph-topic">
-    <div class="page-title" id="ph-title">
-        <h1>@Model.Title</h1>
+<section class="bg-light separator-top section-cover">
+    <div class="container">
+        <div class="row justify-content-left" >
+            <div class="col-12 mt-10 text-center">
+                <h1>@Model.Title</h1>               
+            </div>
+            <div class="col-12 mt-8 text-center divider-lg" style="width:initial;"><hr/></div>
+            <div class="col-12 text-left" style="margin-top:4em;">
+                @Html.Raw(Model.Body)
+            </div>
+        </div>
     </div>
-    <div class="page-body">
-        @Html.Raw(Model.Body)
-    </div>
-</div>
+</section>

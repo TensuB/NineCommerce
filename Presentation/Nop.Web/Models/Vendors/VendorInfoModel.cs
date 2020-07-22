@@ -26,5 +26,15 @@ namespace Nop.Web.Models.Vendors
         public string PictureUrl { get; set; }
 
         public IList<VendorAttributeModel> VendorAttributes { get; set; }
+
+
+        [NopResourceDisplayName("Account.VendorInfo.About")]
+        public string About { get; set; }
+
+        [NopResourceDisplayName("Account.VendorInfo.Story")]
+        public string Story { get; set; }
+
+        [NopResourceDisplayName("Account.VendorInfo.Vision")]
+        public string Vision { get; set; }
     }
 }

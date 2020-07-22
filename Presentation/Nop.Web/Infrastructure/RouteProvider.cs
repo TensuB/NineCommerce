@@ -119,6 +119,7 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("NewsArchive", $"{pattern}news",
                 new { controller = "News", action = "List" });
 
+
             //forum
             endpointRouteBuilder.MapControllerRoute("Boards", $"{pattern}boards",
                 new { controller = "Boards", action = "Index" });
@@ -138,6 +139,19 @@ namespace Nop.Web.Infrastructure
             //vendors
             endpointRouteBuilder.MapControllerRoute("VendorList", $"{pattern}vendor/all/",
                 new { controller = "Catalog", action = "VendorAll" });
+
+            endpointRouteBuilder.MapControllerRoute("VendorAbout", $"{pattern}vendor/about/",
+                new { controller = "Vendor", action = "About" });
+
+            endpointRouteBuilder.MapControllerRoute("VendorStory", $"{pattern}vendor/story/",
+                new { controller = "Vendor", action = "MyStory" });
+
+            endpointRouteBuilder.MapControllerRoute("VendorVision", $"{pattern}vendor/vision/",
+                new { controller = "Vendor", action = "MyVision" });
+
+            endpointRouteBuilder.MapControllerRoute("VendorConnect", $"{pattern}vendor/connect/",
+                new { controller = "Vendor", action = "Connect" });
+            
 
             //add product to cart (without any attributes and options). used on catalog pages.
             endpointRouteBuilder.MapControllerRoute("AddProductToCart-Catalog",
@@ -406,6 +420,16 @@ namespace Nop.Web.Infrastructure
             //new RSS
             endpointRouteBuilder.MapControllerRoute("NewProductsRSS", $"{pattern}newproducts/rss",
                 new { controller = "Product", action = "NewProductsRss" });
+
+
+            //Dr Barry Nutrition program product
+            endpointRouteBuilder.MapControllerRoute("NutritionProgram", $"{pattern}nutritionprogram/",
+                new { controller = "Product", action = "NutritionProgram" });
+
+            //Dr Speaking Service program product
+            endpointRouteBuilder.MapControllerRoute("SpeakingService", $"{pattern}speaking-service/",
+                new { controller = "Product", action = "SpeakingService" });
+            
 
             //get state list by country ID  (AJAX link)
             endpointRouteBuilder.MapControllerRoute("GetStatesByCountryId", $"{pattern}country/getstatesbycountryid/",

@@ -676,5 +676,19 @@ namespace Nop.Web.Controllers
         }
 
         #endregion
+
+        /* DR Barry Nutrition program */
+        public virtual IActionResult NutritionProgram()
+        {
+
+            return View();
+        }
+
+        /* Speaking Service */
+        public virtual IActionResult SpeakingService()
+        {
+            return View();
+        }
+
     }
 }

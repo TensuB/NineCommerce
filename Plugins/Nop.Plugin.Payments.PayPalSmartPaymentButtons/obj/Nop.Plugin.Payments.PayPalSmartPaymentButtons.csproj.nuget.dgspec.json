@@ -518,6 +518,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "bootstrap.sass": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

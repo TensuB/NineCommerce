@@ -392,5 +392,63 @@ namespace Nop.Web.Controllers
         }
 
         #endregion
+
+        /* vendor custom info  */
+        //about Dr Barry
+        [HttpsRequirement]
+        public virtual IActionResult About()
+        {
+            var model = new VendorInfoModel() 
+            { 
+                Description = "About Dr Toole - test description", 
+                Email = "test@test.com", 
+                Name = "name test",
+                PictureUrl = "test url"
+            };
+            return View(model);
+        }
+        //my story
+        [HttpsRequirement]
+        public virtual IActionResult MyStory()
+        {
+            var model = new VendorInfoModel()
+            {
+                Description = "My Story - test vendor description",
+                Story = "My Story - test Vendor Story description",
+                Email = "test@test.com",
+                Name = "name test",
+                PictureUrl = "test url"
+            };
+            return View(model);
+        }
+        //my vision
+        [HttpsRequirement]
+        public virtual IActionResult MyVision()
+        {
+            var model = new VendorInfoModel()
+            {
+                Description = "My Story - test vendor description",
+                Vision = "My Story - test Vendor Vision description",
+                Email = "test@test.com",
+                Name = "name test",
+                PictureUrl = "test url"
+            };
+            return View(model);
+        }
+
+        //Connect
+        [HttpsRequirement]
+        public virtual IActionResult Connect()
+        {
+            var model = new VendorInfoModel()
+            {
+                Description = "Connect - test Connect with vendor community description",
+                Vision = "My Story - test Connect with vendor community",
+                Email = "test@test.com",
+                Name = "name test",
+                PictureUrl = "test url"
+            };
+            return View(model);
+        }
     }
 }
