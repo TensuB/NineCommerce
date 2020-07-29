@@ -48,11 +48,11 @@
                         </p>                      
                     </div>
                     <div class="buttons">   
-                    <button type="button" class="btn btn-primary btn-rounded"                         
+                    <button type="button" class="btn btn-green btn-rounded px-5"                         
                             onclick="location.href='@Url.RouteUrl("Checkout")'">
                             @T("Account.Login.CheckoutAsGuest")
                     </button>
-                    <button type="button" class="btn btn-primary btn-rounded" 
+                    <button type="button" class="btn btn-green btn-rounded px-5" 
                             onclick="location.href='@registerUrl'">
                         @T("Account.Register")
                     </button>
@@ -70,8 +70,8 @@
                         <p> @T("Account.Login.NewCustomerText")</p> 
                         <p>&nbsp;</p>
                     </div>
-                    <div class="buttons">
-                        <button type="button" class="btn btn-primary btn-rounded" 
+                    <div class="text-center text-md-left">
+                        <button type="button" class="btn btn-green btn-rounded px-5" 
                                 onclick="location.href='@registerUrl'">@T("Account.Register")
                         </button>
                     </div>
@@ -81,33 +81,33 @@
             <div class="returning-wrapper fieldset col-sl-12 col-md-6 col-lg-7">
                 <form asp-route="Login" asp-route-returnurl="@Context.Request.Query["ReturnUrl"]" method="post" autocomplete="off">
                     <div asp-validation-summary="ModelOnly" class="message-error">@T("Account.Login.Unsuccessful")</div>
-                    <div class="col">
+                    <div class="col align-items-center">
                     <h2>@T("Account.Login.ReturningCustomer")</h2>
                     </div>
                     <div class="col text-left form-fields">
                         @if (Model.UsernamesEnabled)
                         {
-                            <div class="inputs">
-                                <label asp-for="Username" asp-postfix=":"></label>
-                                <input asp-for="Username" class="username" autofocus="autofocus" />
+                            <div class="form-group inputs">
+                                <label asp-for="Username" asp-postfix=":" for="Username" ></label>
+                                <input asp-for="Username" class="username form-control" autofocus="autofocus" />
                                 <span asp-validation-for="Username"></span>
                             </div>
                         }
                         else
                         {
                             <div class="inputs">
-                                <label asp-for="Email" asp-postfix=":"></label>
-                                <input asp-for="Email" class="email" autofocus="autofocus" />
-                                <span asp-validation-for="Email"></span>
+                                <label asp-for="Username" asp-postfix=":" for="Username" ></label>
+                                <input asp-for="Username" class="username form-control" autofocus="autofocus" />
+                                <span asp-validation-for="Username"></span>
                             </div>
                         }
                         <div class="inputs">
-                            <label asp-for="Password" asp-postfix=":"></label>
-                            <input asp-for="Password" class="password" />
+                            <label asp-for="Password" asp-postfix=":" for="Password"></label>
+                            <input asp-for="Password" class="password form-control" />
                             <span asp-validation-for="Password"></span>
                         </div>
                         <div class="inputs reversed">
-                            <input asp-for="RememberMe" />
+                            <input asp-for="RememberMe"/>
                             <label asp-for="RememberMe"></label>
                             <span class="forgot-password">
                                 <a asp-route="PasswordRecovery">@T("Account.Login.ForgotPassword")</a>
@@ -118,8 +118,8 @@
                             <nop-captcha />
                         }
                     </div>
-                    <div class="buttons">
-                         <button type="submit" class="btn btn-primary btn-rounded">@T("Account.Login.LoginButton")</button>
+                    <div class="text-center text-md-left">
+                         <button type="submit" class="btn btn-green btn-rounded px-5">@T("Account.Login.LoginButton")</button>
                     </div>
                 </form>
             </div>

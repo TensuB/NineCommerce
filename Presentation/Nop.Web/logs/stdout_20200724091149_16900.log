@@ -1,0 +1,1248 @@
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://127.0.0.1:46839
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1003.5047ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1024.6934ms - NoContent
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 49897.4756ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 50631.4441ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 56996.128ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000032_slider-3-writings-life-style.png  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000030_slider-4-writings-health.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000032_slider-3-writings-life-style.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000032_slider-3-writings-life-style.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000030_slider-4-writings-health.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000030_slider-4-writings-health.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 11.7976ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 34.0419ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000033_slider-2-writings-medical-conditions.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000033_slider-2-writings-medical-conditions.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000033_slider-2-writings-medical-conditions.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 4.3327ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000031_slider-1-writings-nutrition.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000031_slider-1-writings-nutrition.png'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\images\thumbs\0000031_slider-1-writings-nutrition.png'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 10.2851ms 200 image/png
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 137.0701ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 137.3641ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 167.2976ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 167.5371ms - NoContent
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 174.8827ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 175.0986ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 542.2123ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 542.4382ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 93.6154ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 93.8241ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 116.707ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 116.932ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 84.0185ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 84.3068ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 110.5588ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 110.7497ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 83.56ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 83.7738ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 84.0681ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 84.2356ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 178.5579ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 179.7065ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 79.0974ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 79.2791ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 120.6221ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 121.2352ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 78.3168ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 78.4827ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 80.1236ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 80.3361ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 84.5575ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 85.6371ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 101.4079ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 101.992ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 108.4424ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 108.6194ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 107.378ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 107.5512ms - NoContent
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/admin  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Areas.Admin.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Nop.Web.Framework.Mvc.Filters.AuthorizeAdminAttribute+AuthorizeAdminFilter'.
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[12]
+      AuthenticationScheme: Authentication was challenged.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web) in 68.6031ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1251.9902ms 302 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/login?ReturnUrl=%2Fadmin  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.CustomerController.Login (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Login", controller = "Customer", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.Nullable`1[System.Boolean]) on controller Nop.Web.Controllers.CustomerController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Login.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Login executed in 1148.224ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomerController.Login (Nop.Web) in 1215.5789ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.CustomerController.Login (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1825.6542ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/login?returnurl=%2Fadmin application/x-www-form-urlencoded 254
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.CustomerController.Login (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Login", controller = "Customer", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Nop.Web.Models.Customer.LoginModel, System.String, Boolean) on controller Nop.Web.Controllers.CustomerController (Nop.Web).
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[10]
+      AuthenticationScheme: Authentication signed in.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor[1]
+      Executing RedirectResult, redirecting to /admin.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomerController.Login (Nop.Web) in 911.473ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.CustomerController.Login (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1428.4039ms 302 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/admin  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Areas.Admin.Controllers.HomeController (Nop.Web).
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[100]
+      Start processing HTTP request GET https://www.nopcommerce.com/site-warnings?url=http://www.otensu.com/&local=true&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[100]
+      Sending HTTP request GET https://www.nopcommerce.com/site-warnings?url=http://www.otensu.com/&local=true&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[101]
+      Received HTTP response after 1557.76ms - OK
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[101]
+      End processing HTTP request after 1557.8772ms - OK
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[100]
+      Start processing HTTP request GET https://www.nopcommerce.com/nopcommerce-news-rss?version=4.30&localhost=true&hideadvertisements=false&storeurl=http://localhost:15536/&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[100]
+      Sending HTTP request GET https://www.nopcommerce.com/nopcommerce-news-rss?version=4.30&localhost=true&hideadvertisements=false&storeurl=http://localhost:15536/&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[101]
+      Received HTTP response after 829.3136ms - OK
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[101]
+      End processing HTTP request after 829.4466ms - OK
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 5318.6261ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web) in 7981.2584ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 8617.3759ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/ionicons/css/ionicons-2.0.1.min.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/bootstrap/js/bootstrap.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\bootstrap-touchspin\jquery.bootstrap-touchspin.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 19.6236ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/js/bootstrap.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\bootstrap\js\bootstrap.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 13.5415ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/cldr/dist/cldr.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/adminLTE/js/adminlte.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/adminLTE/js/adminlte.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\adminLTE\js\adminlte.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 48.3382ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/cldr/dist/cldr/event.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/cldr/dist/cldr.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\cldr\dist\cldr.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 109.0638ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/cldr/dist/cldr/supplemental.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/cldr/dist/cldr/event.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\cldr\dist\cldr\event.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/ionicons/css/ionicons-2.0.1.min.css'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\ionicons\css\ionicons-2.0.1.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 402.2282ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 582.517ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/globalize/dist/globalize.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/cldr/dist/cldr/supplemental.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\cldr\dist\cldr\supplemental.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 72.8779ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/globalize/dist/globalize/number.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/globalize/dist/globalize/date.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/globalize/dist/globalize.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\globalize\dist\globalize.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 46.7593ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/globalize/dist/globalize/currency.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/globalize/dist/globalize/number.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\globalize\dist\globalize\number.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 34.1358ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/globalize/dist/globalize/date.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\globalize\dist\globalize\date.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 46.1929ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-validate/jquery.validate.globalize-1.0.0.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui/jquery-ui-1.10.3/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/globalize/dist/globalize/currency.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\globalize\dist\globalize\currency.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 82.0523ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/typeahead/typeahead.bundle.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/typeahead/typeahead.bundle.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\typeahead\typeahead.bundle.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 56.4208ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validate/jquery.validate.globalize-1.0.0.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-validate\jquery.validate.globalize-1.0.0.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 98.6319ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/admin.common.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/admin.navigation.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/admin.common.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\admin.common.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 101.1475ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/admin.search.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/admin.navigation.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\admin.navigation.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 165.7719ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/admin.search.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\js\admin.search.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 28.6915ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/kendo/2020.1.406/js/kendo.ui.core.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui/jquery-ui-1.10.3/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\jquery-ui\jquery-ui-1.10.3\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 339.3647ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/kendo/2020.1.406/js/messages/kendo.messages.en-US.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/kendo/2020.1.406/js/messages/kendo.messages.en-US.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\kendo\2020.1.406\js\messages\kendo.messages.en-US.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 68.922ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/kendo/2020.1.406/js/cultures/kendo.culture.en-US.min.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/datatables/js/jquery.dataTables.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/kendo/2020.1.406/js/cultures/kendo.culture.en-US.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\kendo\2020.1.406\js\cultures\kendo.culture.en-US.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 47.4597ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/datatables/js/dataTables.bootstrap.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/datatables/js/dataTables.bootstrap.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\datatables\js\dataTables.bootstrap.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 46.9317ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/datatables/datatables.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/datatables/js/jquery.dataTables.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\datatables\js\jquery.dataTables.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 235.957ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/datatables/moment-with-locales-2.22.2.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/datatables/datatables.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\datatables\datatables.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 148.3652ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/datatables/dataTables.buttons.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/datatables/dataTables.buttons.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\datatables\dataTables.buttons.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 123.0913ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/datatables/buttons.bootstrap.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/kendo/2020.1.406/js/kendo.ui.core.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\kendo\2020.1.406\js\kendo.ui.core.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 767.0248ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/datatables/buttons.bootstrap.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\datatables\buttons.bootstrap.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 201.5234ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/chartjs/Chart.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/datatables/moment-with-locales-2.22.2.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\datatables\moment-with-locales-2.22.2.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 426.458ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/chartjs/Chart.min.js'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\chartjs\Chart.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 36.071ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/css/admin/images/throbber-synchronizing.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/admin/images/throbber-synchronizing.gif'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\css\admin\images\throbber-synchronizing.gif'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 66.8758ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/fontAwesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/ionicons/fonts/ionicons.ttf?v=2.0.0  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/fontAwesome/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\fontAwesome\fonts\fontawesome-webfont.woff2'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 87.3879ms 200 font/woff2
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/ionicons/fonts/ionicons.ttf'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\ionicons\fonts\ionicons.ttf'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 135.1347ms 200 application/x-font-ttf
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Plugin/AdminNavigationPlugins?_=1595582913115  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "AdminNavigationPlugins", controller = "Plugin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminNavigationPlugins() on controller Nop.Web.Areas.Admin.Controllers.PluginController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType19`5[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web) in 383.7124ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 613.8923ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Order/LoadOrderStatistics?period=week&_=1595582913116  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Customer/LoadCustomerStatistics?period=week&_=1595582913117  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/OrderAverageReportList application/x-www-form-urlencoded; charset=UTF-8 1634
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/OrderIncompleteReportList application/x-www-form-urlencoded; charset=UTF-8 931
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CustomerController.LoadCustomerStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "LoadCustomerStatistics", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoadCustomerStatistics(System.String) on controller Nop.Web.Areas.Admin.Controllers.CustomerController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.LoadOrderStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "LoadOrderStatistics", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoadOrderStatistics(System.String) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderAverageReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "OrderAverageReportList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderAverageReportList(Nop.Web.Areas.Admin.Models.Orders.OrderAverageReportSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CustomerController.LoadCustomerStatistics (Nop.Web) in 429.0829ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CustomerController.LoadCustomerStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 917.6089ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Common/PopularSearchTermsReport application/x-www-form-urlencoded; charset=UTF-8 720
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderIncompleteReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "OrderIncompleteReportList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderIncompleteReportList(Nop.Web.Areas.Admin.Models.Orders.OrderIncompleteReportSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.LoadOrderStatistics (Nop.Web) in 964.4381ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.LoadOrderStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1485.3701ms 200 application/json; charset=utf-8
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.PopularSearchTermsReport (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "PopularSearchTermsReport", controller = "Common"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PopularSearchTermsReport(Nop.Web.Areas.Admin.Models.Common.PopularSearchTermSearchModel) on controller Nop.Web.Areas.Admin.Controllers.CommonController (Nop.Web).
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 101.1118ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 101.2081ms - NoContent
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/OrderList application/x-www-form-urlencoded; charset=UTF-8 1384
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Orders.OrderIncompleteReportModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.OrderIncompleteReportList (Nop.Web) in 400.2829ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderIncompleteReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1561.514ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/BestsellersBriefReportByQuantityList?OrderBy=OrderByQuantity application/x-www-form-urlencoded; charset=UTF-8 1168
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByQuantityList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "BestsellersBriefReportByQuantityList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult BestsellersBriefReportByQuantityList(Nop.Web.Areas.Admin.Models.Reports.BestsellerBriefSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "OrderList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderList(Nop.Web.Areas.Admin.Models.Orders.OrderSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Common.PopularSearchTermModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CommonController.PopularSearchTermsReport (Nop.Web) in 1344.952ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.PopularSearchTermsReport (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1580.1805ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/BestsellersBriefReportByAmountList?OrderBy=OrderByTotalAmount application/x-www-form-urlencoded; charset=UTF-8 1168
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Orders.OrderModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.OrderList (Nop.Web) in 1056.8274ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1476.8764ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/kendo/2020.1.406/styles/web/fonts/glyphs/WebComponentsIcons.ttf?gedxeo  
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Orders.OrderAverageReportModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.OrderAverageReportList (Nop.Web) in 2616.9397ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderAverageReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3086.0433ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByAmountList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "BestsellersBriefReportByAmountList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult BestsellersBriefReportByAmountList(Nop.Web.Areas.Admin.Models.Reports.BestsellerBriefSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/kendo/2020.1.406/styles/web/fonts/glyphs/WebComponentsIcons.ttf'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\lib\kendo\2020.1.406\styles\web\fonts\glyphs\WebComponentsIcons.ttf'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 168.7923ms 200 application/x-font-ttf
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Reports.BestsellerModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByAmountList (Nop.Web) in 222.4758ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByAmountList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 481.1292ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Reports.BestsellerModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByQuantityList (Nop.Web) in 1629.6494ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByQuantityList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1845.6761ms 200 application/json; charset=utf-8
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1175.7016ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1175.8334ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 157.6812ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 157.7776ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1215.4091ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1215.5217ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 221.6229ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 222.7645ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 51632.8641ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 51632.9886ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 12675.4588ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 12675.5726ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1009.4674ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1009.6049ms - NoContent
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 1588.7123ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 1588.8226ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 269.5309ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 269.6298ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 143.7534ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 143.848ms - NoContent
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Controllers.HomeController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 1101.7174ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 1195.3427ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3508.8093ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/icons/icons_0/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/icons/icons_0/favicon.ico'. Physical path: 'C:\Users\Tensay Bulcha\Source\Repos\TensuB\NineCommerce\Presentation\Nop.Web\wwwroot\icons\icons_0\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 54.49ms 200 image/x-icon
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Common/ClearCache application/x-www-form-urlencoded 244
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.ClearCache (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "ClearCache", controller = "Common"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ClearCache(System.String) on controller Nop.Web.Areas.Admin.Controllers.CommonController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor[1]
+      Executing RedirectResult, redirecting to /admin.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CommonController.ClearCache (Nop.Web) in 7.2454ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.ClearCache (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 371.3333ms 302 
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/admin  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Nop.Web.Areas.Admin.Controllers.HomeController (Nop.Web).
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[100]
+      Start processing HTTP request GET https://www.nopcommerce.com/site-warnings?url=http://www.otensu.com/&local=true&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[100]
+      Sending HTTP request GET https://www.nopcommerce.com/site-warnings?url=http://www.otensu.com/&local=true&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[101]
+      Received HTTP response after 292.1739ms - OK
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[101]
+      End processing HTTP request after 292.2911ms - OK
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[100]
+      Start processing HTTP request GET https://www.nopcommerce.com/nopcommerce-news-rss?version=4.30&localhost=true&hideadvertisements=false&storeurl=http://localhost:15536/&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[100]
+      Sending HTTP request GET https://www.nopcommerce.com/nopcommerce-news-rss?version=4.30&localhost=true&hideadvertisements=false&storeurl=http://localhost:15536/&language=en
+info: System.Net.Http.HttpClient.NopHttpClient.ClientHandler[101]
+      Received HTTP response after 841.9055ms - OK
+info: System.Net.Http.HttpClient.NopHttpClient.LogicalHandler[101]
+      End processing HTTP request after 841.9609ms - OK
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 1234.6414ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web) in 1958.3792ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.HomeController.Index (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2735.386ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Plugin/AdminNavigationPlugins?_=1595583383613  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "AdminNavigationPlugins", controller = "Plugin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminNavigationPlugins() on controller Nop.Web.Areas.Admin.Controllers.PluginController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType19`5[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web) in 5.967ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 635.1529ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Order/LoadOrderStatistics?period=week&_=1595583383614  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Customer/LoadCustomerStatistics?period=week&_=1595583383615  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/OrderAverageReportList application/x-www-form-urlencoded; charset=UTF-8 1634
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/OrderIncompleteReportList application/x-www-form-urlencoded; charset=UTF-8 931
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/OrderList application/x-www-form-urlencoded; charset=UTF-8 1384
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Common/PopularSearchTermsReport application/x-www-form-urlencoded; charset=UTF-8 720
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CustomerController.LoadCustomerStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "LoadCustomerStatistics", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoadCustomerStatistics(System.String) on controller Nop.Web.Areas.Admin.Controllers.CustomerController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.LoadOrderStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "LoadOrderStatistics", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoadOrderStatistics(System.String) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.LoadOrderStatistics (Nop.Web) in 249.1073ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.LoadOrderStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2682.8635ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/BestsellersBriefReportByQuantityList?OrderBy=OrderByQuantity application/x-www-form-urlencoded; charset=UTF-8 1168
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderIncompleteReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "OrderIncompleteReportList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderIncompleteReportList(Nop.Web.Areas.Admin.Models.Orders.OrderIncompleteReportSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderAverageReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "OrderAverageReportList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderAverageReportList(Nop.Web.Areas.Admin.Models.Orders.OrderAverageReportSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Orders.OrderIncompleteReportModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.OrderIncompleteReportList (Nop.Web) in 105.1547ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderIncompleteReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2916.6925ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Order/BestsellersBriefReportByAmountList?OrderBy=OrderByTotalAmount application/x-www-form-urlencoded; charset=UTF-8 1168
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "OrderList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderList(Nop.Web.Areas.Admin.Models.Orders.OrderSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.PopularSearchTermsReport (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "PopularSearchTermsReport", controller = "Common"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PopularSearchTermsReport(Nop.Web.Areas.Admin.Models.Common.PopularSearchTermSearchModel) on controller Nop.Web.Areas.Admin.Controllers.CommonController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Orders.OrderModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.OrderList (Nop.Web) in 69.5228ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3009.7142ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Common.PopularSearchTermModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CommonController.PopularSearchTermsReport (Nop.Web) in 74.6464ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.PopularSearchTermsReport (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2994.7252ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByAmountList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "BestsellersBriefReportByAmountList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult BestsellersBriefReportByAmountList(Nop.Web.Areas.Admin.Models.Reports.BestsellerBriefSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByQuantityList (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "BestsellersBriefReportByQuantityList", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult BestsellersBriefReportByQuantityList(Nop.Web.Areas.Admin.Models.Reports.BestsellerBriefSearchModel) on controller Nop.Web.Areas.Admin.Controllers.OrderController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CustomerController.LoadCustomerStatistics (Nop.Web) in 939.3193ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CustomerController.LoadCustomerStatistics (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3239.4229ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Reports.BestsellerModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByAmountList (Nop.Web) in 73.3084ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByAmountList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 293.2583ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Reports.BestsellerModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByQuantityList (Nop.Web) in 77.1282ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.BestsellersBriefReportByQuantityList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 628.7059ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[Nop.Web.Areas.Admin.Models.Orders.OrderAverageReportModel, Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.OrderController.OrderAverageReportList (Nop.Web) in 3377.99ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.OrderController.OrderAverageReportList (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 6286.9275ms 200 application/json; charset=utf-8
+info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+      Start processing HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[100]
+      Sending HTTP request POST http://www.otensu.com/scheduletask/runtask
+info: System.Net.Http.HttpClient.default.ClientHandler[101]
+      Received HTTP response after 310.2044ms - NoContent
+info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+      End processing HTTP request after 310.3962ms - NoContent
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/Admin/Common/RestartApplication application/x-www-form-urlencoded 244
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.RestartApplication (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "RestartApplication", controller = "Common"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RestartApplication(System.String) on controller Nop.Web.Areas.Admin.Controllers.CommonController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view RestartApplication.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view RestartApplication executed in 49.6362ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CommonController.RestartApplication (Nop.Web) in 52.9038ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.RestartApplication (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 523.6759ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Plugin/AdminNavigationPlugins?_=1595583406285  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "AdminNavigationPlugins", controller = "Plugin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminNavigationPlugins() on controller Nop.Web.Areas.Admin.Controllers.PluginController (Nop.Web).
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType19`5[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Nop.Web, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web) in 3.5968ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.PluginController.AdminNavigationPlugins (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 645.9896ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Admin/Common/RestartApplication  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.RestartApplication (Nop.Web)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {area = "Admin", action = "RestartApplication", controller = "Common"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RestartApplication() on controller Nop.Web.Areas.Admin.Controllers.CommonController (Nop.Web).
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action Nop.Web.Areas.Admin.Controllers.CommonController.RestartApplication (Nop.Web) in 2.4579ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Nop.Web.Areas.Admin.Controllers.CommonController.RestartApplication (Nop.Web)'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 476.1237ms 200 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

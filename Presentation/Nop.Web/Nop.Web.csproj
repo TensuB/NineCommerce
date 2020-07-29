@@ -46,7 +46,11 @@
 
     <Content Include="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\Default.cshtml" />
 
+    <Content Include="Themes\MukeraCleanTheme\Views\Blog\BlogTagsList.cshtml" />
+
     <Content Include="Themes\MukeraCleanTheme\Views\Blog\List.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Common\Connect.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Common\ContactUs.cshtml" />
 
@@ -145,8 +149,10 @@
     <None Remove="Themes\MukeraCleanTheme\preview.jpg" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\BlogPost.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogMonths\Default.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\BolgTagsList.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\List.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Common\Connect.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Common\ContactUs.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Customer\Login.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Customer\Register.cshtml" />
@@ -209,7 +215,15 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Blog\BlogTagsList.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Blog\List.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Common\Connect.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

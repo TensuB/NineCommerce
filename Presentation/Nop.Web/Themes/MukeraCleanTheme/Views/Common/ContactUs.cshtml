@@ -8,71 +8,149 @@
     Html.AppendPageCssClassParts("html-contact-page");
 }
 
-<section class="bg-light separator-top section-cover">
+<section class="bg-light-dark separator-top section-cover">
     <div class="container">
         <div class="row justify-content-left" >
             <div class="col-12 mt-10 text-center">
-                 <h1>@T("PageTitle.ContactUs")</h1>              
-            </div>
-            <div class="col-12 text-left" style="margin-top:4em;">
-        @await Component.InvokeAsync("TopicBlock", new { systemName = "ContactUs" })
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })
-
-        @if (Model.SuccessfullySent)
-        {
-            <div class="result">
-                @Model.Result
-            </div>
-        }
-        else
-        {
-            <form asp-route="ContactUs" method="post">
-                <div asp-validation-summary="ModelOnly" class="message-error"></div>
-                <div class="fieldset">
-                    <div class="form-fields">
-                        <div class="inputs">
-                            <label asp-for="FullName" asp-postfix=":"></label>
-                            <input asp-for="FullName" placeholder="@T("ContactUs.FullName.Hint")" class="fullname" />
-                            <nop-required />
-                            <span asp-validation-for="FullName"></span>
-                        </div>
-                        <div class="inputs">
-                            <label asp-for="Email" asp-postfix=":"></label>
-                            <input asp-for="Email" placeholder="@T("ContactUs.Email.Hint")" class="email" />
-                            <nop-required />
-                            <span asp-validation-for="Email"></span>
-                        </div>
-                        @if (Model.SubjectEnabled)
-                        {
-                            <div class="inputs">
-                                <label asp-for="Subject" asp-postfix=":"></label>
-                                <input asp-for="Subject" placeholder="@T("ContactUs.Subject.Hint")" class="subject" />
-                                <nop-required />
-                                <span asp-validation-for="Subject"></span>
-                            </div>
-                        }
-                        <div class="inputs">
-                            <label asp-for="Enquiry" asp-postfix=":"></label>
-                            <textarea asp-for="Enquiry" placeholder="@T("ContactUs.Enquiry.Hint")" class="enquiry"></textarea>
-                            <nop-required />
-                            <span asp-validation-for="Enquiry"></span>
-                        </div>
-                        @if (Model.DisplayCaptcha)
-                        {
-                            <nop-captcha />
-                        }
-                    </div>
-                </div>
-                <div class="col-3">
-                    <button type="submit" name="send-email" class="btn btn-primary btn-rounded btn-block">
-                        @T("ContactUs.Button")
-                    </button>
-                </div>
-            </form>
-        }
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsBottom })
+                 <h1>@T("PageTitle.ContactUs")</h1>                 
             </div>
         </div>
     </div>
 </section>
 
+<section class="bg-light separator-top section-cover">
+    <div class="container"> 
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })
+    <!-- Left side contact page -->
+    <div class="col-sm-12 col-md-10 col-lg-5">
+        <!--await Component.InvokeAsync("TopicBlock", new { systemName = "ContactUs" }) -->
+        <h2>Get in touch</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
+
+        <p>Aenean id ornare eros. Nulla feugiat libero ipsum, quis blandit nisl lacinia eu. Aenean rutrum posuere metus id vehicula. Aenean pellentesque nunc mauris, at egestas ipsum egestas a. Mauris sed commodo magna, sit amet ultricies sapien. Ut euismod metus in turpis convallis rhoncus nec nec lacus. Nulla maximus est dolor, a mattis sapien posuere nec. </p>
+    </div>
+    <!-- Right side contact page -->
+    <div class="col-sm-12 col-md-10 col-lg-7">
+        @if (Model.SuccessfullySent)
+        {
+            <div class="result"> @Model.Result </div>
+        }
+        else
+        {
+           <form asp-route="ContactUs" method="post">
+           <div class="col-sm-12 col-md-10 col-lg-10"><div asp-validation-summary="ModelOnly" class="message-error"></div> </div>
+           <!--
+           <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                <label asp-for="FullName" asp-postfix=":"></label>
+                <input asp-for="FullName" placeholder="@T("ContactUs.FullName.Hint")" class="fullname form-control" 
+                        id="fullname"/>
+                <nop-required />
+                <span asp-validation-for="FullName"></span>      
+           </div>
+            -->
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                <label asp-for="FirstName" asp-postfix=":"></label>
+                <input asp-for="FirstName" placeholder="@T("ContactUs.FirstName.Hint")" class="firstName form-control" 
+                        id="firstname"/>
+                <nop-required />
+                <span asp-validation-for="FirstName"></span>      
+           </div>
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                <label asp-for="LastName" asp-postfix=":"></label>
+                <input asp-for="LastName" placeholder="@T("ContactUs.LastName.Hint")" class="lastname form-control" 
+                        id="lastname"/>
+                <nop-required />
+                <span asp-validation-for="LastName"></span>      
+           </div>
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                <label asp-for="Email" asp-postfix=":"></label>
+                <input asp-for="Email" placeholder="@T("ContactUs.Email.Hint")" class="email form-control" type="email" id="email"/>
+                <nop-required />
+                <span asp-validation-for="Email"></span>
+            </div>
+
+           <div class="col-sm-12 col-md-12 col-lg-12">
+            @if(Model.SubjectEnabled)
+            {
+                <div class="form-group">
+                    <label asp-for="Subject" asp-postfix=":" for="Subject">Subject</label>
+                    <textarea asp-for="Subject" class="subject form-control" placeholder="@T("ContactUs.Subject.Hint")" id="Subject" rows="3"></textarea>
+                    <span asp-validation-for="Subject"></span>
+                </div>
+            }
+
+            <div class="form-group">
+                <label asp-for="Enquiry" asp-postfix=":" for="Enquiry">Enquiry</label>
+                <textarea asp-for="Enquiry" class="subject form-control" placeholder="@T("ContactUs.Enquiry.Hint")" id="Enquiry" rows="3"></textarea>
+                <nop-required />
+                <span asp-validation-for="Enquiry"></span>
+
+                @if (Model.DisplayCaptcha)
+                {
+                    <nop-captcha />
+                }
+            </div>
+           </div>
+               <div class="col-sm-12 col-md-10 col-lg-6">&nbsp;</div>
+               <div class="col-sm-12 col-md-12 col-lg-12">
+
+                <div class="form-group">
+                    <button type="submit" name="send-email" class="btn btn-primary btn-rounded">@T("ContactUs.Button")</button>
+                </div>
+
+               </div>
+            </form>
+        }
+    </div>
+ 
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsBottom })
+    </div>
+</section>
+
+<section class="bg-light-dark separator-top section-cover">
+    <div class="container">
+        <div class="row justify-content-left" >
+            <div class="col-12 mt-10 text-center">
+                 <h2>Join Us on Social Media</h2>                 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light separator-top section-cover">
+    <div class="container"> 
+        <div class="col-sm-12 col-md-10 col-lg-8">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
+
+            <p>Aenean id ornare eros. Nulla feugiat libero ipsum, quis blandit nisl lacinia eu. Aenean rutrum posuere metus id vehicula. Aenean pellentesque nunc mauris, at egestas ipsum egestas a. Mauris sed commodo magna, sit amet ultricies sapien. Ut euismod metus in turpis convallis rhoncus nec nec lacus. Nulla maximus est dolor, a mattis sapien posuere nec. </p>
+        </div>
+         <div class="col-sm-12 col-md-2 col-lg-3" data-aos="zoom-in">
+            <div class="presentation-circle">
+                <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/assets/images/demo/learning/plant-based-program-image-4.png')"></figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light separator-top section-cover">
+    <div class="container"> 
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="#"><i class="icon-facebook-square fs-20"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#"><i class="icon-linkedin-square fs-20"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#"><i class="icon-twitter-square fs-20"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#"><i class="icon-instagram fs-20"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#"><i class="icon-pinterest-square fs-20"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

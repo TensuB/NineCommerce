@@ -18,11 +18,11 @@
          var themeName = themeContext.WorkingThemeName;
 
 
-    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/script.js");
-    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/core.min.js");
-
     Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/assets/js/app.js");
     Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/assets/js/vendor.js");
+
+    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/script.js");
+    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/core.min.js");
 
     Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/bootstrap.min.js");
     

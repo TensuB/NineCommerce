@@ -111,9 +111,15 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("NewProducts", $"{pattern}newproducts/",
                 new { controller = "Product", action = "NewProducts" });
 
+            //blog tags list - categories of tags used to filter writing entries
+            endpointRouteBuilder.MapControllerRoute("BlogsByTagList", $"{pattern}blog",
+                new { controller = "Blog", action = "BlogTagsList" });
+
             //blog
             endpointRouteBuilder.MapControllerRoute("Blog", $"{pattern}blog",
                 new { controller = "Blog", action = "List" });
+
+
 
             //news
             endpointRouteBuilder.MapControllerRoute("NewsArchive", $"{pattern}news",
@@ -148,10 +154,10 @@ namespace Nop.Web.Infrastructure
 
             endpointRouteBuilder.MapControllerRoute("VendorVision", $"{pattern}vendor/vision/",
                 new { controller = "Vendor", action = "MyVision" });
-
+            /*
             endpointRouteBuilder.MapControllerRoute("VendorConnect", $"{pattern}vendor/connect/",
                 new { controller = "Vendor", action = "Connect" });
-            
+            */
 
             //add product to cart (without any attributes and options). used on catalog pages.
             endpointRouteBuilder.MapControllerRoute("AddProductToCart-Catalog",
