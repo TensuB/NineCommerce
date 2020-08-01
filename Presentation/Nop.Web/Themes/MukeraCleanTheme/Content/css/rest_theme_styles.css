@@ -1520,11 +1520,12 @@ html {
 }
 
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
     font-size: 14px;
     line-height: 1.57143;
     color: #888888;
-    /* background-color: #2d2e2e; */
+    /*  font-family: "Open Sans", Helvetica, Arial, sans-serif; 
+        background-color: #2d2e2e; */
 }
 
 input,
@@ -1593,7 +1594,7 @@ hr {
     margin-top: 5px;
     margin-bottom: 25px;
     border: 0;
-    border-top: 1px solid #eaecef;
+    border-top: 1px solid #ececec4d;
 }
 
 .sr-only {
@@ -3598,7 +3599,7 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
     width: 100%;
 }
-
+/*
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -3633,7 +3634,7 @@ input[type="button"].btn-block {
         width: 1200px;
     }
 }
-
+    */
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
@@ -47381,22 +47382,17 @@ div.theme-custom
 {
  margin:0em !important;
 }
-section#newsSectonBackground {
-    background-position-x: right;
-    background-color: #033800 !important;
-    background-image: url(/Themes/MukeraCleanTheme/Content/images/writings-aging-one.png) !important;
-    background-blend-mode: multiply;
-    border-top-width: 0px;
-}
+
 
 footer {
-padding:4em 2.5em !important;
+padding:0em !important;
 }
 
 .inputs label {
     display: inline-block;
     width: auto;
     min-width: 100px;
+    text-align: left;
 }
 
 .presentation-circle > figure::before {
@@ -47522,14 +47518,18 @@ padding:4em 2.5em !important;
     background-color: #f5f5f5b0;
 }
 
+.fs-20, .fs-18 {
+    color: #38e619 !important;
+}
+.fs-20:hover, .fs-18:hover {
+    color: #c7f802 !important;
+}
 .fs-20 {
     font-size: 10.25rem !important;
-    color: green !important;
 }
 
-.fs-20:hover {
-    font-size: 10.25rem !important;
-    color:#9bba2f !important;
+.fs-18 {
+    font-size: 6.25rem !important;
 }
 
 .gallery-thumbs .swiper-slide-active {
@@ -47560,5 +47560,55 @@ padding:4em 2.5em !important;
 
 .text-white p {
     color: rgb(239 239 239 / 99%) !important;
+}
+
+section#writingsSectonBackground {
+    background-position-x: right;
+    background-color: #033800 !important;
+    background-image: url(/Themes/MukeraCleanTheme/Content/images/writing-entries-section-background.png) !important;
+    background-blend-mode: multiply;
+    border-top: solid 2px #3a7602;
+}
+
+section#newsSectonBackground {
+    background-position-x: right;
+    background-color: #033800 !important;
+    background-image: url(/Themes/MukeraCleanTheme/Content/images/writings-aging-one.png) !important;
+    background-blend-mode: overlay;
+    border-top: solid 2px #3a7602;
+}
+
+footer .universalPageFooter {
+   border-top: solid 1px #3a7602;
+    width: 100% !important; max-width: 100% !important; padding: 2.75em 0em;
+}
+
+footer .nav {
+    display: inline-grid !important;
+}
+.mt-10, .my-10 {
+    margin-top: 3.25rem !important;
+}
+
+.card {
+    background-color: #a8e405b0 !important;
+}
+
+.card p {
+    color: white;
+    text-align: initial;       
+}
+.post-date, .news-date {
+    background-color: #51900675 !important;
+    color: #dededee0 !important;
+}
+
+.btn-green {
+    background-color: #307d05 !important;
+}
+
+.btn-green:hover {
+    background-color: #62c104 !important;
+    border: 1px solid #349200;
 }
     /*# sourceMappingURL=style.css.map */

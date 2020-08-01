@@ -1,100 +1,105 @@
 ﻿@model HomepageNewsItemsModel
 
 <!-- blog -->
-<section class="bg-dark" style="background-color: #033800 !important; background-image: url(../Themes/MukeraCleanTheme/Content/images/writings-aging-one.png) !important; background-blend-mode: multiply; border-top-width: 0px;">
-    <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-6 text-white text-center">
-        <h2>See My <b>Writings</b></h2>
+    <section class="bg-dark" id="writingsSectonBackground" style="background-position-x: right; background-color: #033800 !important; background-blend-mode: overlay; border-top: solid 2px #3a7602;" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8 text-white text-center">
+                    <h2>See My <b>Writings</b></h2>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="masonry row gutter-1" id="writingsList">
+                        <li class="col-md-4" data-aos="fade-up">
+                            <article class="tile">
+                                <div class="tile-image"
+                                     style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-nutrition.png)"></div>
+                                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Diet" })" class="tile-content">
+                                    <div class="tile-footer">
+                                        <span class="eyebrow mb-1">Plant-Based Diet</span>
+                                        <h3>Diet</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="col-md-4" data-aos="fade-up">
+                            <article class="tile tile-long">
+                                <div class="tile-image" style="background-image:url(Themes/MukeraCleanTheme/Content/images/writings-diet.png)"></div>
+                                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Nutrition" })" class="tile-content">
+                                    <div class="tile-footer">
+                                        <span class="eyebrow mb-1">Plant-Based Nutrition</span>
+                                        <h3>Nutrition.</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="col-md-4" data-aos="fade-up">
+                            <article class="tile">
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-aging.png)"></div>
+                                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Health" })" class="tile-content">
+                                    <div class="tile-footer">
+                                        <span class="eyebrow mb-1">Plant-Based Health and Welbeing</span>
+                                        <h3>Health & Welbeing</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="col-md-4" data-aos="fade-up">
+                            <article class="tile tile-long">
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-life-style.png)"></div>
+                                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
+                                    <div class="tile-footer">
+                                        <span class="eyebrow mb-1">Plant-Based Life Style</span>
+                                        <h3>Life Style.</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="col-md-4" data-aos="fade-up">
+                            <article class="tile tile-long">
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-medical-conditions.png)"></div>
+                                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
+                                    <div class="tile-footer">
+                                        <span class="eyebrow mb-1">Plant-Based Nutrition</span>
+                                        <h3>Medical Conditions.</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="col-md-4" data-aos="fade-up">
+                            <article class="tile">
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-health.png)"></div>
+                                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
+                                    <div class="tile-footer">
+                                        <span class="eyebrow mb-1">Plant-Based Nutrition</span>
+                                        <h3>Greacful Aging.</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-        <ul class="masonry row gutter-1" id="writingsList">
-            <li class="col-md-4" data-aos="fade-up">
-            <article class="tile">
-                <div class="tile-image" 
-                    style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-nutrition.png)"></div>
-                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Diet" })" class="tile-content">
-                <div class="tile-footer">
-                    <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                    <h3>Diet</h3>
-                </div>
-                </a>
-            </article>
-            </li>
-            <li class="col-md-4" data-aos="fade-up">
-            <article class="tile tile-long">
-                <div class="tile-image" style="background-image:url(Themes/MukeraCleanTheme/Content/images/writings-diet.png)"></div>
-                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Nutrition" })" class="tile-content">
-                <div class="tile-footer">
-                    <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                    <h3>Nutrition.</h3>
-                </div>
-                </a>
-            </article>
-            </li>
-            <li class="col-md-4" data-aos="fade-up">
-            <article class="tile">
-                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-aging.png)"></div>
-                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Health" })" class="tile-content">
-                <div class="tile-footer">
-                    <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                    <h3>Health</h3>
-                </div>
-                </a>
-            </article>
-            </li>
-            <li class="col-md-4" data-aos="fade-up">
-            <article class="tile tile-long">
-                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-life-style.png)"></div>
-                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
-                <div class="tile-footer">
-                    <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                    <h3>Life Style.</h3>
-                </div>
-                </a>
-            </article>
-            </li>
-            <li class="col-md-4" data-aos="fade-up">
-            <article class="tile tile-long">
-                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-medical-conditions.png)"></div>
-                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })"" class="tile-content">
-                <div class="tile-footer">
-                    <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                    <h3>Medical Conditions.</h3>
-                </div>
-                </a>
-            </article>
-            </li>
-            <li class="col-md-4" data-aos="fade-up">
-            <article class="tile">
-                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-health.png)"></div>
-                <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
-                <div class="tile-footer">
-                    <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                    <h3>Greacful Aging.</h3>
-                </div>
-                </a>
-            </article>
-            </li>
-        </ul>
-        </div>
-    </div>
-    </div>
-</section>
+    </section>
 <!-- / blog -->
 
 
 @if (Model.NewsItems.Count > 0)
 {
-   <section class="bg-light separator-top section-cover" id="newsSectonBackground">
+   <section class="bg-light separator-top section-cover" id="newsSectonBackground" 
+            style="        background-position-x: right;
+        background-color: #033800 !important;
+        background-image: url(/Themes/MukeraCleanTheme/Content/images/writings-nutrition-news-entry-background.png) !important;
+        background-blend-mode: overlay; border-top: solid 2px #3a7602 ">
         <div class="container">
             <div class="row justify-content-center" >
-                <div class="col-12 text-center">
-                     <h2 style="background-color:aliceblue; padding:0.75em;" class="btn-rounded">@T("Writings")</h2>                   
+                <div class="col-sm-12 col-md-10 col-lg-8 text-white text-center">
+                    <h2>Latest News</h2>
+                     <hr/>
                 </div>
-
                 <div class="col-12 mt-10 text-center">
                     @{
                         var fadeEffectList = new List<string>(){"fade-right", "fade-up", "fade-left"};
@@ -102,16 +107,17 @@
 
                         foreach (var item in Model.NewsItems.ToList().Take(3))
                         {
-                            <div class="col-md-4" data-aos="@fadeEffectList.ElementAt(index)" style="margin-bottom: 5px;">
+                            <div class="col-md-4" data-aos="@fadeEffectList.ElementAt(index)" style="margin-bottom: 5px; padding-left:0px; padding-right:0px;">
                             <div class="card card-price-1 rising">
                               <div class="card-body">
-                                <h4 class="card-title font-weight-bold text-purple">@item.Title</h4>
+                                <h4 class="card-title font-weight-bold text-white">@item.Title</h4>
                                     <span class="news-date">@item.CreatedOn.ToString("D")</span>                              
                                     <p> @Html.Raw(item.Short)</p>
                               </div>
                               <div class="card-footer">
+                                  <hr/>
                                 <a href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })"
-                                     class="btn btn-lg btn-green btn-block">@T("News.MoreInfo")                                 
+                                     class="btn btn-lg btn-green btn-rounded px-5">Read more                                 
                                 </a>
                               </div>
                             </div>
@@ -119,11 +125,10 @@
                             index = index + 1;
                         }
                     }
-
                 </div>
 
                 <div class="col-12 mt-10 text-center">
-                   <div class="boxed bg-lightest p-5 text-dark">
+                   <div class="boxed bg-lightest p-5 text-dark"  style="background-color: #a8e405b0 !important;">
                       <div class="row justify-content-between align-items-center text-center text-md-left">
                         <div class="col-md-9 mt-1 mt-md-">
 
@@ -138,7 +143,7 @@
 
                         </div>
                         <div class="col-md-3 mt-1 mt-md-0 text-lg-right">
-                            <a href="@Url.RouteUrl("NewsArchive")" class="btn btn-green btn-rounded px-5">@T("Read More writings")</a>
+                            <a href="@Url.RouteUrl("NewsArchive")" class="btn btn-green btn-rounded px-5">Read More writings</a>
                         </div>
                       </div>
                     </div>
