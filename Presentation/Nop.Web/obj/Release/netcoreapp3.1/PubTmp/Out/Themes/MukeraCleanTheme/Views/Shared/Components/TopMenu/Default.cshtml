@@ -1,16 +1,23 @@
 ﻿@model TopMenuModel
     <div class="container" style=" padding-bottom: 1.05em !important;" >
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- Logo / business name -->
-            @await Component.InvokeAsync("Logo")
+        <nav class="mb-1 navbar navbar-expand-lg navbar-light">
+            <!-- Logo / business name 
+            await Component.InvokeAsync("Logo")
+            -->
+            <a href="@Url.RouteUrl("Homepage")" class="navbar-brand">
+                <img title="" alt="Dr Barry Website" 
+                     class="navbar-logo navbar-logo-light" 
+                     src="Themes/MukeraCleanTheme/Content/images/logo-170x172.png">
+            </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="burger"><span></span></span>
+                    <span class="navbar-toggler-icon"></span>
             </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Top Menu Links List -->
-            <ul class="navbar-nav align-items-center mr-auto" style="margin-top: 1.5em !important;">
+            <ul class="navbar-nav align-items-center mr-auto top-menu notmobile" style="margin-top: 1.5em !important;">
             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
 
             @if (Model.DisplayHomepageMenuItem)
@@ -20,102 +27,62 @@
                 </li>
             }
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownOne" role="button" data-toggle="dropdown" aria-haspopup="true" 
-                       aria-expanded="false" href="#">About</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownOne">
-                          <a class="dropdown-item" href="@Url.RouteUrl("VendorStory")">
-                            <span>My Story</span>
-                          </a>
-                          <div class="dropdown-divider"></div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownOne" data-toggle="dropdown" aria-haspopup="true" 
+                    aria-expanded="false" role="button" href="#">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownOne">
+                        <a class="dropdown-item" href="@Url.RouteUrl("VendorStory")">
+                        <span>My Story</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
 
-                          <a class="dropdown-item" href="@Url.RouteUrl("VendorVision")">
-                            <span>My Vision</span>
-                          </a>
-                          <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="@Url.RouteUrl("VendorVision")">
+                        <span>My Vision</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
 
-                          <a class="dropdown-item" href="@Url.RouteUrl("ContactUs")">
-                            <span>Connect</span>
-                          </a>
-                        <!--
-                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="Url.RouteUrl("VendorConnect")">
-                            <span>Connect</span>
-                          </a>                       
-                        -->
+                        <a class="dropdown-item" href="@Url.RouteUrl("ContactUs")">
+                        <span>Connect</span>
+                        </a>
 
-                        <span class="dropdown-menu-toggle"></span>
-                    </div>
-                </li>
+                    <span class="dropdown-menu-toggle"></span>
+                </div>
+            </li>
 
-                <!-- Topics (Program, Writing, Speaking) List Link -->
-                <li class="nav-item"><a href="@Url.RouteUrl("NutritionProgram")" class="nav-link">Program</a></li>
+            <!-- Topics (Program, Writing, Speaking) List Link -->
+            <li class="nav-item"><a href="@Url.RouteUrl("NutritionProgram")" class="nav-link">Program</a></li>
 
-                 @if (Model.BlogEnabled && Model.DisplayBlogMenuItem)
-                {
-                   <li class="nav-item">            
-                     <a class="nav-link" href="@Url.RouteUrl("BlogsByTagList")">
-                        Writings
-                    </a>
+                @if (Model.BlogEnabled && Model.DisplayBlogMenuItem)
+            {
+                <li class="nav-item">            
+                    <a class="nav-link" href="@Url.RouteUrl("BlogsByTagList")">
+                    Writings
+                </a>
                   
-                  </li>
-                }
-
-            <li class="nav-item"><a href="@Url.RouteUrl("SpeakingService")" class="nav-link">Speaking</a></li>
-
-            @if (Model.DisplayCustomerInfoMenuItem)
-            {
-                <!-- Sign In link-->
-                <li class="nav-item"><a href="@Url.RouteUrl("CustomerInfo")" class="nav-link">@T("Account.MyAccount")</a></li>
-            }
-
-            @if (Model.DisplayProductSearchMenuItem)
-            {
-                <li class="nav-item">
-                    <a href="@Url.RouteUrl("ProductSearch")" class="nav-link">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </a>
                 </li>
             }
 
-            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
-            </ul>
-            </div>
+        <li class="nav-item"><a href="@Url.RouteUrl("SpeakingService")" class="nav-link">Speaking</a></li>
+
+        @if (Model.DisplayCustomerInfoMenuItem)
+        {
+            <!-- Sign In link-->
+            <li class="nav-item"><a href="@Url.RouteUrl("CustomerInfo")" class="nav-link">@T("Account.MyAccount")</a></li>
+        }
+
+        @if (Model.DisplayProductSearchMenuItem)
+        {
+            <li class="nav-item">
+                <a href="@Url.RouteUrl("ProductSearch")" class="nav-link">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+        }
+
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
+        </ul>
+
+        </div>
         </nav>
     </div>
-
-@{/*
-  
-    @if (Model.UseAjaxMenu)
-    {
-        <script asp-location="Footer">
-        $(document).ready(function () {
-            $('.navbar-toggler').on('click', function () {
-                $(this).siblings('.top-menu.mobile').slideToggle('slow');
-            });
-            var localized_data = {
-                AjaxFailure: "@T("MainMenu.AjaxFailure")"
-            };
-            mainMenu.init('@Url.RouteUrl("GetCatalogRoot")', '@Url.RouteUrl("GetCatalogSubCategories")', 'ul.top-menu.notmobile', 'ul.top-menu.mobile', localized_data);
-        });
-        </script>
-
-        Html.AppendScriptParts(ResourceLocation.Footer, "~/js/public.menu.js");
-    }
-    else
-    {
-        <script asp-location="Footer">
-            $(document).ready(function () {
-                $('.navbar-toggler').on('click', function () {
-                    $(this).siblings('#navbarSupportedContent').slideToggle('slow');
-                });
-                
-                $('.top-menu.mobile .sublist-toggle').on('click', function () {
-                    $(this).siblings('.sublist').slideToggle('slow');
-                });
-                
-            });
-        </script>
-    }
-*/}
 

@@ -436,6 +436,27 @@ namespace Nop.Web.Controllers
             return View(model);
         }
 
+        [HttpsRequirement]
+        public virtual IActionResult PrivacyNotice()
+        {
+            var model = new VendorPrivacyNoticeModel()
+            {
+                Description = "My Privacy Notice - test vendor Privacy Notice description",
+            };
+            return View(model);
+        }
+
+        [HttpsRequirement]
+        public virtual IActionResult ConditionsOfUse()
+        {
+            var model = new VendorConditionsOfUseModel()
+            {
+                Description = "Conditions Of Use - test vendor Conditions Of Use page description",
+            };
+            return View(model);
+        }
+
+        
         //Connect
         [HttpsRequirement]
         public virtual IActionResult Connect()

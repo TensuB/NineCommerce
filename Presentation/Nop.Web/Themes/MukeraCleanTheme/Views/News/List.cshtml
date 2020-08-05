@@ -1,0 +1,71 @@
+﻿@model NewsItemListModel
+@{
+    Layout = "_ColumnsTwo";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.NewsArchive").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-news-list-page");
+}
+
+<section class="bg-light separator-top section-cover">
+    <div class="container">
+        <div class="row justify-content-left" >
+        <div class="col-12 mt-10 text-center">
+            <a href="@Url.RouteUrl("NewsRSS", new { languageId = Model.WorkingLanguageId })" 
+               class="link-rss" title="@T("News.RSS.Hint")">@T("News.RSS")</a>
+         <h1>@T("News")</h1>               
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-dark separator-top section-cover">
+    <div class="container">
+         <div class="row justify-content-between align-items-center">
+            <div class="col-md-12 pl-md-5">
+             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsListPageBeforeItems })
+  
+                <div class="news-items">
+                    @foreach (var item in Model.NewsItems)
+                    {
+                        <div class="col-sm-12 col-md-10 col-lg-12 news-body text-white news-body">
+                            <div class="news-head">
+                               <h2> @item.Title </h2> 
+                                <span class="news-date">@item.CreatedOn.ToString("D")</span>
+                            </div>   
+                        </div>
+
+                        <div class="col-sm-12 col-md-10 col-lg-12 news-body text-white news-body">
+                            <div class="col-lg-9 col-md-6 text-center text-md-left" 
+                                 style="padding-left: 0px; line-height: 2.125; letter-spacing: 0.048em;">
+                                @Html.Raw(item.Short)   
+                           </div>
+                            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
+                            <div class="presentation-circle">
+                              <figure style="background-image: url('Themes/MukeraCleanTheme/Content/assets/images/demo/learning/plant-based-program-image-4.png')"></figure>
+                            </div>
+                          </div>                               
+                        </div>
+
+                        <div class="col-sm-12 col-md-10 col-lg-12 news-body text-white news-body text-right">
+                            <hr/>
+                            <a href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })" class="read-more btn btn-white btn-rounded">@T("News.MoreInfo")</a> 
+                        </div>
+                    }
+                </div>
+                @{
+                    var pager = Html.Pager(Model.PagingFilteringContext).QueryParam("pagenumber");
+                }
+                @if (!pager.IsEmpty())
+                {
+                    <div class="pager">
+                        @pager
+                    </div>
+                }
+                @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsListPageAfterItems })
+            </div>
+        </div>
+     </div>
+</section>
+

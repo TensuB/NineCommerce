@@ -39,15 +39,7 @@
         {
            <form asp-route="ContactUs" method="post">
            <div class="col-sm-12 col-md-10 col-lg-10"><div asp-validation-summary="ModelOnly" class="message-error"></div> </div>
-           <!--
-           <div class="form-group col-sm-12 col-md-12 col-lg-12">
-                <label asp-for="FullName" asp-postfix=":"></label>
-                <input asp-for="FullName" placeholder="@T("ContactUs.FullName.Hint")" class="fullname form-control" 
-                        id="fullname"/>
-                <nop-required />
-                <span asp-validation-for="FullName"></span>      
-           </div>
-            -->
+
             <div class="form-group col-sm-12 col-md-12 col-lg-12">
                 <label asp-for="FirstName" asp-postfix=":"></label>
                 <input asp-for="FirstName" placeholder="@T("ContactUs.FirstName.Hint")" class="firstName form-control" 
@@ -107,33 +99,37 @@
     </div>
 </section>
 
-<section class="bg-light-dark separator-top section-cover">
+<section class="bg-green separator-top section-cover text-white" style="background-color: #2e8000 !important;">
     <div class="container">
         <div class="row justify-content-left" >
-            <div class="col-12 mt-10 text-center">
-                 <h2>Join Us on Social Media</h2>                 
+            <div class="col-12">
+                 <h2>Join Us on Social Media</h2>   
+                <hr/>
             </div>
         </div>
     </div>
-</section>
 
-<section class="bg-light separator-top section-cover">
     <div class="container"> 
         <div class="col-sm-12 col-md-10 col-lg-8">
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
 
             <p>Aenean id ornare eros. Nulla feugiat libero ipsum, quis blandit nisl lacinia eu. Aenean rutrum posuere metus id vehicula. Aenean pellentesque nunc mauris, at egestas ipsum egestas a. Mauris sed commodo magna, sit amet ultricies sapien. Ut euismod metus in turpis convallis rhoncus nec nec lacus. Nulla maximus est dolor, a mattis sapien posuere nec. </p>
         </div>
-         <div class="col-sm-12 col-md-2 col-lg-3" data-aos="zoom-in">
+         <div class="col-sm-8 col-md-3 col-lg-2 align-items-center" data-aos="zoom-in">
             <div class="presentation-circle">
                 <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/assets/images/demo/learning/plant-based-program-image-4.png')"></figure>
             </div>
         </div>
+
     </div>
-</section>
-<section class="bg-light separator-top section-cover">
-    <div class="container" style="background-image: url(/Themes/MukeraCleanTheme/Content/images/writings-nutrition-footer-background.png) !important; background-blend-mode: overlay;"> 
+
+    <div class="container"> 
         <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <div>&nbsp;</div>
+            <hr style="width:initial;"/>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 text-left">
+          
             <ul class="list-inline mb-0">
                 <li class="list-inline-item">
                     <a href="#"><i class="icon-facebook-square fs-20"></i></a>
@@ -151,6 +147,7 @@
                     <a href="#"><i class="icon-pinterest-square fs-20"></i></a>
                 </li>
             </ul>
+
         </div>
     </div>
 </section>

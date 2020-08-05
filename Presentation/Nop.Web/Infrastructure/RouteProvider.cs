@@ -149,15 +149,17 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("VendorAbout", $"{pattern}vendor/about/",
                 new { controller = "Vendor", action = "About" });
 
+            endpointRouteBuilder.MapControllerRoute("VendorConditionsOfUse", $"{pattern}vendor/conditionsOfUse/",
+                new { controller = "Vendor", action = "ConditionsOfUse" });
+
+            endpointRouteBuilder.MapControllerRoute("VendorPrivacyNotice", $"{pattern}vendor/PrivacyNotice/",
+                new { controller = "Vendor", action = "PrivacyNotice" });
+
             endpointRouteBuilder.MapControllerRoute("VendorStory", $"{pattern}vendor/story/",
                 new { controller = "Vendor", action = "MyStory" });
 
             endpointRouteBuilder.MapControllerRoute("VendorVision", $"{pattern}vendor/vision/",
                 new { controller = "Vendor", action = "MyVision" });
-            /*
-            endpointRouteBuilder.MapControllerRoute("VendorConnect", $"{pattern}vendor/connect/",
-                new { controller = "Vendor", action = "Connect" });
-            */
 
             //add product to cart (without any attributes and options). used on catalog pages.
             endpointRouteBuilder.MapControllerRoute("AddProductToCart-Catalog",

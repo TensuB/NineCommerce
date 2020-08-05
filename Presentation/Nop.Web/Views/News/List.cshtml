@@ -7,13 +7,25 @@
     //page class
     Html.AppendPageCssClassParts("html-news-list-page");
 }
-<div class="page news-list-page">
-    <div class="page-title">
-        <a href="@Url.RouteUrl("NewsRSS", new { languageId = Model.WorkingLanguageId })" class="link-rss" title="@T("News.RSS.Hint")">@T("News.RSS")</a>
-        <h1>@T("News")</h1>
+
+<section class="bg-light separator-top section-cover">
+    <div class="container">
+        <div class="row justify-content-left" >
+        <div class="col-12 mt-10 text-center">
+            <a href="@Url.RouteUrl("NewsRSS", new { languageId = Model.WorkingLanguageId })" 
+               class="link-rss" title="@T("News.RSS.Hint")">@T("News.RSS")</a>
+         <h1>@T("News")</h1>               
+        </div>
+        </div>
     </div>
-    <div class="page-body">
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsListPageBeforeItems })
+</section>
+
+<section class="bg-light separator-top section-cover">
+    <div class="container">
+         <div class="row justify-content-between align-items-center">
+            <div class="col-md-12 pl-md-5">
+
+                        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsListPageBeforeItems })
         <div class="news-items">
             @foreach (var item in Model.NewsItems)
             {
@@ -42,5 +54,11 @@
             </div>
         }
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsListPageAfterItems })
-    </div>
-</div>
+
+
+            </div>
+          <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+        </div>
+     </div>
+</section>
+

@@ -50,13 +50,41 @@
 
     <Content Include="Themes\MukeraCleanTheme\Views\Blog\List.cshtml" />
 
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\CategoryTemplate.ProductsInGridOrLines.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\ManufacturerAll.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\ManufacturerTemplate.ProductsInGridOrLines.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\ProductsByTag.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\ProductTagsAll.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\Search.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\Vendor.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\VendorAll.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\_CatalogSelectors.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\_FilterPriceBox.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Catalog\_FilterSpecsBox.cshtml" />
+
     <Content Include="Themes\MukeraCleanTheme\Views\Common\Connect.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Common\ContactUs.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Customer\Login.cshtml" />
 
+    <Content Include="Themes\MukeraCleanTheme\Views\Customer\RegisterResult.cshtml" />
+
     <Content Include="Themes\MukeraCleanTheme\Views\Home\Index.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\News\List.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\News\NewsItem.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml" />
 
@@ -79,6 +107,10 @@
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\Connect.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\Info.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Vendor\ConditionsOfUse.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Vendor\PrivacyNotice.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\MyStory.cshtml" />
 
@@ -152,11 +184,24 @@
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\BolgTagsList.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\List.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\CategoryTemplate.ProductsInGridOrLines.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\ManufacturerAll.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\ManufacturerTemplate.ProductsInGridOrLines.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\ProductsByTag.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\ProductTagsAll.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\Search.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\Vendor.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\VendorAll.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\_CatalogSelectors.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\_FilterPriceBox.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Catalog\_FilterSpecsBox.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Common\Connect.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Common\ContactUs.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Customer\Login.cshtml" />
-    <None Remove="Themes\MukeraCleanTheme\Views\Customer\Register.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Customer\RegisterResult.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Home\Index.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\News\List.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\News\NewsItem.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\TopicBlock\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\TopMenu\Default.cshtml" />
@@ -166,10 +211,12 @@
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\_Header.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\_Root.Head.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\About.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Vendor\ConditionsOfUse.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\Connect.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\Info.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\MyStory.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\MyVision.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Vendor\PrivacyNotice.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\_VendorAttributes.cshtml" />
 
     <None Update="Areas\Admin\sitemap.config">
@@ -223,6 +270,50 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\CategoryTemplate.ProductsInGridOrLines.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\ManufacturerAll.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\ManufacturerTemplate.ProductsInGridOrLines.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\ProductsByTag.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\ProductTagsAll.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\Search.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\Vendor.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\VendorAll.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\_CatalogSelectors.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\_FilterPriceBox.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Catalog\_FilterSpecsBox.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Common\Connect.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -235,7 +326,19 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Customer\RegisterResult.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Home\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\News\List.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\News\NewsItem.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -280,6 +383,14 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Vendor\Info.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Vendor\ConditionsOfUse.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Vendor\PrivacyNotice.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
