@@ -47667,3 +47667,27 @@ div#registerFormDatepicker .selectric-open .selectric-items {
 div#registerFormDatepicker .selectric .label {
     padding: 1.9375rem 1.9375rem !important;
 }
+
+.nivo-caption {
+    position: absolute;
+    top: 25% !important;
+    left: 15% !important;
+    bottom: 15% !important;
+    right: 15% !important;
+    color: #fffffff0 !important;
+    font-family: "Merriweather", "Times New Roman", Times, serif, "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    z-index: 8;
+    padding: 0.21em !important;
+    opacity: 0.8;
+    overflow: hidden;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    filter: alpha(opacity=8);
+    box-sizing: border-box;
+    background-color: #243c0cc7 !important;
+    opacity: 0.999 !important;
+    border: 1px solid #2e5f0269 !important;
+    width: 70% !important;
+}
