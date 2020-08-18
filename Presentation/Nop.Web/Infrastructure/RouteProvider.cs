@@ -120,7 +120,6 @@ namespace Nop.Web.Infrastructure
                 new { controller = "Blog", action = "List" });
 
 
-
             //news
             endpointRouteBuilder.MapControllerRoute("NewsArchive", $"{pattern}news",
                 new { controller = "News", action = "List" });
@@ -247,6 +246,7 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("SubscribeNewsletter", $"{pattern}subscribenewsletter",
                 new { controller = "Newsletter", action = "SubscribeNewsletter" });
 
+
             //email wishlist
             endpointRouteBuilder.MapControllerRoute("EmailWishlist", $"{pattern}emailwishlist",
                 new { controller = "ShoppingCart", action = "EmailWishlist" });
@@ -278,9 +278,17 @@ namespace Nop.Web.Infrastructure
                 new { controller = "Topic", action = "TopicDetailsPopup" });
 
             //blog
-            endpointRouteBuilder.MapControllerRoute("BlogByTag",
+            endpointRouteBuilder.MapControllerRoute("BlogTagBySubcategory",
+                pattern + "blog/tag/{tag}",
+                new { controller = "Blog", action = "BlogTagBySubcategoryList" });
+
+           endpointRouteBuilder.MapControllerRoute("BlogByTag",
                 pattern + "blog/tag/{tag}",
                 new { controller = "Blog", action = "BlogByTag" });
+            
+            endpointRouteBuilder.MapControllerRoute("BlogByTagAndSubCategory",
+                pattern + "blog/tag/{tag}/{subCategory}",
+                new { controller = "Blog", action = "BlogPostTagBySubcategoryList" });            
 
             endpointRouteBuilder.MapControllerRoute("BlogByMonth",
                 pattern + "blog/month/{month}",

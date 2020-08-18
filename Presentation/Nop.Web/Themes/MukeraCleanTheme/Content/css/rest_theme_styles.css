@@ -24,7 +24,7 @@
 *     1.18 Pager
 *     1.19 Labels
 *     1.20 Badges
-*     1.21 Jumbotron
+*     1.21 Jumbotron#writingsList a div.tile-footer, #writingsList article div.tile-footer
 *     1.22 Thumbnails
 *     1.23 Alerts
 *     1.24 Progress bars
@@ -1594,7 +1594,7 @@ hr {
     margin-top: 5px;
     margin-bottom: 25px;
     border: 0;
-    border-top: 1px solid #ececec4d;
+    border-top: 1px solid #99a5944d;
 }
 
 .sr-only {
@@ -25251,6 +25251,9 @@ button.list-group-item-danger {
 .input-group .form-control {
     color: #212121;
     background: #fff;
+    background-color: #fbfbfbed;
+    border: 1px solid #4c504cba;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif, "Times New Roman", Times, serif;
 }
 
 .input-group > .input-group-addon > .input-group-icon {
@@ -46309,7 +46312,7 @@ a.pswp__share--download:hover {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-touch-callout: none;
+    -webkit-touch-callout: none;  
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -47408,6 +47411,39 @@ padding:0em !important;
     border-bottom: 5px solid #2e5f02;
 }
 
+#writingsList article div.tile-body {
+    background-color: #f3f3f3 !important;
+    position: initial;
+    height: -webkit-fill-available;
+    padding: 1.5em;
+    color: black;
+}
+
+#writingsList article.tile {
+    background-color: #4d9407f7 !important;
+    opacity: 0.999 !important;
+    border-bottom: 5px solid #2e5f02;
+    max-height: 25em;
+}
+
+#writingsList article div.tile-footer {
+    position: initial;
+}
+#writingsList article div.tile-footer p {
+    font-size: 0.85em !important;
+}
+
+#writingsList article div.tile-header {
+    top: 0;
+    margin-top: 0em;
+    bottom: 0;
+    background-color: #279200de !important;
+    border-top: 1px solid #8c8a8a40;
+    border-bottom: 4px solid #07230229;
+    position: initial;
+    padding: 2.875rem !important;
+}
+
 /* Step =accordion for Timeline styling */
 .accordion-group-steps .accordion {
     padding-left: 6.55rem !important;
@@ -47561,33 +47597,26 @@ padding:0em !important;
     width: 100% !important;
 }
 
-.bg-dark {
-  background-color: #2e8000 !important;
+.bg-custom-gray {
+    background-color: #e8efe8 !important;
 }
 
 .text-white p {
-    color: rgb(239 239 239 / 99%) !important;
+    color: rgb(243 243 243 / 99%) !important
 }
 
 section#writingsSectonBackground {
     background-position-x: right;
-    background-color: #033800 !important;
-    background-image: url(/Themes/MukeraCleanTheme/Content/images/writing-entries-section-background.png) !important;
-    background-blend-mode: multiply;
+    background-color: #033800 !important;   
     border-top: solid 2px #3a7602;
 }
 
-section#newsSectonBackground {
-    background-position-x: right;
-    background-color: #033800 !important;
-    background-image: url(/Themes/MukeraCleanTheme/Content/images/writings-aging-one.png) !important;
-    background-blend-mode: overlay;
-    border-top: solid 2px #3a7602;
-}
 
 footer .universalPageFooter {
-   border-top: solid 1px #3a7602;
-    width: 100% !important; max-width: 100% !important; padding: 2.75em 0em;
+    border-top: solid 1px #4c4a4aa1;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2.75em 0em;
 }
 
 footer .nav {
@@ -47598,25 +47627,27 @@ footer .nav {
 }
 
 .card {
-    background-color:#7eac03b0 !important;
+    background-color: #f9f9f9b0 !important;
+    border: 1px solid rgb(0 0 0 / 5%);
 }
 
 .card p {
-    color: white;
+    color: black;
     text-align: initial;       
 }
 .post-date, .news-date {
-    background-color: #73ce0675 !important;
-    color: #dededee0 !important;
+    background-color: #f1f1f1eb !important;
+    color: #6f6d6de0 !important;
 }
 
 .btn-green {
-    background-color: #307d05 !important;
+    background-color: #1b4702 !important;
 }
 
 .btn-green:hover {
     background-color: #62c104  ;
     border: 1px solid #349200;
+    color:white;
 }
 .dropdown-item span {
     color: #333;
@@ -47645,7 +47676,7 @@ footer .nav {
 }
 
 .bg-green {
-    background-color: #307d05 !important;
+    background-color: #033800 !important;
 }
 
 .swiper-slide:hover {
@@ -47690,4 +47721,26 @@ div#registerFormDatepicker .selectric .label {
     opacity: 0.999 !important;
     border: 1px solid #2e5f0269 !important;
     width: 70% !important;
+}
+
+.newsletter-email input[type="email"], .newsletter-email input[type="text"],
+.ebook-download-email input[type="email"], .ebook-download-email input[type="text"]
+{
+    float: left;
+    width: 180px;
+    height: 45px;
+    margin: 0 -1px 0 0;
+}
+
+#writingsList span.text-italic {
+    font-style: italic;
+    color: whitesmoke;
+}
+#writingHeaderSection .card-body {   
+    padding: 1.25rem;
+    font-size: 1.5em;
+}
+
+#writingsList .tile-body p {
+    color: rgb(107 105 105 / 99%) !important;
 }

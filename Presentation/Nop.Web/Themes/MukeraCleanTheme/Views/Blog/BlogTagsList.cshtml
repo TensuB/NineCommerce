@@ -13,7 +13,7 @@
   <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 mt-10 text-center">
-            <h1>My <b>Writings</b></h1>
+            <h1><b>Writing</b></h1>
         </div>
     </div>
   </div>             
@@ -21,106 +21,158 @@
 
 <section class="bg-dark separator-top section-cover">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="writingHeaderSection">
         <div class="col-lg-12 text-white text-left">
             <h2>Overview</h2>
             <hr/>
-            <div class="col-lg-5 text-white text-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis erat non vehicula varius. Mauris nec justo quis ex vulputate malesuada sed at mi. Integer vitae lobortis ipsum. Curabitur nisl nisi, aliquet rhoncus commodo non, vestibulum eget turpis. Sed dictum dignissim venenatis. Ut bibendum dignissim neque eget commodo. Phasellus enim neque, gravida ut enim sed, venenatis efficitur odio.</p>
-            </div>
-            <div class="col-lg-5 text-white text-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis erat non vehicula varius. Mauris nec justo quis ex vulputate malesuada sed at mi. Integer vitae lobortis ipsum. Curabitur nisl nisi, aliquet rhoncus commodo non, vestibulum eget turpis. Sed dictum dignissim venenatis. Ut bibendum dignissim neque eget commodo. Phasellus enim neque, gravida ut enim sed, venenatis efficitur odio.</p>
-            </div>
-            <div class="col-lg-2 text-white text-left">
-                <div class="presentation-circle">
-                    <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/images/my-targets.png')"></figure>
-                </div>  
-            </div>
+            <p>
+             Read about the latest in plant-based news, nutrition and healthy lifestyle.
+            </p>
         </div>
+
     </div>
   </div>             
-</section>
 
-<section class="bg-dark separator-top section-cover" style="background-image: url(../Themes/MukeraCleanTheme/Content/images/writings-aging-one.png) !important; background-blend-mode: multiply; border-top-width:0px;">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="writingsList">
+
         <div class="col-lg-12 text-white text-left">
-            <h2>Writing Categories</h2>
+            <h2> <span>The</span> How</h2>                 
             <hr/>
-            <div class="row">
-                    <div class="col">
-                    <ul class="masonry row gutter-1" id="writingsList">
-                        <li class="col-md-4" data-aos="fade-up">
-                        <article class="tile">
-                            <div class="tile-image" 
-                                style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-nutrition.png)"></div>
-                            <a href="@Url.RouteUrl("BlogByTag", new { tag = "Diet" })" class="tile-content">
-                            <div class="tile-footer">
-                                <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                                <h3>Diet</h3>
-                            </div>
-                            </a>
-                        </article>
-                        </li>
-                        <li class="col-md-4" data-aos="fade-up">
-                        <article class="tile tile-long">
-                            <div class="tile-image" style="background-image:url(Themes/MukeraCleanTheme/Content/images/writings-diet.png)"></div>
-                            <a href="@Url.RouteUrl("BlogByTag", new { tag = "Nutrition" })" class="tile-content">
-                            <div class="tile-footer">
-                                <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                                <h3>Nutrition.</h3>
-                            </div>
-                            </a>
-                        </article>
-                        </li>
-                        <li class="col-md-4" data-aos="fade-up">
-                        <article class="tile">
-                            <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-aging.png)"></div>
-                            <a href="@Url.RouteUrl("BlogByTag", new { tag = "Health" })" class="tile-content">
-                            <div class="tile-footer">
-                                <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                                <h3>Health</h3>
-                            </div>
-                            </a>
-                        </article>
-                        </li>
-                        <li class="col-md-4" data-aos="fade-up">
-                        <article class="tile tile-long">
-                            <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-life-style.png)"></div>
-                            <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
-                            <div class="tile-footer">
-                                <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                                <h3>Life Style.</h3>
-                            </div>
-                            </a>
-                        </article>
-                        </li>
-                        <li class="col-md-4" data-aos="fade-up">
-                        <article class="tile tile-long">
-                            <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-medical-conditions.png)"></div>
-                            <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })"" class="tile-content">
-                            <div class="tile-footer">
-                                <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                                <h3>Medical Conditions.</h3>
-                            </div>
-                            </a>
-                        </article>
-                        </li>
-                        <li class="col-md-4" data-aos="fade-up">
-                        <article class="tile">
-                            <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-health.png)"></div>
-                            <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
-                            <div class="tile-footer">
-                                <span class="eyebrow mb-1">Plant-Based Nutrition</span>
-                                <h3>Greacful Aging.</h3>
-                            </div>
-                            </a>
-                        </article>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
         </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <ul class="masonry row gutter-1">
+                <li class="col-md-6" data-aos="fade-up">
+                <article class="tile">
+                    <div class="tile-image" 
+                        style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-nutrition.png)"></div>
+                    <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "Diet" })" class="tile-content">
+                    <div class="tile-footer">                        
+                        <h3>Food and Diet</h3>
+                        <hr/>
+                        <p> Learn all about the five plant-food groups.</p>
+                        <p> Understand the health benefits of brassicas and berries, beans and leafy greens, flaxseed, cacao and other superfoods </p>
+                        <p>Should I drink tea, or coffee? Is red wine healthy? Are avocados fattening? Is soy safe?</p>
+                        <p> All of your food and diet questions answered. </p>
+                    </div>
+                    </a>
+                </article>
+                </li>
+                <li class="col-md-6" data-aos="fade-up">
+                <article class="tile tile">
+                    <div class="tile-image" style="background-image:url(Themes/MukeraCleanTheme/Content/images/writings-diet.png)"></div>
+                    <a href="@Url.RouteUrl("BlogByTag", new { tag = "Nutrition" })" class="tile-content">
+                    <div class="tile-footer">
+                        <h3>Nutrition.</h3>
+                        <hr/>
+                        <p>You're A to Z of plant-based nutrition.</p>
+                        <p>Basics of plant-based biochemistry.</p>
+                        <p>Highlighting the power of plant-based ‘phyto’ nutrition</p>
+                        <p>Demonstrating the detrimental effects of animal-based nutrition</p>
+                        <p>Addressing nutritional concerns of plant-based nutrition</p>
+                        <p>Where do you get your "protein, calcium, B12, omega-3's etc"? </p>
+                        <p>All of your nutritional concerns explained. </p>
+                    </div>
+                    </a>
+                </article>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+        <div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+
+        <div class="col-lg-12 text-white text-left">
+            <h2> <span>The</span> Why</h2>                 
+            <hr/>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <ul class="masonry row gutter-1">
+                <li class="col-md-6" data-aos="fade-up">
+                <article class="tile">
+                    <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-aging.png)"></div>
+                    <a href="@Url.RouteUrl("BlogByTag", new { tag = "Health and Welbeing" })" class="tile-content">
+                    <div class="tile-footer">
+                        <h3>Health and Welbeing</h3>
+                        <hr/>
+                            <p>Highlighting the health and longevity benefits of plant-based nutrition.</p>
+                            <p>Maintaining a healthy weight through weight loss or weight gain.</p>
+                            <p>Reduce your risk of overweight and obesity.</p>
+                            <p>Demonstrating the detrimental effects of animal-based nutrition</p>
+                            <p>Prevent and reverse diabetes, hypertension, cardiovascular and other metabolic disease</p>
+                            <p>Learn the ways to living healthier for longer.</p>
+                    </div>
+                    </a>
+                </article>
+                </li>
+                <li class="col-md-6" data-aos="fade-up">
+                <article class="tile tile">
+                    <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-life-style.png)"></div>
+                    <a href="@Url.RouteUrl("BlogByTag", new { tag = "Life Style" })" class="tile-content">
+                    <div class="tile-footer">                            
+
+                        <h3>Life Style</h3>
+                        <hr/>
+                        <p>Everyday plant-based living </p>
+                        <p>Transition strategies</p>
+                        <p>Kitchen tips and tricks</p>
+                        <p>Feeding the family and kids</p>
+                        <p>Fuelling plant-powered athletes</p>
+                        <p>Eating out and on the open road</p>
+                        <p>Eating local, organic and seasonal</p>
+                        <p>Overcoming obstacles, bad habits and limiting beliefs</p>
+                        <p>and much more … </p>
+                    </div>
+                    </a>
+                </article>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+        <div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+
+        <div class="col-lg-12 text-white text-left">
+            <h2> <span>The</span> How</h2>                 
+            <hr/>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <ul class="masonry row gutter-1">
+                <li class="col-md-6" data-aos="fade-up">
+                <article class="tile tile">
+                    <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-health.png)"></div>
+                    <a href="@Url.RouteUrl("BlogByTag", new { tag = "For Health Professionals" })" class="tile-content">
+                    <div class="tile-footer">
+                        <h3>For Health Professionals</h3>
+                        <hr/>
+                        <p>Nutrition education is sparse in the current medical and healthcare profession.</p>
+                        <p>In these articles I summarise the latest publications in plant-based nutrition from peer-reviewed journals.</p>
+                    </div>
+                    </a>
+                </article>
+                </li>
+                <li class="col-md-6" data-aos="fade-up">
+                <article class="tile ">
+                    <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-medical-conditions.png)"></div>
+                    <a href="@Url.RouteUrl("BlogByTag", new { tag = "Recipes" })" class="tile-content">
+                    <div class="tile-footer">
+                        <h3>Recipes</h3>
+                        <hr/>
+                        <p>Daily and weekly meal plans.</p>
+                        <p>How to plan your plate.</p>
+                        <p>Simple everyday recipes.</p>
+                        <p> Breakfasts and brunch.</p>
+                        <p>Lunch and afternoon fare</p>
+                        <p>Dinner and hearty mains </p>
+                        <p>Desserts, sweets and healthy treats.</p>
+                        <p>And don’t forget to submit your favourite plant-based recipes.</p>
+                    </div>
+                    </a>
+                </article>
+                </li>
+            </ul>
+        </div>
+
     </div>
   </div>             
 </section>

@@ -18,6 +18,7 @@ namespace Nop.Web.Components
 
         public IViewComponentResult Invoke()
         {
+            var testStop = string.Empty;
             if (!_newsSettings.Enabled || !_newsSettings.ShowNewsOnMainPage)
                 return Content("");
 

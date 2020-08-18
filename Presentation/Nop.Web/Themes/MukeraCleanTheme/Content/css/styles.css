@@ -1026,15 +1026,19 @@ label, label + * {
 	margin: 0 -1px 0 0;
 }
 .newsletter-subscribe-button {
+	text-transform: uppercase;
 	float: left;
-	height: 36px;
+	height: 45px;
+	width: auto !important;
 	border: none;
 	background-color: #4ab2f1;
-	padding: 0 15px;
+	padding: 0.5em 1.5em;
 	text-align: center;
 	color: #fff;
-	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font-size: 1.25em;
 }
+
 .newsletter-subscribe-button:hover {
 	background-color: #248ece;
 }
@@ -1048,9 +1052,18 @@ label, label + * {
 	overflow: hidden; 
 	line-height: 28px; 
 }
-/*.newsletter-validation .please-wait {
-	display: none !important; 
-}*/
+
+.ebook-download-request-button {
+	float: left;
+	height: 45px;
+	border: none;
+	background-color: #4ab2f1;
+	padding: 0.5em 1.5em;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.18em;
+	font-size: 1.25em;
+}
 
 .footer-lower {
 	width: 95%;
@@ -6836,10 +6849,12 @@ pre {
 .newsletter-email input[type="text"] {
 	width: 200px;
 }
+/*
 .newsletter-email .newsletter-subscribe-button {
 	width: 100px;
 	padding: 0 5px;
 }
+*/
 .newsletter-validation .field-validation-valid {
 	text-align: left;
 }

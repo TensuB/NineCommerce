@@ -37,7 +37,7 @@ namespace Nop.Web.Controllers
         [CheckAccessClosedStore(true)]
         [HttpPost]
         [IgnoreAntiforgeryToken]
-        public virtual IActionResult SubscribeNewsletter(string email, bool subscribe)
+        public virtual IActionResult SubscribeNewsletter(string email,bool subscribe, bool isEbookDownloadRequest, string name = "test")
         {
             string result;
             var success = false;
@@ -49,6 +49,7 @@ namespace Nop.Web.Controllers
             else
             {
                 email = email.Trim();
+                name = name.Trim();
 
                 var subscription = _newsLetterSubscriptionService.GetNewsLetterSubscriptionByEmailAndStoreId(email, _storeContext.CurrentStore.Id);
                 if (subscription != null)
@@ -76,14 +77,23 @@ namespace Nop.Web.Controllers
                     {
                         NewsLetterSubscriptionGuid = Guid.NewGuid(),
                         Email = email,
-                        Active = false,
+                        Name = name,
+                        Active = true,
+                        IsEbookRequest = isEbookDownloadRequest,
                         StoreId = _storeContext.CurrentStore.Id,
                         CreatedOnUtc = DateTime.UtcNow
                     };
                     _newsLetterSubscriptionService.InsertNewsLetterSubscription(subscription);
                     _workflowMessageService.SendNewsLetterSubscriptionActivationMessage(subscription, _workContext.WorkingLanguage.Id);
 
-                    result = _localizationService.GetResource("Newsletter.SubscribeEmailSent");
+                    if(isEbookDownloadRequest)
+                    {
+                        result = _localizationService.GetResource("newsletter.ebookdownloadrequestemailsent");
+                    }
+                    else
+                    {
+                        result = _localizationService.GetResource("Newsletter.SubscribeEmailSent");
+                    }
                 }
                 else
                 {

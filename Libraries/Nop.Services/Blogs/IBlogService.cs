@@ -93,6 +93,13 @@ namespace Nop.Services.Blogs
         IList<string> ParseTags(BlogPost blogPost);
 
         /// <summary>
+        /// Parse Tag Subcategories
+        /// </summary>
+        /// <param name="blogPost">Blog post</param>
+        /// <returns>TagSubcategories</returns>
+        IList<string> ParseTagSubcategories(BlogPost blogPost);
+
+        /// <summary>
         /// Get a value indicating whether a blog post is available now (availability dates)
         /// </summary>
         /// <param name="blogPost">Blog post</param>

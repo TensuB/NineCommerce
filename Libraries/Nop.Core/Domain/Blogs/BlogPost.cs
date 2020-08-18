@@ -45,6 +45,12 @@ namespace Nop.Core.Domain.Blogs
         public string Tags { get; set; }
 
         /// <summary>
+        /// Gets or sets the blog tag Subcategories
+        /// </summary>
+        public string Subcategories { get; set; }        
+
+
+        /// <summary>
         /// Gets or sets the blog post start date and time
         /// </summary>
         public DateTime? StartDateUtc { get; set; }

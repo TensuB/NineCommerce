@@ -277,6 +277,26 @@ namespace Nop.Services.Blogs
         }
 
         /// <summary>
+        /// Parse tag subcategories
+        /// </summary>
+        /// <param name="blogPost">Blog post</param>
+        /// <returns>Tags</returns>
+        public virtual IList<string> ParseTagSubcategories(BlogPost blogPost)
+        {
+            if (blogPost == null)
+                throw new ArgumentNullException(nameof(blogPost));
+
+            if (blogPost.Subcategories == null)
+                return new List<string>();
+
+            var tagSubcategories = blogPost.Subcategories.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                .Select(tagSubcategory => tagSubcategory.Trim())
+                .Where(tagSubcategory => !string.IsNullOrEmpty(tagSubcategory)).ToList();
+
+            return tagSubcategories;
+        }
+
+        /// <summary>
         /// Get a value indicating whether a blog post is available now (availability dates)
         /// </summary>
         /// <param name="blogPost">Blog post</param>

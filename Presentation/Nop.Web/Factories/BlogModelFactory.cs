@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using Nop.Core;
 using Nop.Core.Caching;
 using Nop.Core.Domain.Blogs;
@@ -16,6 +17,7 @@ using Nop.Services.Media;
 using Nop.Services.Seo;
 using Nop.Web.Infrastructure.Cache;
 using Nop.Web.Models.Blogs;
+using NUglify.Helpers;
 
 namespace Nop.Web.Factories
 {
@@ -137,6 +139,8 @@ namespace Nop.Web.Factories
             model.AllowComments = blogPost.AllowComments;
             model.CreatedOn = _dateTimeHelper.ConvertToUserTime(blogPost.StartDateUtc ?? blogPost.CreatedOnUtc, DateTimeKind.Utc);
             model.Tags = _blogService.ParseTags(blogPost);
+            model.Subcategories = _blogService.ParseTagSubcategories(blogPost);
+
             model.AddNewComment.DisplayCaptcha = _captchaSettings.Enabled && _captchaSettings.ShowOnBlogCommentPage;
 
             //number of blog comments
@@ -209,7 +213,57 @@ namespace Nop.Web.Factories
                 })
                 .ToList();
 
+            //filter out the subcategories for the current tag
+            var subCategoriesList = FilterTagSubcategories(model);
+
+            //update the viewmodel on subcategory and past count
+            model.BlogPostSubCategoriesByCount = SetTagSubcategories(model, subCategoriesList);
+            //model.CurrentPostTag = 
             return model;
+        }
+
+        //filter out the subcategories for the current tag
+        private IList<string> FilterTagSubcategories(BlogPostListModel model)
+        {
+            var categoriesList = new List<string>();
+            var subCategoriesList = new List<string>();
+
+            //model.BlogPosts;
+            foreach (var post in model.BlogPosts)
+            {
+               post.Subcategories.ForEach(c=> categoriesList.Add(c));
+            }
+
+            subCategoriesList = categoriesList.Distinct().ToList();
+
+            return subCategoriesList;
+        }
+
+        //update the viewmodel on subcategory and past count
+        private IList<KeyValuePair<string, int>> SetTagSubcategories(BlogPostListModel model, IList<string> categoriesList)
+        {
+            IList<string> currentCategoriesList = new List<string>();
+            IList<KeyValuePair<string, int>> subCateByCount = new List<KeyValuePair<string, int>>();
+
+            foreach (var category in categoriesList)
+            {
+                int subCateCount = 0;
+
+                foreach (var post in model.BlogPosts)
+                {
+                    if(post.Subcategories.Contains(category))
+                    {
+                        subCateCount++;
+                    }
+                }
+
+                if(subCateCount > 0)
+                {
+                    subCateByCount.Add(new KeyValuePair<string, int>(category, subCateCount));
+                }
+            }
+
+            return subCateByCount;
         }
 
         /// <summary>

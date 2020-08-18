@@ -113,7 +113,39 @@ namespace Nop.Web.Controllers
                 return RedirectToRoute("Homepage");
 
             var model = _blogModelFactory.PrepareBlogPostListModel(command);
+
             return View("List", model);
+        }
+
+        public virtual IActionResult BlogTagBySubcategoryList(BlogPagingFilteringModel command)
+        {
+            if (!_blogSettings.Enabled)
+                return RedirectToRoute("Homepage");
+
+            var model = _blogModelFactory.PrepareBlogPostListModel(command);
+
+            return View("BlogTagBySubcategoryList", model);
+        }
+
+        
+        public virtual IActionResult BlogTagBySubcategory(BlogPagingFilteringModel command)
+        {
+            if (!_blogSettings.Enabled)
+                return RedirectToRoute("Homepage");
+
+            var model = _blogModelFactory.PrepareBlogPostListModel(command);
+
+            return View("BlogPostTagBySubcategory", model);
+        }
+
+        public virtual IActionResult BlogByTagSubCategory(BlogPagingFilteringModel command)
+        {
+            if (!_blogSettings.Enabled)
+                return RedirectToRoute("Homepage");
+
+            var model = _blogModelFactory.PrepareBlogPostListModel(command);
+
+            return View("BlogPostTagBySubcategory", model);
         }
 
         public virtual IActionResult BlogByMonth(BlogPagingFilteringModel command)

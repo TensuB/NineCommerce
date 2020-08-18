@@ -11,6 +11,7 @@ namespace Nop.Web.Models.Blogs
             Tags = new List<string>();
             Comments = new List<BlogCommentModel>();
             AddNewComment = new AddBlogCommentModel();
+            Subcategories = new List<string>();
         }
 
         public string MetaKeywords { get; set; }
@@ -26,6 +27,7 @@ namespace Nop.Web.Models.Blogs
         public DateTime CreatedOn { get; set; }
 
         public IList<string> Tags { get; set; }
+        public IList<string> Subcategories { get; set; }
 
         public IList<BlogCommentModel> Comments { get; set; }
         public AddBlogCommentModel AddNewComment { get; set; }

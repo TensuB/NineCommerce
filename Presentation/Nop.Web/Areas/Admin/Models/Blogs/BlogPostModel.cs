@@ -51,6 +51,9 @@ namespace Nop.Web.Areas.Admin.Models.Blogs
         [NopResourceDisplayName("Admin.ContentManagement.Blog.BlogPosts.Fields.Tags")]
         public string Tags { get; set; }
 
+        [NopResourceDisplayName("Admin.ContentManagement.Blog.BlogPosts.Fields.Subcategories")]
+        public string Subcategories { get; set; }
+
         public string InitialBlogTags { get; set; }
 
         public int ApprovedComments { get; set; }

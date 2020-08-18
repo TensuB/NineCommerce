@@ -14,5 +14,7 @@ namespace Nop.Web.Models.Blogs
         public int WorkingLanguageId { get; set; }
         public BlogPagingFilteringModel PagingFilteringContext { get; set; }
         public IList<BlogPostModel> BlogPosts { get; set; }
+        public IList<KeyValuePair<string, int>> BlogPostSubCategoriesByCount { get; set; } 
+        public string CurrentPostTag { get; set; }
     }
 }

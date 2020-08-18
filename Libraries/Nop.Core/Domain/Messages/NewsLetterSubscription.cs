@@ -18,9 +18,19 @@ namespace Nop.Core.Domain.Messages
         public string Email { get; set; }
 
         /// <summary>
+        /// Gets or sets the subscriber's name
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
         /// Gets or sets a value indicating whether subscription is active
         /// </summary>
         public bool Active { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value to if it is Ebook Download Request
+        /// </summary>
+        public bool IsEbookRequest { get; set; }
 
         /// <summary>
         /// Gets or sets the store identifier in which a customer has subscribed to newsletter

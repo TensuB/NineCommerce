@@ -1,0 +1,148 @@
+﻿@model Nop.Web.Models.EbookDownload.EbookDownloadBoxModel 
+
+@{
+    var signUpMessage = string.Empty;
+    var ebookTitle = string.Empty;
+    var buttonLabel = string.Empty;
+
+    signUpMessage = "Download your free e-book";
+    ebookTitle = "Test downloadable ebook.";
+    buttonLabel = "Download";
+}
+
+<section class="component bg-custom-gray text-black separator-top" style="width: 100% !important;
+        max-width: 100% !important; padding: 1.75em 0em;">
+    <div class="container">
+        <div class="row justify-content-center" style="mix-blend-mode:hard-light;">
+
+            <div class="form-group ebook-download" id="ebook-download-block">
+                <div class="row ebook-download-email">
+
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2 class="title">@signUpMessage</h2>
+                        <h3>@ebookTitle</h3>
+                        <p class="lead">And receive articles and latest news from our Plant-based Community.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-1 col-lg-1" style="padding-top:1.5em;"> &nbsp; </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:1.5em;">
+                       <div class="input-group" style="display:inline-flex !important;">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="background-color: #e8eee5ed; border: 1px solid #4c504cba;" id="ebook-download-name">
+                            <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
+                              <path d="M13.784 14c-.497-1.27-1.988-3-5.784-3s-5.287 1.73-5.784 3h11.568z"/>
+                              <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>                  
+                           </span>
+                        </div>
+                       <input asp-for="EbookDownloadEmail" id="ebook-download-name" type="text" class="form-control form-control"  placeholder="Insert your name" aria-label="name" aria-describedby="basic-name" 
+                              style="background-color: #fbfbfbed; border: 1px solid #4c504cba;"/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:1.5em;">
+                        <div class="input-group" style="display:inline-flex !important;">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="background-color: #e8eee5ed; border: 1px solid #4c504cba;" id="basic-email">
+                                <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                </svg>    
+                          </span>
+                        </div>
+                        <input type="email" class="form-control form-control ebook-download-email" id="ebook-download-email" 
+                               placeholder="Insert your email" aria-label="email" aria-describedby="basic-email" 
+                               style="background-color: #fbfbfbed; border:1px solid #4c504cba;">
+                         <input type="hidden" value="true" id="isEbookDownloadRequest" />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-2 col-lg-2" style="padding-top:1.5em;">
+                         <input type="button" value=@buttonLabel id="ebook-download-button" 
+                                class="ebook-download-request-button btn-green btn-rounded"/>
+                    </div>
+
+                    <div class="newsletter-validation col-sm-12 col-md-12 col-lg-12">
+                        <span id="subscribe-loading-progress" style="display: none;" 
+                              class="please-wait">@T("Common.Wait...")</span>
+                        <span asp-validation-for="EbookDownloadEmail"></span>
+                    </div>
+
+                </div>
+            </div>
+
+        <div class="newsletter-result text-center" id="ebook-download-result-block"></div>
+
+        <script asp-location="Footer">
+            function ebook_download_subscribe(subscribe)
+            {
+                var subscribeProgress = $("#subscribe-loading-progress");
+                    subscribeProgress.show();
+
+                var userEmail = $("#ebook-download-email").val();
+                var userName = $("#ebook-downloadr-name").val();
+                var isEbookRequest = $("#isEbookDownloadRequest").val();
+
+                var postData = {
+                    email: userEmail,
+                    subscribe: subscribe,
+                    isEbookDownloadRequest: isEbookRequest,
+                    name: userName
+                };  
+
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: "@(Url.RouteUrl("SubscribeNewsletter"))",
+            data: postData,
+            success: function (data, textStatus, jqXHR) {
+                $("#ebook-download-result-block").html(data.Result);
+
+                if (data.Success) {
+                    $('#ebook-download-block').hide();
+                    $('#ebook-download-result-block').show();
+                } else {
+                    $('#ebook-download-result-block').fadeIn("slow").delay(2000).fadeOut("slow");
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert('Failed to subscribe.');
+            },
+            complete: function (jqXHR, textStatus) {
+                subscribeProgress.hide();
+            }
+        });
+        }
+
+            $(document).ready(function () {
+
+            $('#ebook-download-button').on('click', function () {
+                @if (Model.AllowToUnsubscribe)
+                {
+                    <text>if ($('#ebook_download_subscribe').is(':checked')) {
+                    ebook_download_subscribe('true');
+                } else {
+                    ebook_download_subscribe('false');
+                }</text>
+                }
+                else
+                {
+                    <text>ebook_download_subscribe('true');</text>
+                }
+            });
+
+            $("#ebook-download-email").on("keydown", function (event) {
+                if (event.keyCode == 13) {
+                    $("#ebook-download-button").trigger("click");
+                    return false;
+                }
+            });
+        });
+
+        </script>
+
+        </div>
+    </div>
+</section>
+
+

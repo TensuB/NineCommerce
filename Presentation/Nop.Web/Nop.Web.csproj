@@ -42,6 +42,10 @@
 
     <Content Include="Themes\MukeraCleanTheme\Views\Blog\BlogPost.cshtml" />
 
+    <Content Include="Themes\MukeraCleanTheme\Views\Blog\BlogTagBySubcategoryList.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Blog\BlogPostTagBySubcategory.cshtml" />
+
     <Content Include="Themes\MukeraCleanTheme\Views\Blog\Components\BlogMonths\Default.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\Default.cshtml" />
@@ -88,6 +92,10 @@
 
     <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml" />
 
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\EbookDownloadBox\Default.cshtml" />
+
+    <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\NewsletterBox\Default.cshtml" />
+
     <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\TopicBlock\Default.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Shared\Components\TopMenu\Default.cshtml" />
@@ -126,6 +134,7 @@
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
+    <Content Remove="Themes\MukeraCleanTheme\Content\css\rest_theme_styles.css" />
     <None Remove="compilerconfig.json.defaults" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\print.css" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\styles.css" />
@@ -180,6 +189,8 @@
     <None Remove="Themes\MukeraCleanTheme\Content\images\wishlist-button.png" />
     <None Remove="Themes\MukeraCleanTheme\preview.jpg" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\BlogPost.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Blog\BlogPostTagBySubcategory.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Blog\BlogTagBySubcategoryList.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogMonths\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\BolgTagsList.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Blog\Components\BlogTags\Default.cshtml" />
@@ -203,6 +214,8 @@
     <None Remove="Themes\MukeraCleanTheme\Views\News\List.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\News\NewsItem.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\EbookDownloadBox\Default.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\NewsletterBox\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\TopicBlock\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\Components\TopMenu\Default.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Shared\_CategoryLine.TopMenu.cshtml" />
@@ -251,6 +264,14 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Blog\BlogPost.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Blog\BlogTagBySubcategoryList.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Blog\BlogPostTagBySubcategory.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -343,6 +364,14 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Shared\Components\HomepageNews\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\Components\EbookDownloadBox\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Shared\Components\NewsletterBox\Default.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

@@ -1,4 +1,6 @@
 ﻿@model TopicModel
+
+@{ /*
 @if (Model.IsPasswordProtected)
 {
 <script asp-location="Footer">
@@ -43,6 +45,7 @@
         });
 </script>
 
+
     <div class="topic-password" id="ph-password-@Model.Id">
         <form asp-route="TopicAuthenticate" method="post" autocomplete="off">
             <input asp-for="Id" id="topic-@Model.Id" type="hidden"/>
@@ -75,6 +78,8 @@
 }
 else
 {
+     @await Component.InvokeAsync("EbookDownloadBox")
+
     <section class="bg-white separator-top" >
         <div class="container">
             <div class="row justify-content-center" >
@@ -92,5 +97,17 @@ else
             </div>
         </div>
     </section>
-}
 
+    <section class="bg-green text-white" >
+        <div class="container">
+            <div class="row justify-content-center">
+            <h2>
+                Program homepage promotion section
+            </h2>
+            </div>
+        </div>
+    </section>
+}
+*/}
+
+@await Component.InvokeAsync("EbookDownloadBox")
