@@ -47446,8 +47446,8 @@ padding:0em !important;
 
 /* Step =accordion for Timeline styling */
 .accordion-group-steps .accordion {
-    padding-left: 6.55rem !important;
-    padding: 2em !important;
+   /* padding-left: 6.55rem !important;
+    padding: 2em !important;*/
 }
 
     .accordion-group-steps .accordion:not(:first-child)::before {
@@ -47458,11 +47458,12 @@ padding:0em !important;
         left: 20px !important;
         height: calc(50% - 30px);
         width: 3px !important;
-        background: #eaeaea !important;
+        background: #fff !important;
         z-index: 10;
+        margin-left: 1.278em;
     }
 
-.accordion-group-steps .accordion-control::before{
+.accordion-group-steps .accordion-control::before {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
@@ -47485,6 +47486,7 @@ padding:0em !important;
     z-index: 20;
     border-radius: 50%;
     font-size: 20px;
+    margin-left: 0.75em !important;
 }
 
 .accordion-group-steps .accordion.open .accordion-control::before {
@@ -47508,26 +47510,34 @@ padding:0em !important;
     left: 20px !important;
     height: calc(50% - 30px);
     width: 3px !important;
-    background: #eaeaea !important;
+    background: #ffffff !important;
     z-index: 10;
+    margin-left: 1.278em;
 }
 
 .accordion-group-steps h3 {
-    color: brown !important;
+    color: #635151 !important;
     font-weight: bold !important;
     padding-left: inherit;
 }
 
 .accordion {
-    background-color: #f6f7f8 !important;
+    /* background-color: #f6f7f8 !important;*/
+    background-color: #dedede !important
 }
 
 .accordion .open {
     background-color: aliceblue !important;
 }
-
+    .accordion p {
+        color: initial !important;
+    }
 .accordion-control > * {
     font-size: 3rem !important;
+}
+.accordion-content-details
+{
+
 }
 
 .divider_section {
@@ -47536,7 +47546,9 @@ padding:0em !important;
 }
 
 .accordion-content .accordion-content-wrapper {
-    padding: 0 2rem 1rem 5rem !important;
+    padding: 0 1rem !important;
+    background-color: azure;
+    padding-bottom: 2.5em;
 }
 
 .accordion-group-steps .accordion-content-wrapper h3 {
@@ -47544,6 +47556,8 @@ padding:0em !important;
 }
 .accordion-content {
     height: auto !important;
+    /* max-height: none !important; */
+    overflow: visible;
 }
 
 .blockquote {
@@ -47642,13 +47656,21 @@ footer .nav {
 
 .btn-green {
     background-color: #1b4702 !important;
+    border: 2px solid #2d6d01;
+    color: white;
+}
+.btn-light-green {
+    background-color: #54AF5D !important;
+    border: 2px solid #2d6d01;
+    color: white;
 }
 
-.btn-green:hover {
-    background-color: #62c104  ;
-    border: 1px solid #349200;
-    color:white;
+.btn-green:hover, .btn-light-green:hover {
+    background-color: #62c104;
+    border: 2px solid #349200;    
 }
+
+
 .dropdown-item span {
     color: #333;
     font-size: 1.355rem !important;
@@ -47663,6 +47685,28 @@ footer .nav {
         width: 100% !important;
         position:inherit !important;
     }
+    .accordion-control > * {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 767.02px) {
+    .accordion-control > * {
+        font-size: 1.85rem !important;
+    }
+
+    .accordion p {
+        color: initial !important;
+    }
+
+    .accordion-content {
+        height: auto !important;
+    }
+
+        .accordion-content .accordion-content-wrapper {
+            padding: 0 2rem 1rem 4rem !important;
+        }
+
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -47676,7 +47720,8 @@ footer .nav {
 }
 
 .bg-green {
-    background-color: #033800 !important;
+    background-color: #042103 !important;
+    /* background-color: #033800 !important; */
 }
 
 .swiper-slide:hover {
@@ -47684,7 +47729,6 @@ footer .nav {
     opacity: 0.799 !important;
     border-top: 4px solid #86dc13 !important;
 }
-
 
 div#registerFormDatepicker .selectric-above .selectric-items {
     width: 200.75px;
@@ -47744,3 +47788,22 @@ div#registerFormDatepicker .selectric .label {
 #writingsList .tile-body p {
     color: rgb(107 105 105 / 99%) !important;
 }
+
+svg.bi {
+    color: rgb(154 154 154 / 50%) !important;
+}
+
+section#footerMenu {
+    opacity: 0.556 !important;
+    color: #343a40 !important;
+}
+
+div.accordion open 
+{
+    min-height:250px !important;
+}
+
+.accordion-group-steps div.open h3 {
+    color: #821b1be3 !important
+}
+

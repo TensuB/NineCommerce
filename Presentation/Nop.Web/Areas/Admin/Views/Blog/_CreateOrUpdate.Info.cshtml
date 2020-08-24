@@ -4,6 +4,10 @@
     //resources for product tags input
     Html.AppendCssFileParts("~/lib/tagEditor/jquery.tag-editor.css");
     Html.AppendScriptParts("~/lib/tagEditor/jquery.tag-editor.min.js");
+
+    Html.AppendCssFileParts("~/lib/subcategoryEditor/jquery.subcategory-editor.css");
+    Html.AppendScriptParts("~/lib/subcategoryEditor/jquery.subcategory-editor.min.js");
+
     Html.AppendScriptParts("~/lib/tagEditor/jquery.caret.min.js");
 }
 <script>
@@ -18,6 +22,21 @@
             },
             delimiter: ',',
             placeholder: '@T("Admin.ContentManagement.Blog.BlogPosts.Fields.Tags.Placeholder")'
+        });
+    });
+</script>
+<script>
+    //Subcategories
+    $(document).ready(function() {
+        @Html.Raw(Model.InitialBlogSubcategories)
+        $("#@Html.IdFor(model => model.Subcategories)").subcategoryEditor({
+            autocomplete: {
+                delay: 0,
+                position: { collision: 'flip' },
+                source: initialBlogSubcategories
+            },
+            delimiter: ',',
+            placeholder: '@T("Admin.ContentManagement.Blog.BlogPosts.Fields.Subcategories.Placeholder")'
         });
     });
 </script>
@@ -73,6 +92,17 @@
             <span asp-validation-for="Tags"></span>
         </div>
     </div>
+
+    <div class="form-group">
+        <div class="col-md-3">
+            <nop-label asp-for="Subcategories" />
+        </div>
+        <div class="col-md-9">
+            <nop-editor asp-for="Subcategories" />
+            <span asp-validation-for="Subcategories"></span>
+        </div>
+    </div>
+
     <div class="form-group">
         <div class="col-md-3">
             <nop-label asp-for="AllowComments" />

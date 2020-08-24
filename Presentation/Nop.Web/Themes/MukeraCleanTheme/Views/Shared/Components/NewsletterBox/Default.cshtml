@@ -9,14 +9,14 @@
 }
 
 <section class="component universalPageFooter" 
-         style="width: 100% !important; max-width: 100% !important; padding: 1.75em 0em; padding-bottom: 5em;">
+         style="width: 100% !important; max-width: 100% !important; padding: 1.75em 0em; padding-bottom: 5em; color:">
     <div class="container">
         <div class="row justify-content-center">
 
         <div class="form-group newsletter-subscribe" id="newsletter-subscribe-block">
-            <div class="row newsletter-email">
+            <div class="newsletter-email">
                 <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h2 class="title">@signUpMessage</h2>
+                    <h2 class="title" style="color: aliceblue;">@signUpMessage</h2>
                     <p class="lead">To receive all the latest news and articles</p>
                 </div>
 
@@ -24,42 +24,27 @@
                     &nbsp;
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:1.5em;">
+                <div class="col-sm-10 col-md-6 col-lg-4 text-sm-left" style="padding-top:1.5em;">
                    <div class="input-group" style="display:inline-flex !important;">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" style="background-color: #3b3f38cf; border: 1px solid #615f5f;" >
-                        <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" 
-                             xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
-                          <path d="M13.784 14c-.497-1.27-1.988-3-5.784-3s-5.287 1.73-5.784 3h11.568z"/>
-                          <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        </svg>                  
-                        </span>
-                    </div>
                    <input asp-for="NewsletterSubscriberName" id="newsletter-subscriber-name" type="text" class="form-control form-control"  
-                          placeholder="Insert your name" aria-label="name" aria-describedby="basic-name" 
-                          style="background-color: #555a53; color: #ccc;"/>
+                          placeholder="First name" aria-label="name" aria-describedby="basic-name" 
+                          style="background-color: #e0e0e0; color: #6f6666;"/>
                   </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top:1.5em;">
+                <div class="col-sm-10 col-md-6 col-lg-4 text-sm-left" style="padding-top:1.5em;">
                     <div class="input-group" style="display:inline-flex !important;">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" style="background-color: #3b3f38cf; border: 1px solid #615f5f;" id="basic-email">
-                            <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                            </svg>    
-                      </span>
-                    </div>
-                    <input asp-for="NewsletterEmail" id="newsletter-email" type="email" class="form-control form-control" placeholder="Insert your email" aria-label="email" aria-describedby="basic-email" 
-                             style="background-color: #555a53; color:#ccc;"/>
+                    <input asp-for="NewsletterEmail" id="newsletter-email" type="email" class="form-control form-control" 
+                           placeholder="Email" aria-label="email" aria-describedby="basic-email" 
+                           style="background-color:#e0e0e0; color:#6f6666;"/>
                     <input type="hidden" value="false" id="isEbookDownload" />
                   </div>
                 </div>
 
-        <div class="col-sm-12 col-md-2 col-lg-2" style="padding-top:1.5em;">
+        <div class="col-sm-10 col-md-2 col-lg-2 text-sm-left" style="padding-top:1.5em;">
                 <input type="button" value="@T(Model.AllowToUnsubscribe ? "Newsletter.Options.Send" :"Newsletter.Options.Subscribe")"   
                     aria-label="@T("Newsletter.Subscribe")" id="newsletter-subscribe-button" 
-                    class="newsletter-subscribe-button btn-white btn-rounded"/>
+                    class="newsletter-subscribe-button btn-light-green btn-rounded" style="padding: 0.35em 1.5em;"/>
         </div>
 
 

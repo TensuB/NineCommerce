@@ -16,9 +16,12 @@
                     <span class="navbar-toggler-icon"></span>
             </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-sm-12 col-md-6 col-lg-3">              
             <!-- Logo / business name -->
             @await Component.InvokeAsync("Logo")
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-9"> 
             <!-- Top Menu Links List -->
             <ul class="navbar-nav align-items-center mr-auto top-menu notmobile" style="margin-top: 1.5em !important;">
             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
@@ -36,11 +39,6 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownOne">
                         <a class="dropdown-item" href="@Url.RouteUrl("VendorStory")">
                         <span>My Story</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-
-                        <a class="dropdown-item" href="@Url.RouteUrl("VendorVision")">
-                        <span>My Vision</span>
                         </a>
                         <div class="dropdown-divider"></div>
 
@@ -84,7 +82,7 @@
 
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
         </ul>
-
+            </div>
         </div>
         </nav>
     </div>

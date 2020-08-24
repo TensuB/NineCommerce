@@ -1,11 +1,49 @@
 ﻿@model HomepageNewsItemsModel
       
-<!-- blog -->
-    <section class="bg-dark" id="writingsSectonBackground" style="background-position-x: right; background-color: #033800 !important; background-blend-mode: overlay; border-top: solid 2px #3a7602;" >
+<!-- Plant-based Program Promotion start -->
+        <section class="bg-transparent-white" style="background-position-x: right;
+        background-blend-mode: overlay;
+        border-top: solid 1px #232322 !important;" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8 text-darker text-center">
+                    <h2><b>Plant-based Blueprint</b></h2>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="col-sm-12 col-md-10 col-lg-4 text-darker text-center">
+                        <img src="../Themes/MukeraCleanTheme/Content/images/Plant-based-Program-package-header.png" alt="DR-Barry-John-Toole-Planted-Based-Blueprint-Program" />
+                    </div>
+                    <div class="col-sm-12 col-md-10 col-lg-8 text-darker text-left">
+                        <p>
+                            The Planted-Based Blueprint is a comprehensive and systematic program or package that empowers you to understand, persue and enjoy plant-based nutrition, lifestyle and vitality. The Blueprint is the product of deacads-long research, study and personal passion to answer the Why, What and How of plant-based life style.  
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-darker text-right">
+                        <hr/>
+                         <a href="@Url.RouteUrl("NutritionProgram")" class="btn btn-green btn-rounded px-5">Learn More</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Plant-based Program Promotion end -->
+
+
+<!-- Writing - blog -->
+    <section class="bg-gray-dark" 
+             style="background-position-x: right;
+        /*id=writingsSectonBackground
+        ackground-color: #033800 !important;
+        background-blend-mode: overlay;
+        border-top: solid 1px #234a00 !important;
+        */ " >
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-10 col-lg-8 text-white text-center">
-                    <h2>See My <b>Writing</b></h2>
+                    <h2><b>Writing</b></h2>
                     <hr/>
                 </div>
             </div>
@@ -87,9 +125,47 @@
 <!-- / blog -->
 
 
+<!-- Speaking start -->
+        <section class="bg-transparent-white" style="        background-position-x: right;
+        background-blend-mode: overlay;
+        border-top: solid 1px #dededeab !important;" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8 text-darker text-center">
+                    <h2><b>Speaking</b></h2>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="col-sm-12 col-md-10 col-lg-6 text-darker text-left">
+                     <h3>Lectures and Presentations</h3>
+                     <hr/>
+                     <p>I have a series of lectures and presentations suited for a varity of audience, as highlighted below. </p>
+                     <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm-12 col-md-10 col-lg-6 text-darker text-left">
+                        <h3>Media Apperances</h3>
+                        <hr/>
+                     <p>I am available for interview, blog, podcast and other collaborations. </p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-darker text-right">
+                        <hr/>
+                         <a href="@Url.RouteUrl("SpeakingService")" class="btn btn-green btn-rounded px-5">Learn More</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Speaking end -->
+
+
+
+<!-- News Section -->
 @if (Model.NewsItems.Count > 0)
 {
-   <section class="bg-light text-black separator-top section-cover" >
+   <section class="bg-light text-black separator-top section-cover" style="background-color: gainsboro !important;" >
         <div class="container">
             <div class="row justify-content-center" >
                 <div class="col-sm-12 col-md-10 col-lg-8 text-center">
@@ -139,7 +215,7 @@
 
                         </div>
                         <div class="col-md-3 mt-1 mt-md-0 text-lg-right">
-                            <a href="@Url.RouteUrl("NewsArchive")" class="btn btn-green btn-rounded px-5">Read More writings</a>
+                            <a href="@Url.RouteUrl("NewsArchive")" class="btn btn-green btn-rounded px-5">Read More Writing</a>
                         </div>
                       </div>
                     </div>
@@ -148,4 +224,6 @@
         </div>
     </section>
 }
+
+
 

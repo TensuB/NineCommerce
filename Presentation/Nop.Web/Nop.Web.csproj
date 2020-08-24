@@ -122,8 +122,6 @@
 
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\MyStory.cshtml" />
 
-    <Content Include="Themes\MukeraCleanTheme\Views\Vendor\MyVision.cshtml" />
-
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\_VendorAttributes.cshtml" />
     <None Include="Plugins\**" CopyToPublishDirectory="PreserveNewest" />
 
@@ -135,6 +133,7 @@
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
     <Content Remove="Themes\MukeraCleanTheme\Content\css\rest_theme_styles.css" />
+    <Content Remove="Views\Vendor\MyVision.cshtml" />
     <None Remove="compilerconfig.json.defaults" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\print.css" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\styles.css" />
@@ -424,10 +423,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Vendor\MyStory.cshtml">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Themes\MukeraCleanTheme\Views\Vendor\MyVision.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
