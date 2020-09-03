@@ -41,7 +41,9 @@ namespace Nop.Web.Models.Blogs
         public string Month { get; set; }
 
         public string Tag { get; set; }
-        
+
+        public string Subcategory { get; set; }
+
         #endregion
     }
 }

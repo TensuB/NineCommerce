@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Nop.Core;
 using Nop.Core.Domain.Blogs;
@@ -117,14 +118,17 @@ namespace Nop.Web.Controllers
             return View("List", model);
         }
 
-        public virtual IActionResult BlogTagBySubcategoryList(BlogPagingFilteringModel command)
+        public virtual IActionResult BlogPostByTagAndSubcategoryList(BlogPagingFilteringModel command)
         {
             if (!_blogSettings.Enabled)
                 return RedirectToRoute("Homepage");
-
+            var testStop = string.Empty;
             var model = _blogModelFactory.PrepareBlogPostListModel(command);
+            //filter current subcategory only
+            var filteredList = model.BlogPosts.ToList().Where(p => p.Subcategories.Contains(command.Subcategory));
+            model.BlogPosts = filteredList.ToList();
 
-            return View("BlogTagBySubcategoryList", model);
+            return View("BlogPostByTagAndSubcategoryList", model);
         }
 
         
@@ -138,14 +142,14 @@ namespace Nop.Web.Controllers
             return View("BlogPostTagBySubcategory", model);
         }
 
-        public virtual IActionResult BlogByTagSubCategory(BlogPagingFilteringModel command)
+        public virtual IActionResult BlogTagBySubcategoryList(BlogPagingFilteringModel command)
         {
             if (!_blogSettings.Enabled)
                 return RedirectToRoute("Homepage");
 
-            var model = _blogModelFactory.PrepareBlogPostListModel(command);
+            var model = _blogModelFactory.PrepareBlogPostListModel(command);  
 
-            return View("BlogPostTagBySubcategory", model);
+            return View("BlogTagBySubcategoryList", model);
         }
 
         public virtual IActionResult BlogByMonth(BlogPagingFilteringModel command)

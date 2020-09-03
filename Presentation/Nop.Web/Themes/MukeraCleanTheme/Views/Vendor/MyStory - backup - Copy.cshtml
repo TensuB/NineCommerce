@@ -1,0 +1,344 @@
+﻿@model VendorInfoModel
+@{
+    Layout = "_ColumnsOne";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.VendorAbout").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-account-page");
+    Html.AppendPageCssClassParts("html-vendorinfo-page");
+}
+
+<section class="bg-gray-dark separator-top section-cover text-white" 
+         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/mystory-header-background-11.png');
+        background-blend-mode: soft-light; padding-bottom: 4rem;">
+    <div class="container">
+        <div class="row justify-content-left" >
+        <div class="col-12 mt-10 text-center text-dark" 
+             style="background-color: brown; padding: 1em; padding-bottom: 4em; opacity: 0.85; border-radius: 4px;">
+           <h1>My Story</h1>  
+            <hr />
+            <h3>Biochemist <icon class="fa-circle subheadingseparator"></icon>
+                Writer <icon class="fa-circle subheadingseparator"></icon>
+                Speaker </h3>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-darkest section-cover" style="padding: 0em !important;">
+    <div class="container">
+     <div class="row justify-content-between align-items-center">   
+         
+        <div class="col-sm-12 col-md-3 col-lg-4">
+            <div class="presentation-circle">
+                <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/images/DR-Barry-John-Toole-Planted-Based-Blueprint-Creator-black-and-white.png'); border:solid;"></figure>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-9 col-lg-8 text-white" style="padding: 1em 2em 2em 3em;  color: #484444 !important;">
+            <h3>Welcome!</h3>
+            <hr/>
+            <p>I'm Barry, creator of <span style="font-weight:bold; font-style:italic;"> The Plant-Based BluePrint</span>, the first comprehensive and definitive guide into plant-based eating, nutrition and lifestyle. </p>
+            <p>I have studied plant-based nutrition for over 10 years. I have read every book, learned from everyone I can, travelled the world to learn eating habits and mind-sets.  </p>
+            <p>As much as changing to plant-based eating is understanding nutrition and how to do it, it is mostly about overcoming our misunderstandings, breaking our lifelong food addictions, and more.  </p>          
+        </div>
+
+    </div>
+     </div>
+</section>
+
+<section class="bg-lighter separator-top section-covercomponent text-black">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <h2>My Journey to Plant-Based</h2>  
+            </div>
+            <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+            <div class="col-12 text-center text-black">
+                <h3>I wasn't raised eating only plants – here’s my brief story</h3>
+            </div>
+            <div class="col-12 text-center text-white" style="line-height:4em;"> &nbsp; </div>
+        </div>
+    </div>
+    <div class="tab-content" id="component-2">
+    <div class="tab-pane show active" id="component-2-1" role="tabpanel" aria-labelledby="component-2-1">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                <div class="accordion-group accordion-group-steps" data-accordion-group="">
+
+                        <div class="accordion bg-dark-brown" data-accordion="" >
+                            <div class="accordion-control" data-control="">
+                                <div class="col-2 text-white text-right" >
+                                    <h2 style="padding-left:0.65em;"> 1979 </h2>                         
+                                </div>          
+                                <div class="col-lg-10 text-left">
+                                    <h3> Born into the standard Western diet</h3>
+                                </div>
+                            </div>
+                            <div class="accordion-content" data-content="" style="transition: max-height 300ms ease 0s; max-height: 100px; overflow: hidden;">
+                            <div class="accordion-content-wrapper">
+                                <div class="row align-items-center justify-content-center presentation-container">
+                                    <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
+
+                                    <div class="col-sm-12 col-md-7 col-lg-7 text-left accordion-content-details">                                      
+                                            <p>&nbsp;</p>
+                                            <p>Like most kids, I was raised on the standard western diet of meat and dairy products, highly processed and artificially sweetened foods, with minimal contribution of fruits, vegetables, pulses and whole grains. From the first tastes of meat, chocolate and cheese, our minds are set, our beliefs are concrete - we are now brainwashed and addicted. </p>
+
+                                            <p>Sometime in my mid-teens, when I began studying all things health and fitness related, I realised the importance of nutrition in my physical training, so I began eating a 'healthy' omnivorous diet, one of 'lean' white meat, tuna fish, skimmed cow's milk and egg whites, with plenty of fruit and vegetables, of course. I felt very healthy.</p>
+
+                                            <p>Looking back, I wasn't <strong><em>truly</em></strong> healthy, I was just young.</p>
+                                            <p>&nbsp;</p><p>&nbsp;</p>
+                                        </div>
+                                    <div class="col-sm-12 col-md-3 col-lg-4">                                            
+                             <img src="~/Themes/MukeraCleanTheme/Content/images/accordion-images/western-diet.png" 
+                                  style="width: 100%; height: auto; " />                                          
+                                    </div>                                    
+                                </div> 
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="accordion bg-dark-brown" data-accordion="">
+                            <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                            <div class="accordion-control" data-control="">
+                                <div class="col-2 text-white text-right" >
+                                    <h2 style="padding-left:0.65em;"> 2011 </h2>                         
+                                </div>          
+                                <div class="col-lg-10 text-left">
+                                    <h3>The Blue Zones - my inspiration</h3>
+                                </div>
+                            </div>
+                            <div class="accordion-content" data-content="" style="max-height: 100px; overflow: hidden; transition: max-height 300ms ease 0s;">
+                                <div class="accordion-content-wrapper">
+                                    <div class="row align-items-center justify-content-center presentation-container">
+                                        <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4">                                            
+                        <img src="~/Themes/MukeraCleanTheme/Content/images/accordion-images/mystory-page-accordion-bluew-zone-bright.png" style="width:100%; height:auto;" />              
+                                    </div>
+                                        <div class="col-sm-12 col-md-7 col-lg-7 text-left" style="padding-right: 2.5em;">
+                                        <p>&nbsp;</p>
+                                        <p>My journey to plant-based began by reading Dan Buettner's 2008 book, The Blue Zones, which catalogues his exploration of the longest living peoples on our planet. A true inspiration – I read this book in springtime, accompanied with bread, olives and a glass of <em>Cannonau di Sardegna</em>.</p>
+                                        <p>Introduced to the concept of plant-based, Dan's book was followed by studying the work of Ancel Keys and his Seven Countries Study (the original study of the Mediterranean diet), T.C. Campbell and his China Study, as well as the Willcox's study of the Okinawan centenarians. The pattern was obvious; those living the longest and healthiest lives followed a whole-food, plant-based diet.</p>
+                                        <p>&nbsp;</p><p>&nbsp;</p>
+                                        </div>
+
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion bg-dark-brown" data-accordion="">
+                        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                        <div class="accordion-control" data-control="">
+                            <div class="col-2 text-white text-right" >
+                                <h2 style="padding-left:0.65em;"> 2011 </h2>                         
+                            </div>          
+                            <div class="col-lg-10 text-left">
+                                <h3>Becoming vegetarian – an overnight decision</h3>
+                            </div>
+                        </div>
+                        <div class="accordion-content" data-content="" style="max-height: 0px; overflow: hidden; transition: max-height 300ms ease 0s;">
+                        <div class="accordion-content-wrapper">
+                            <div class="row align-items-center justify-content-center presentation-container">
+
+                                <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
+                                <div class="col-sm-12 col-md-7 col-lg-7 text-left">
+                                <p>&nbsp;</p>
+                                <p>Once I discovered that the healthiest diet for humans was whole food plant-based, that we don’t need meat for growth and muscle strength, and that animal-based food is actually detrimental to long-term health, I never ate meat again. An overnight decision - this was actually the easiest change I made.</p>
+                                <p>Dairy and eggs were more of an issue. These nasty foods are everywhere – dairy milk in chocolate, cheese on pizzas, eggs in all things baked – I couldn’t escape them! Furthermore, trying my best to avoid them - I just didn’t realise how dependent on these foods I was. I had more learning to do – and some lifelong food addictions to extinguish.</p>
+                                <p>&nbsp;</p>
+                                </div>
+
+                                <div class="col-sm-12 col-md-4 col-lg-4">                                            
+                        <img src="~/Themes/MukeraCleanTheme/Content/images/my-story-slim-placeholder-2.png" style="width:100%; height:auto;" />              
+                                </div>
+                            </div> 
+                        </div>   
+                        </div>
+                        </div>
+
+                        <div class="accordion bg-dark-brown" data-accordion="">
+                        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                        <div class="accordion-control" data-control="">
+                            <div class="col-2 text-white text-right" >
+                                <h2 style="padding-left:0.65em;"> 2013 </h2>                         
+                            </div>          
+                            <div class="col-lg-10 text-left">
+                                <h3>Becoming Plant-Based - a two-year transitiond</h3>
+                            </div>
+                        </div>
+                        <div class="accordion-content" data-content="" style="max-height: 0px; overflow: hidden; transition: max-height 300ms ease 0s;">
+                        <div class="accordion-content-wrapper">
+                            <div class="row align-items-center justify-content-center presentation-container">
+                                <div class="col-sm-12 col-md-10 col-lg-10 text-center text-md-left">
+                                <p>&nbsp;</p>
+                                <p>Transitioning from vegetarian to exclusively plant-based was the most challenging yet educational and inspiring two years of my journey. Learning to bake without eggs, realising dark chocolate is superior to milk chocolate, and that cheese and butter is simply not for human consumption. I replaced and ultimately removed these foods from my diet and my mind completely.</p>
+                                <p>Over the last several years, I have been fully immersed in the plant-based lifestyle. Travelling the world to learn recipes and mindsets, a real journey of discovery. How do you eat plant-based in the meat-eating city of Cali, Colombia? How do you enjoy?</p>
+                                <p>&nbsp;</p>
+                                </div>
+                            </div> 
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="accordion bg-dark-brown" data-accordion="">
+                        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                        <div class="accordion-control" data-control="">                           
+                            <div class="col-2 text-white text-right" >
+                                <h2 style="padding-left:0.65em;"> 2016 </h2>                         
+                            </div>          
+                            <div class="col-lg-10 text-left">
+                                <h3>Medellin, Colombia – my work begins</h3>
+                            </div>
+                        </div>
+                        <div class="accordion-content" data-content="" style="max-height: 0px; overflow: hidden; transition: max-height 300ms ease 0s;">
+                        <div class="accordion-content-wrapper">
+                            <div class="row align-items-center justify-content-center presentation-container">
+                                <div class="col-sm-12 col-md-10 col-lg-10 text-left">
+                                <p>&nbsp;</p>
+                                <p>After a day visiting towns in the mountains of Antioquia, Colombia, I returned to my apartment in Medellin, inspired and ready to work - I opened my laptop and started typing. There’s something about voluntary solitude and writing. This habit repeated itself in further trips, Blue Mountains in Jamaica, Nicoya Peninsula in Costa Rica and Cameron Highlands in Malaysia to name a few.</p>
+                                <p>Over the last several years, I have spent countless hours answering the questions and queries of my nearest and dearest, and being told over and over – write your book! So I started flirting with my ideas in 2016, crystallising my concepts, and putting pen to paper. The seeds of the Blueprint.</p>
+                                <p>&nbsp;</p>
+                                </div>
+                            </div> 
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="accordion bg-dark-brown" data-accordion="">
+                        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                        <div class="accordion-control" data-control="">
+                            <div class="col-2 text-white text-right" >
+                                <h2 style="padding-left:0.65em;"> 2020 </h2>                         
+                            </div>          
+                            <div class="col-lg-10 text-left">
+                                <h3>The Website</h3>
+                            </div>
+                        </div>
+                        <div class="accordion-content" data-content="" >
+                        <div class="accordion-content-wrapper">
+                            <div class="row align-items-center justify-content-center presentation-container">
+                                <div class="col-sm-12 col-md-10 col-lg-10 text-left">
+                                <p>&nbsp;</p>
+                                <p>The isolation of 2020 meant only one thing – to put the theory into practice. </p>
+                                <p>&nbsp;</p>
+                                </div>
+                            </div> 
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="accordion  bg-dark-brown" data-accordion="" >
+                        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                        <div class="accordion-control" data-control="">
+                            <div class="col-2 text-white text-right" >
+                                <h2 style="padding-left:0.65em;"> 2021 </h2>                         
+                            </div>          
+                            <div class="col-lg-10 text-left">
+                                <h3>Blueprint</h3>
+                            </div>
+                        </div>
+                        <div class="accordion-content" data-content="" style="max-height: 0px; overflow: hidden; transition: max-height 300ms ease 0s;">
+                        <div class="accordion-content-wrapper">
+                            <div class="row align-items-center justify-content-center presentation-container">
+                                <div class="col-sm-12 col-md-10 col-lg-10 text-left">
+                                <p>&nbsp;</p>
+                                <p>To be launched in 2021.</p>
+                                <p>&nbsp;</p>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="bg-gray-dark separator-top section-cover text-white">
+    <div class="container">
+        <div class="row justify-content-left" >
+            <div class="col-12 text-center">
+                 <h2>My Vision</h2>                 
+            </div>
+            <div class="col-12"><hr/></div>
+
+            <div class="col-sm-0 col-md-1 col-lg-2 text-center">              
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-8 text-center">
+                 <p>“Imagine a world
+                    No chronic, lifestyle-related disease, no pandemics
+                    We’d have an epidemic of health
+                    This can all be achieved if we adopt a plant-based diet …”
+                </p>                 
+            </div>
+            <div class="col-sm-0 col-md-1 col-lg-2 text-center">              
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-overlay-white section-cover text-black">
+    <div class="container">
+        <div class="row justify-content-left" >
+            <div class="col-12 text-center">
+                 <h2>My Academic Biography</h2>                 
+            </div>
+            <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+
+            <div class="col-sm-0 col-md-1 col-lg-3 text-center">        
+            <img src="~/Themes/MukeraCleanTheme/Content/images/biography/biography-newcastle-university-bright.png" style="width:60%; height:auto;" />  
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-8 text-left " style="margin-top:1em;">
+             <p>After studying the three sciences of Biology, Chemistry and Physics at A-Level, I began my degree in Biochemistry in the Autumn of 1997. I graduated from Newcastle University as a <em>Bachelor of Science</em> with an Honours Degree in Biochemistry in the summer of <strong>2000</strong>. </p>               
+            </div>
+            <div class="col-sm-0 col-md-1 col-lg-1 text-center">              
+            </div>
+        </div>
+
+        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+
+        <div class="row justify-content-left" >
+            <div class="col-sm-12 col-md-10 col-lg-9 text-left " style="margin-top:1em;">
+             <p>After a 2-year sabbatical, I commenced my PhD studies within the Medical Research Council - Protein Phosphorylation Unit in Dundee, studying insulin signaling pathways in search of the genes and proteins involved in the causation of diabetes. I received my Degree of <em>Doctor of Philosophy </em> in Biochemistry and Molecular Biology from the University of Dundee in Autumn <strong>2006</strong>.</p>               
+            </div>
+            <div class="col-sm-0 col-md-1 col-lg-3 text-center">        
+            <img src="~/Themes/MukeraCleanTheme/Content/images/biography/biography-university-of-dundee.png" style="width:70%; height:auto;" />  
+            </div>
+        </div>
+
+        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+
+        <div class="row justify-content-left" >
+            <div class="col-sm-0 col-md-1 col-lg-4 text-center">        
+            <img src="~/Themes/MukeraCleanTheme/Content/images/biography/biography-university-of-surrey.png" style="width:100%; height:auto;" />  
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-8 text-left " style="margin-top:1em;">
+             <p>I began my training in clinical biochemistry in 2006, based in the hospitals of NHS Glasgow. I was awarded the degree of <em>Master of Science</em> in Biochemistry and Molecular Biology from the University of Surrey in Autumn <strong>2008</strong>.</p>              
+            </div>
+        </div>
+
+        <div class="col-12 mt-4 text-center divider-lg" style="width:initial;"><hr/></div>
+
+        <div class="row justify-content-left" >
+            <div class="col-sm-12 col-md-10 col-lg-9 text-left " style="margin-top:1em;">
+             <p>After several years of reading in chemical pathology, I was admitted <em> Fellowship of the Royal College of Pathologists</em> in <strong>2014</strong>. I currently work for the NHS as a state-registered Clinical Scientist in Biochemistry.</p>               
+            </div>
+            <div class="col-sm-0 col-md-1 col-lg-3 text-center">        
+            <img src="~/Themes/MukeraCleanTheme/Content/images/biography/biography-royal-college-of-pathology.png" style="width:70%; height:auto;" />  
+            </div>
+            <div class="col-12">        
+            &nbsp;  
+            </div>
+        </div>
+
+    </div>
+</section>

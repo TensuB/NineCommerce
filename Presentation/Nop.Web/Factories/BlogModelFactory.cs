@@ -178,6 +178,7 @@ namespace Nop.Web.Factories
                 PagingFilteringContext =
                 {
                     Tag = command.Tag,
+                    Subcategory = command.Subcategory != null ? command.Subcategory : string.Empty,
                     Month = command.Month
                 },
                 WorkingLanguageId = _workContext.WorkingLanguage.Id

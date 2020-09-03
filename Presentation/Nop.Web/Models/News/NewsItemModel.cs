@@ -22,6 +22,7 @@ namespace Nop.Web.Models.News
         public string Full { get; set; }
         public bool AllowComments { get; set; }
         public int NumberOfComments { get; set; }
+        public string ImgUrl { get; set; }
         public DateTime CreatedOn { get; set; }
 
         public IList<NewsCommentModel> Comments { get; set; }

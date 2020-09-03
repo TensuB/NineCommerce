@@ -1,0 +1,89 @@
+﻿@model TopMenuModel
+    <div class="container" style=" padding-bottom: 1.05em !important;" >
+        <nav class="mb-1 navbar navbar-expand-lg navbar-light">
+           
+            <!-- Logo / business name
+            await Component.InvokeAsync("Logo")
+   
+            <a href="@Url.RouteUrl("Homepage")" class="navbar-brand">
+                <img title="" alt="Dr Barry Website" 
+                     class="navbar-logo navbar-logo-light" 
+                     src="../Themes/MukeraCleanTheme/Content/images/logo-170x172.png">
+            </a>
+            -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-sm-12 col-md-6 col-lg-3">              
+            <!-- Logo / business name -->
+            @await Component.InvokeAsync("Logo")
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-9"> 
+            <!-- Top Menu Links List -->
+            <ul class="navbar-nav align-items-center mr-auto top-menu notmobile" style="margin-top: 1.5em !important;">
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
+
+            @if (Model.DisplayHomepageMenuItem)
+            {
+                <li class="nav-item">
+                    <a class="nav-link" role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a>
+                </li>
+            }
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownOne" data-toggle="dropdown" aria-haspopup="true" 
+                    aria-expanded="false" role="button" href="#">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownOne">
+                        <a class="dropdown-item" href="@Url.RouteUrl("VendorStory")">
+                        <span>My Story</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="@Url.RouteUrl("ContactUs")">
+                        <span>Connect</span>
+                        </a>
+
+                    <span class="dropdown-menu-toggle"></span>
+                </div>
+            </li>
+
+            <!-- Topics (Program, Writing, Speaking) List Link -->
+            <li class="nav-item"><a href="@Url.RouteUrl("NutritionProgram")" class="nav-link">Program</a></li>
+
+                @if (Model.BlogEnabled && Model.DisplayBlogMenuItem)
+            {
+                <li class="nav-item">            
+                    <a class="nav-link" href="@Url.RouteUrl("BlogsByTagList")">
+                    Writing
+                </a>
+                  
+                </li>
+            }
+
+        <li class="nav-item"><a href="@Url.RouteUrl("SpeakingService")" class="nav-link">Speaking</a></li>
+
+        @if (Model.DisplayCustomerInfoMenuItem)
+        {
+            <!-- Sign In link-->
+            <li class="nav-item"><a href="@Url.RouteUrl("CustomerInfo")" class="nav-link">@T("Account.MyAccount")</a></li>
+        }
+
+        @if (Model.DisplayProductSearchMenuItem)
+        {
+            <li class="nav-item">
+                <a href="@Url.RouteUrl("ProductSearch")" class="nav-link">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+        }
+
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
+        </ul>
+            </div>
+        </div>
+        </nav>
+    </div>
+

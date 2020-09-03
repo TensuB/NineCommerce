@@ -1,0 +1,121 @@
+﻿@model BlogPostListModel
+@{
+    Layout = "_ColumnsTwo";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.Blog").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-blog-page");
+}
+
+<section class="bg-light separator-top section-cover">
+    <div class="container">
+        <div class="row justify-content-left" >
+        <div class="col-12 mt-10 text-center">
+                
+                @if (string.IsNullOrEmpty(Model.PagingFilteringContext.Tag))
+                {
+                    <h1>Writing</h1>
+                }
+                else
+                {
+                   <h1> Writing - @Model.PagingFilteringContext.Tag</h1>
+                }              
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-dark separator-top section-cover">
+    <div class="container">
+        <div class="row justify-content-between" >
+        <div class="col-lg-9 text-white" style="margin-bottom:1em;">
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogListPageBeforePosts })
+            <div class="blog-posts">
+                @foreach (var item in Model.BlogPosts)
+                {
+                    @await Component.InvokeAsync("Widget", 
+                           new { widgetZone = PublicWidgetZones.BlogListPageBeforePost, additionalData = item })
+
+                    <div class="post col" style="display: inline-block; margin-bottom: 1.5em;">
+                        <div class="post-head">
+                             <h2> @item.Title </h2>     
+                            <span class="post-date">@item.CreatedOn.ToString("D")</span>
+                            <div>&nbsp;</div>
+                        </div>
+
+                        @await Component.InvokeAsync("Widget", 
+                               new { widgetZone = PublicWidgetZones.BlogListPageBeforePostBody, additionalData = item })
+
+
+                        <div class="col-sm-12 col-md-8 col-lg-10 text-center text-md-left" 
+                                style="padding-left: 0px; line-height: 2.125; letter-spacing: 0.048em;">
+                                @Html.Raw(!string.IsNullOrEmpty(item.BodyOverview) ? item.BodyOverview : item.Body)
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-2" data-aos="zoom-in">
+                            <div class="presentation-circle">
+                                <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/assets/images/demo/learning/plant-based-program-image-4.png')"></figure>
+                            </div>
+                        </div>                             
+
+           @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogListPageAfterPostBody, additionalData = item })
+
+                        <div class="blog-details col-sm-12 col-md-10 col-lg-12 text-white" style="padding-left:0px; padding-right:0px;">
+                            <div>&nbsp;</div>
+                            <hr/>
+                            @if (item.Tags.Count > 0)
+                            {
+                                <label>@T("Blog.Tags"):</label>
+                                <ul>
+                                    @for (var i = 0; i < item.Tags.Count; i++)
+                                    {
+                                        var tag = item.Tags[i];
+                                        <li><a href="@Url.RouteUrl("BlogByTag", new {tag = tag})">@tag</a></li>
+                                        if (i != item.Tags.Count - 1)
+                                        {
+                                            <li class="separator">,</li>
+                                        }
+                                    }
+                                </ul>
+                            
+                            }
+                        </div>
+
+                        <div class="col-sm-12 col-md-10 col-lg-12 text-white text-right" style="padding-left:0px; padding-right:0px;">
+                             <hr/>
+                            <div class="buttons" style="float:right;">
+                              <a href="@Url.RouteUrl("BlogPost", new {SeName = item.SeName})" class="btn btn-white btn-rounded btn-block">@T("Blog.MoreInfo")</a> 
+                            </div> 
+                        </div>
+
+                        </div>
+                        @await Component.InvokeAsync("Widget", 
+                               new { widgetZone = PublicWidgetZones.BlogListPageInsidePost, additionalData = item })
+
+                    @await Component.InvokeAsync("Widget", 
+                           new { widgetZone = PublicWidgetZones.BlogListPageAfterPost, additionalData = item })
+                }
+            </div>
+            @{
+                var pager = Html.Pager(Model.PagingFilteringContext).QueryParam("pagenumber");
+            }
+            @if (!pager.IsEmpty())
+            {
+                <div class="pager">
+                    @pager
+                </div>
+            }
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogListPageAfterPosts })
+        </div>
+
+        <div class="col-lg-3">
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.LeftSideColumnBlogBefore })
+            @await Component.InvokeAsync("BlogTags")
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.LeftSideColumnBlogAfter })
+        </div>
+
+        </div>
+    </div>
+</section>
+
