@@ -59,11 +59,11 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "bootstrap/4.5.0": {
+      "bootstrap/4.5.2": {
         "type": "package",
         "dependencies": {
           "jQuery": "[3.0.0, 4.0.0)",
-          "popper.js": "[1.16.0, 2.0.0)"
+          "popper.js": "[1.16.1, 2.0.0)"
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -73,11 +73,11 @@
           }
         }
       },
-      "bootstrap.sass/4.5.0": {
+      "bootstrap.sass/4.5.2": {
         "type": "package",
         "dependencies": {
           "jQuery": "[3.0.0, 4.0.0)",
-          "popper.js": "[1.16.0, 2.0.0)"
+          "popper.js": "[1.16.1, 2.0.0)"
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -2036,7 +2036,7 @@
           "lib/netcoreapp3.0/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
-      "popper.js/1.16.0": {
+      "popper.js/1.16.1": {
         "type": "package"
       },
       "Portable.BouncyCastle/1.8.6.7": {
@@ -4327,8 +4327,8 @@
           "Nop.Data": "4.3.0",
           "Nop.Services": "4.3.0",
           "Nop.Web.Framework": "4.3.0",
-          "bootstrap": "4.5.0",
-          "bootstrap.sass": "4.5.0"
+          "bootstrap": "4.5.2",
+          "bootstrap.sass": "4.5.2"
         },
         "compile": {
           "bin/placeholder/Nop.Web.dll": {}
@@ -4452,15 +4452,15 @@
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
       ]
     },
-    "bootstrap/4.5.0": {
-      "sha512": "k0Z6NMeEg8dvQD3IprG8V0Q/szV3OBgfGT2EyKUG0Ae6U6GrYaKvQacLJMCfI/0m5DRX6JfZG6aFNz8mFrY/tw==",
+    "bootstrap/4.5.2": {
+      "sha512": "aO6V1YQtUqSBm+ClDdS5MkQoY6FtNjRvm2wBUesc4COvCFW9wZUE3OoHbJeuhNNOQxokMQALFHcQNJUNH9YoWw==",
       "type": "package",
-      "path": "bootstrap/4.5.0",
+      "path": "bootstrap/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
-        "bootstrap.4.5.0.nupkg.sha512",
+        "bootstrap.4.5.2.nupkg.sha512",
         "bootstrap.nuspec",
         "bootstrap.png",
         "content/Content/bootstrap-grid.css",
@@ -4505,16 +4505,16 @@
         "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map"
       ]
     },
-    "bootstrap.sass/4.5.0": {
-      "sha512": "1aJNdPZXt2rr8MfoVScTTSjiH7xs+FINURyQIG+ZXZxUolY6QCo80hHnKD9IP2snEEb1fZyjWAYf3y2o2BV8Uw==",
+    "bootstrap.sass/4.5.2": {
+      "sha512": "w45WTPtWMVf9XbhwMYoJTAPNpZRdVvuMt3D3CQOyipDQcmL/6inlTztXR57FSJakIIJx7VLcG38qKK1x2WhMGQ==",
       "type": "package",
-      "path": "bootstrap.sass/4.5.0",
+      "path": "bootstrap.sass/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "bootstrap.png",
-        "bootstrap.sass.4.5.0.nupkg.sha512",
+        "bootstrap.sass.4.5.2.nupkg.sha512",
         "bootstrap.sass.nuspec",
         "content/Content/bootstrap/_alert.scss",
         "content/Content/bootstrap/_badge.scss",
@@ -7403,10 +7403,10 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
-    "popper.js/1.16.0": {
-      "sha512": "ZJhaIouJ7dztoRoqj+KA1ADGpEIr+MzCWOkKm/Q6tu3CAauSsc+ZzXsxsD6RClRwieacqE3QNYNpaLU/mkVnWg==",
+    "popper.js/1.16.1": {
+      "sha512": "6GiVZho0vwBnId7pK7NLTjMGq4F0/VE65I08CCeKlarVoUt1w8SGTtJmhNo/0pK38EGUP/xbT4+OkWB8UTMPBw==",
       "type": "package",
-      "path": "popper.js/1.16.0",
+      "path": "popper.js/1.16.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7501,7 +7501,7 @@
         "content/Scripts/umd/popper.js.map",
         "content/Scripts/umd/popper.min.js",
         "content/Scripts/umd/popper.min.js.map",
-        "popper.js.1.16.0.nupkg.sha512",
+        "popper.js.1.16.1.nupkg.sha512",
         "popper.js.nuspec"
       ]
     },

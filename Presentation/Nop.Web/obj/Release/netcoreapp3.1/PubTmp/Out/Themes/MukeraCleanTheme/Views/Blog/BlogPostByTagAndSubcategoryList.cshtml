@@ -9,37 +9,72 @@
 }
 
 <!-- blog -->
-<section class="bg-light separator-top section-cover" style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/Dr-Barry-story-page-header-backgroud-third.png')">
-  <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12 mt-10 text-center">
-            <h1><b>Writing </b></h1>
-            <hr />
-            <h3>
-                <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag =  @Model.PagingFilteringContext.Tag })">
-                    @Model.PagingFilteringContext.Tag  
-                </a>
-                <b> &nbsp; > &nbsp;</b>
-                @Model.PagingFilteringContext.Subcategory                         
-            </h3>
-        </div>
-    </div>
-  </div>             
+<section class="bg-gray-dark separator-top text-white" 
+         style="background-image: url('/Themes/MukeraCleanTheme/Content/images/header-backgrounds/writing-page-header-background.png');
+        background-blend-mode: soft-light;">    
+      <div class="container">
+            <div class="row justify-content-left" >
+                <div class="col-12 text-center text-dark" 
+                     style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">
+                        <h1><b>@Model.PagingFilteringContext.Subcategory</b></h1>
+                    <div class="col-lg-5"></div> <div class="col-lg-2"><hr/></div> <div class="col-lg-5"></div> 
+                    <div class="col-lg-12">
+                        <h3> sub heading <icon class="fa-circle subheadingseparator"></icon> sub heading </h3>
+                    </div> 
+                </div>
+            </div>
+      </div>   
 </section>
 
-<section class="bg-dark separator-top section-cover">
+<!-- Breacdcrumb section - start -->
+    <section class="bg-light" style="background-color: #f5f5f5; padding:0rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 text-black-50 text-center">
+
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb" style="padding: 1.5em;">
+                    <li class="breadcrumb-item" style="font-size: 1.75em;">
+                      <a class="nav-link"   role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a>
+                    </li>
+
+                    <li class="breadcrumb-item" style="font-size: 1.75em;">
+                      <a class="nav-link"   role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a>
+                    </li>
+
+                    <li class="breadcrumb-item" style="font-size: 1.75em;">
+                        <a class="nav-link"   role="button" 
+                           href="@Url.RouteUrl("BlogTagBySubcategory", new { tag =  @Model.PagingFilteringContext.Tag })"> 
+                           @Model.PagingFilteringContext.Tag 
+                        </a>
+                    </li>
+
+                    <li class="breadcrumb-item active" style="font-size: 1.65em;" aria-current="page">
+                      <span style="padding-left: 0.25em; font-size: 1.25em;">@Model.PagingFilteringContext.Subcategory </span>
+                    </li>
+                  </ol>
+              </nav>
+          </div>
+        </div>
+      </div>    
+    </section>       
+<!-- Breacdcrumb section - end -->
+
+<section class="bg-gray-darkest separator-top section-cover">
   <div class="container">
     <div class="row justify-content-center" id="writingHeaderSection">
-        <div class="col-lg-12 text-white text-left">
+        <div class="col-lg-12 text-white text-center">
             <h2><b>@Model.PagingFilteringContext.Subcategory</b> Details</h2>
-            <hr/>
-
+            <div class="col-lg-5"></div> <div class="col-lg-2"><hr/></div> <div class="col-lg-5"></div>               
+        </div>
+     <div class="col-lg-12 text-gray-dark text-left">
             @if(Model.BlogPostSubCategoriesByCount.Count() > 0)
             {            
                  foreach(var item in Model.BlogPosts)
-                {            
+                {           
 
-                     <div class="post col" style="display: inline-block; margin-bottom: 1.5em;">
+                     <div class="post col bg-gray-light" 
+                          style="display: inline-block; margin-bottom: 2em; margin-top:1em; padding: 1em 1.95em; padding-bottom:2.5em;">
                         <div class="post-head">
                              <h2> @item.Title </h2>     
                             <span class="post-date">@item.CreatedOn.ToString("D")</span>
@@ -54,22 +89,24 @@
                             <div class="presentation-circle">
                                 <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/assets/images/demo/learning/plant-based-program-image-4.png')"></figure>
                             </div>
-                        </div>
+                        </div>   
                          
+                        <div class="col-sm-12 col-md-10 col-lg-12 text-white text-right" style=" margin-top:1em; :0px; padding-right:0px;"> 
+                            <hr class="text-gray-dark"/>
+                        <div class="buttons" style="float:right; padding-right:1em;">
+                           <a href="@Url.RouteUrl("BlogPost", new {SeName = item.SeName})" 
+                              class="btn btn-green btn-rounded">Read More</a>                            
+                        </div>                    
+                    </div>                     
                      </div>
-                    <div class="col-sm-12 col-md-10 col-lg-12 text-white text-right" style="padding-left:0px; padding-right:0px;">  
-                        <hr/>
-                        <div class="buttons" style="float:right;">
-                            <a href="@Url.RouteUrl("BlogPost", new {SeName = item.SeName})" class="btn btn-white btn-rounded btn-block">@T("Blog.MoreInfo")</a> 
-                        </div> 
-                    </div>
+
                  }
 
             }
             else
             {
                 <p>
-                 No writing subcategories are found for the current tag!
+                 No writing subcategories are found for the @Model.PagingFilteringContext.Tag!
                 </p>
             }
 

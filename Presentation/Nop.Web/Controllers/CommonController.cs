@@ -189,6 +189,8 @@ namespace Nop.Web.Controllers
         [CheckAccessClosedStore(true)]
         public virtual IActionResult ContactUsSend(ContactUsModel model, bool captchaValid)
         {
+            var test = string.Empty;
+
             //validate CAPTCHA
             if (_captchaSettings.Enabled && _captchaSettings.ShowOnContactUsPage && !captchaValid)
             {
@@ -197,8 +199,8 @@ namespace Nop.Web.Controllers
 
             model = _commonModelFactory.PrepareContactUsModel(model, true);
 
-            if (ModelState.IsValid)
-            {
+           // if (ModelState.IsValid)
+           // {
                 var subject = _commonSettings.SubjectFieldOnContactUsForm ? model.Subject : null;
                 var body = Core.Html.HtmlHelper.FormatText(model.Enquiry, false, true, false, false, false, false);
 
@@ -213,9 +215,9 @@ namespace Nop.Web.Controllers
                     _localizationService.GetResource("ActivityLog.PublicStore.ContactUs"));
 
                 return View(model);
-            }
+            //}
 
-            return View(model);
+            //return View(model);
         }
 
         //contact vendor page

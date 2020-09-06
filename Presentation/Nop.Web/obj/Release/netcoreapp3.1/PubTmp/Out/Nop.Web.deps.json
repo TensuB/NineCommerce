@@ -28,8 +28,8 @@
           "Nop.Data": "4.3.0",
           "Nop.Services": "4.3.0",
           "Nop.Web.Framework": "4.3.0",
-          "bootstrap": "4.5.0",
-          "bootstrap.sass": "4.5.0",
+          "bootstrap": "4.5.2",
+          "bootstrap.sass": "4.5.2",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -376,16 +376,16 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "bootstrap/4.5.0": {
+      "bootstrap/4.5.2": {
         "dependencies": {
           "jQuery": "3.0.0",
-          "popper.js": "1.16.0"
+          "popper.js": "1.16.1"
         }
       },
-      "bootstrap.sass/4.5.0": {
+      "bootstrap.sass/4.5.2": {
         "dependencies": {
           "jQuery": "3.0.0",
-          "popper.js": "1.16.0"
+          "popper.js": "1.16.1"
         }
       },
       "BouncyCastle.NetCore/1.8.3": {
@@ -2260,7 +2260,7 @@
           "lib/netcoreapp3.0/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
-      "popper.js/1.16.0": {},
+      "popper.js/1.16.1": {},
       "Portable.BouncyCastle/1.8.6.7": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -5380,19 +5380,19 @@
       "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
     },
-    "bootstrap/4.5.0": {
+    "bootstrap/4.5.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k0Z6NMeEg8dvQD3IprG8V0Q/szV3OBgfGT2EyKUG0Ae6U6GrYaKvQacLJMCfI/0m5DRX6JfZG6aFNz8mFrY/tw==",
-      "path": "bootstrap/4.5.0",
-      "hashPath": "bootstrap.4.5.0.nupkg.sha512"
+      "sha512": "sha512-aO6V1YQtUqSBm+ClDdS5MkQoY6FtNjRvm2wBUesc4COvCFW9wZUE3OoHbJeuhNNOQxokMQALFHcQNJUNH9YoWw==",
+      "path": "bootstrap/4.5.2",
+      "hashPath": "bootstrap.4.5.2.nupkg.sha512"
     },
-    "bootstrap.sass/4.5.0": {
+    "bootstrap.sass/4.5.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1aJNdPZXt2rr8MfoVScTTSjiH7xs+FINURyQIG+ZXZxUolY6QCo80hHnKD9IP2snEEb1fZyjWAYf3y2o2BV8Uw==",
-      "path": "bootstrap.sass/4.5.0",
-      "hashPath": "bootstrap.sass.4.5.0.nupkg.sha512"
+      "sha512": "sha512-w45WTPtWMVf9XbhwMYoJTAPNpZRdVvuMt3D3CQOyipDQcmL/6inlTztXR57FSJakIIJx7VLcG38qKK1x2WhMGQ==",
+      "path": "bootstrap.sass/4.5.2",
+      "hashPath": "bootstrap.sass.4.5.2.nupkg.sha512"
     },
     "BouncyCastle.NetCore/1.8.3": {
       "type": "package",
@@ -6346,12 +6346,12 @@
       "path": "pipelines.sockets.unofficial/2.0.17",
       "hashPath": "pipelines.sockets.unofficial.2.0.17.nupkg.sha512"
     },
-    "popper.js/1.16.0": {
+    "popper.js/1.16.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZJhaIouJ7dztoRoqj+KA1ADGpEIr+MzCWOkKm/Q6tu3CAauSsc+ZzXsxsD6RClRwieacqE3QNYNpaLU/mkVnWg==",
-      "path": "popper.js/1.16.0",
-      "hashPath": "popper.js.1.16.0.nupkg.sha512"
+      "sha512": "sha512-6GiVZho0vwBnId7pK7NLTjMGq4F0/VE65I08CCeKlarVoUt1w8SGTtJmhNo/0pK38EGUP/xbT4+OkWB8UTMPBw==",
+      "path": "popper.js/1.16.1",
+      "hashPath": "popper.js.1.16.1.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.8.6.7": {
       "type": "package",

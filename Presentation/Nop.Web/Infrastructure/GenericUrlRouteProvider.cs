@@ -62,8 +62,13 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("NewsItem", pattern, 
                 new { controller = "News", action = "NewsItem" });
 
+            /*
             endpointRouteBuilder.MapControllerRoute("BlogPost", pattern, 
+                new { controller = "Blog", action = "BlogPost" });*/
+
+            endpointRouteBuilder.MapControllerRoute("BlogPost", pattern,
                 new { controller = "Blog", action = "BlogPost" });
+
 
             endpointRouteBuilder.MapControllerRoute("Topic", pattern, 
                 new { controller = "Topic", action = "TopicDetails" });

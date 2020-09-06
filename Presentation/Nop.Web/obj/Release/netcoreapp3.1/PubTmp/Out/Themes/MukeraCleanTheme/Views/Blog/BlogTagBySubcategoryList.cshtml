@@ -9,19 +9,49 @@
 }
 
 <!-- blog -->
-<section class="bg-light separator-top section-cover" style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/Dr-Barry-story-page-header-backgroud-third.png')">
+<section class="bg-gray-dark separator-top text-white" 
+         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/writing-page-header-background.png');
+                background-blend-mode: soft-light;">
   <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12 mt-10 text-center">
-            <h1><b>Writing </b></h1>
-            <hr />
-            <h3>@Model.PagingFilteringContext.Tag</h3>
+       <div class="row justify-content-left" >
+            <div class="col-12 text-center text-dark" 
+                    style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">
+                    <h1><b>@Model.PagingFilteringContext.Tag</b></h1>
+                <div class="col-lg-5"></div> <div class="col-lg-2"><hr/></div> <div class="col-lg-5"></div> 
+                <div class="col-lg-12">
+                    <h3> sub heading <icon class="fa-circle subheadingseparator"></icon> sub heading </h3>
+                </div> 
+            </div>
         </div>
-    </div>
   </div>             
 </section>
 
-<section class="bg-dark separator-top section-cover">
+
+<!-- Breacdcrumb section - start -->
+
+    <section class="bg-light" 
+             style="background-color: #f5f5f5; padding:0rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 text-black-50 text-center">
+
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb" style="padding: 1.5em;">
+                    <li class="breadcrumb-item" style="font-size: 1.75em;"><a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a></li>
+                    <li class="breadcrumb-item" style="font-size: 1.75em;"><a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a></li>
+                    <li class="breadcrumb-item active" style="font-size: 1.75em;" aria-current="page">
+                      <span style="padding-left: 0.25em; font-size: 1.5em;">@Model.PagingFilteringContext.Tag </span>
+                    </li>
+                  </ol>
+              </nav>
+          </div>
+        </div>
+      </div>    
+    </section>       
+<!-- Breacdcrumb section - end -->
+
+
+<section class="bg-gray-darkest separator-top section-cover">
   <div class="container">
     <div class="row justify-content-center" id="writingHeaderSection">
         <div class="col-lg-12 text-white text-left">
@@ -39,7 +69,7 @@
                        <li>
                           <h4> <a href="@Url.RouteUrl("BlogPostByTagAndSubCategory", 
                                 new { tag = @Model.PagingFilteringContext.Tag,
-                                      subCategory = category.Key})">@category.Key (@category.Value)</a> 
+                                      subcategory = category.Key})">@category.Key (@category.Value)</a> 
                            </h4>
                         </li> 
                     }

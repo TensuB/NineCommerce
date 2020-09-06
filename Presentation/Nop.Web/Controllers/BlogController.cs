@@ -127,6 +127,8 @@ namespace Nop.Web.Controllers
             //filter current subcategory only
             var filteredList = model.BlogPosts.ToList().Where(p => p.Subcategories.Contains(command.Subcategory));
             model.BlogPosts = filteredList.ToList();
+            model.PagingFilteringContext.Tag = command.Tag;
+            model.PagingFilteringContext.Subcategory = command.Subcategory;
 
             return View("BlogPostByTagAndSubcategoryList", model);
         }
@@ -184,7 +186,7 @@ namespace Nop.Web.Controllers
             return new RssActionResult(feed, _webHelper.GetThisPageUrl(false));
         }
 
-        public virtual IActionResult BlogPost(int blogPostId)
+        public virtual IActionResult BlogPost(int blogPostId, BlogPagingFilteringModel command)
         {
             if (!_blogSettings.Enabled)
                 return RedirectToRoute("Homepage");
@@ -207,8 +209,12 @@ namespace Nop.Web.Controllers
             //display "edit" (manage) link
             if (hasAdminAccess)
                 DisplayEditLink(Url.Action("BlogPostEdit", "Blog", new { id = blogPost.Id, area = AreaNames.Admin }));
+            var stop = string.Empty;
 
             var model = new BlogPostModel();
+                model.TopCategory = command.Tag;
+                model.SubCategory = command.Subcategory;
+
             _blogModelFactory.PrepareBlogPostModel(model, blogPost, true);
 
             return View(model);

@@ -15,6 +15,6 @@ namespace Nop.Web.Models.Blogs
         public BlogPagingFilteringModel PagingFilteringContext { get; set; }
         public IList<BlogPostModel> BlogPosts { get; set; }
         public IList<KeyValuePair<string, int>> BlogPostSubCategoriesByCount { get; set; } 
-        //public string CurrentPostTag { get; set; }
+        public string CurrentPostTag { get; set; }
     }
 }

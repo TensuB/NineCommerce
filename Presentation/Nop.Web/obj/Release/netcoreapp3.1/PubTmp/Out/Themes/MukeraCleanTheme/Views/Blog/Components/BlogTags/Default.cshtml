@@ -1,11 +1,11 @@
 ﻿@model BlogPostTagListModel
 @if (Model.Tags.Count > 0)
 {
-    <div class="block block-popular-blogtags">
-        <div class="title">
+    <div class="block block-popular-blogtags text-gray-dark">
+        <div class="title text-white">
             <strong>@T("Blog.TagCloud")</strong>
         </div>
-        <div class="listbox">
+        <div class="listbox" style="display:table-caption;">
             <ul class="tags">
                 @foreach (var item in Model.Tags)
                 {

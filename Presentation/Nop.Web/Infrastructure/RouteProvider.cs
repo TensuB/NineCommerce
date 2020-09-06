@@ -284,14 +284,16 @@ namespace Nop.Web.Infrastructure
 
             endpointRouteBuilder.MapControllerRoute("BlogPostByTagAndSubCategory",
                 pattern + "writing/{tag}/{subcategory}",
-                new { controller = "Blog", action = "BlogPostByTagAndSubcategoryList" });   
-            
+                new { controller = "Blog", action = "BlogPostByTagAndSubcategoryList" });
+
+            endpointRouteBuilder.MapControllerRoute("BlogPostDetailByTagAndSubCategory",
+                pattern + "writing/{tag}/{subcategory}",
+                new { controller = "Blog", action = "BlogPost" });
 
 
-           endpointRouteBuilder.MapControllerRoute("BlogByTag",
+            endpointRouteBuilder.MapControllerRoute("BlogByTag",
                 pattern + "writing/tag/{tag}",
-                new { controller = "Blog", action = "BlogByTag" });
-       
+                new { controller = "Blog", action = "BlogByTag" });       
 
             endpointRouteBuilder.MapControllerRoute("BlogByMonth",
                 pattern + "blog/month/{month}",
