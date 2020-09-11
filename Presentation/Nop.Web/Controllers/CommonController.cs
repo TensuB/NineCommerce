@@ -183,6 +183,18 @@ namespace Nop.Web.Controllers
             return View(model);
         }
 
+
+        public virtual IActionResult Faqs()
+        {
+            var model = new FaqsModel()
+            {
+                Description = "About Dr Toole - test description"
+            };
+
+            return View(model);
+        }
+
+
         [HttpPost, ActionName("ContactUs")]        
         [ValidateCaptcha]
         //available even when a store is closed

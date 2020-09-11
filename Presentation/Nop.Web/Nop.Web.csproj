@@ -118,6 +118,8 @@
 
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\MyStory - backup - Copy.cshtml" />
 
+    <Content Include="Themes\MukeraCleanTheme\Views\Vendor\Legal.cshtml" />
+
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\PrivacyNotice.cshtml" />
 
     <Content Include="Themes\MukeraCleanTheme\Views\Vendor\MyStory.cshtml" />
@@ -132,7 +134,7 @@
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
-    <Content Remove="Themes\MukeraCleanTheme\Content\css\newed_custom_theme_styles_sheet.css" />
+    <Content Remove="Themes\MukeraCleanTheme\Content\css\custom_theme_styles_sheet.css" />
     <None Remove="compilerconfig.json.defaults" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\print.css" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\styles.css" />
@@ -225,6 +227,7 @@
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\ConditionsOfUse.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\Connect.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\Info.cshtml" />
+    <None Remove="Themes\MukeraCleanTheme\Views\Vendor\Legal.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\MyStory - backup - Copy.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\MyStory.cshtml" />
     <None Remove="Themes\MukeraCleanTheme\Views\Vendor\MyVision.cshtml" />
@@ -415,6 +418,10 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Update="Themes\MukeraCleanTheme\Views\Vendor\MyStory - backup - Copy.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Themes\MukeraCleanTheme\Views\Vendor\Legal.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

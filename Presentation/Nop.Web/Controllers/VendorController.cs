@@ -446,6 +446,15 @@ namespace Nop.Web.Controllers
             return View(model);
         }
 
+        public virtual IActionResult Legal()
+        {
+            var model = new VendorLegalModel()
+            {
+                Description = "My Legal Notice - test vendor Legal description",
+            };
+            return View(model);
+        }
+
         [HttpsRequirement]
         public virtual IActionResult ConditionsOfUse()
         {

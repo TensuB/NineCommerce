@@ -154,6 +154,9 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("VendorPrivacyNotice", $"{pattern}vendor/PrivacyNotice/",
                 new { controller = "Vendor", action = "PrivacyNotice" });
 
+            endpointRouteBuilder.MapControllerRoute("VendorLegal", $"{pattern}vendor/Legal/",
+                new { controller = "Vendor", action = "Legal" });
+
             endpointRouteBuilder.MapControllerRoute("VendorStory", $"{pattern}vendor/story/",
                 new { controller = "Vendor", action = "MyStory" });
 
@@ -404,6 +407,10 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("GetOrderNoteFile",
                 pattern + "download/ordernotefile/{ordernoteid:min(0)}",
                 new { controller = "Download", action = "GetOrderNoteFile" });
+
+            //Customer FAQs
+            endpointRouteBuilder.MapControllerRoute("CustomerFaqs", $"{pattern}customer/faqs",                
+                new { controller = "Common", action = "Faqs" });
 
             //contact vendor
             endpointRouteBuilder.MapControllerRoute("ContactVendor",

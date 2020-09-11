@@ -36,7 +36,7 @@
           <div class="col-sm-12 col-md-12 col-lg-12 text-black-50 text-center">
 
               <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb" style="padding: 1.5em;">
+                  <ol class="breadcrumb" style="padding: 1em;">
                     <li class="breadcrumb-item" style="font-size: 1.75em;"><a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a></li>
                     <li class="breadcrumb-item" style="font-size: 1.75em;"><a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a></li>
                     <li class="breadcrumb-item active" style="font-size: 1.75em;" aria-current="page">
@@ -51,15 +51,22 @@
 <!-- Breacdcrumb section - end -->
 
 
-<section class="bg-gray-darkest separator-top section-cover">
+<section class="bg-gray-darkest">
   <div class="container">
     <div class="row justify-content-center" id="writingHeaderSection">
-        <div class="col-lg-12 text-white text-left">
+        <div class="col-lg-12 text-white text-center">
             <h2>@Model.PagingFilteringContext.Tag  Overview</h2>
-            <hr/>
+        <div class="col-lg-5"></div> <div class="col-lg-2"><hr/></div> <div class="col-lg-5"></div> 
+        <div class="col-lg-12">         
+            <h3>sub heading</h3> 
+            <p>&nbsp;</p>
+        </div> 
+
 
             @if(@Model.BlogPostSubCategoriesByCount.Count() > 0)
             {
+                var fadeEffectList = new List<string>(){"fade-right", "fade-up", "fade-left"};
+                
                 <p>
                  The top categroy of @Model.PagingFilteringContext.Tag has the following @Model.BlogPostSubCategoriesByCount.Count().ToString() subcategories:
                 </p> 
@@ -67,10 +74,21 @@
                     @foreach(var category in Model.BlogPostSubCategoriesByCount)
                     {
                        <li>
-                          <h4> <a href="@Url.RouteUrl("BlogPostByTagAndSubCategory", 
-                                new { tag = @Model.PagingFilteringContext.Tag,
-                                      subcategory = category.Key})">@category.Key (@category.Value)</a> 
-                           </h4>
+                            <div class="col-sm-10 col-md-12 col-lg-4" data-aos="@fadeEffectList.ElementAt(0)" style="padding:1em;">
+                               <a href="@Url.RouteUrl("BlogPostByTagAndSubCategory",
+                                                                new { tag = @Model.PagingFilteringContext.Tag,
+                                                                      subcategory = category.Key})">
+                                    <div class="card card-price-1 rising">
+                                        <div class="card-body" 
+                                                style="min-height: 8em; padding-top:1.75em;
+                                                    background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/subcategory-background-wide.png'); background-blend-mode: soft-light;">
+                                            <h4 class="card-title font-weight-bold text-center text-gray-dark">                       
+                                                @category.Key <br /> (@category.Value)                                        
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </a>
+                          </div>
                         </li> 
                     }
                 </ul>
@@ -78,36 +96,15 @@
             else
             {
                 <p>
-                 No writing subcategories are found for the current tag!
+                 No writing subcategories are found for the "@Model.PagingFilteringContext.Tag" top category!
                 </p>
             }
 
         </div>
 
     </div>
-  </div>  
-    
-  <!--
-  <div class="container">
-    <div class="row justify-content-center" id="writingsList">
-        <div class="col-lg-12 text-white text-left">         
-            <hr/>
-        </div>
+  </div>     
 
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            @foreach(var subcategory in Model.BlogPostSubCategoriesByCount)
-            {
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <a href="@Url.RouteUrl("BlogByTagAndSubCategory", new { tag = @Model.PagingFilteringContext.Tag, subCategory = subcategory.Key  })" class="tile-content">
-                        <h3>@subcategory.Key (@subcategory.Value.ToString())</h3>
-                    </a>                
-                </div>
-            }
-        </div>
-
-    </div>
-  </div>          
-   -->
 </section>
 <!-- / blog -->
 

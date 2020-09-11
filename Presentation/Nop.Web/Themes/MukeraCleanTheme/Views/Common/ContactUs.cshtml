@@ -89,7 +89,7 @@
                 <div style="display: flex !important;">
                      <!--<input asp-for="Subject" placeholder="@T("ContactUs.Subject.Hint")" class="form-control" type="text" id="Subject"/> -->
                   
-                @Html.DropDownListFor(model => model.Subject, Model.SubjectAreaList,  new { @class = "form-control", id="Subject", @required = true, @placehodler ="Select subject area" } )  
+                @Html.DropDownListFor(model => model.Subject, Model.SubjectAreaList,  new { @class = "form-control subject-select-list", id="Subject", @required = true, @placehodler ="Select subject area" } )  
                 @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
                 </div>  
             </div>
