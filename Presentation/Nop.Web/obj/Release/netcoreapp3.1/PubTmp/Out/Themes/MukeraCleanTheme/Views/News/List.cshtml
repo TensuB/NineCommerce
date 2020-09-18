@@ -8,35 +8,48 @@
     Html.AppendPageCssClassParts("html-news-list-page");
 }
 
-<section class="bg-light separator-top section-cover">
+
+<section class="bg-gray-dark separator-top text-white" 
+         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/speaking-services-page-header-backgroud.png');
+        background-blend-mode: soft-light;">
     <div class="container">
         <div class="row justify-content-left" >
-        <div class="col-12 mt-10 text-center">
-            <a href="@Url.RouteUrl("NewsRSS", new { languageId = Model.WorkingLanguageId })" 
-               class="link-rss" title="@T("News.RSS.Hint")">@T("News.RSS")</a>
-         <h1>@T("News")</h1>               
-        </div>
+            <div class="col-12 text-center text-dark" 
+                    style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">
+                <div class="col-12">
+                    <h1><b>@T("News")</b></h1>
+                </div>
+                <div class="col-md-5"></div> 
+                <div class="col-md-2"><p>&nbsp;</p><hr/></div> 
+                <div class="col-md-5"></div>  
+                <div class="col-md-12">         
+                    <h3>Latest News <icon class="fa-circle subheadingseparator"></icon>
+                        Events <icon class="fa-circle subheadingseparator"></icon>
+                        Developments 
+                    </h3>         
+                </div> 
+            </div>
         </div>
     </div>
 </section>
 
-<section class="bg-dark separator-top section-cover">
+<section class="bg-gray-light separator-top section-cover">
     <div class="container">
-         <div class="row justify-content-between align-items-center">
+         <div class="row justify-content-between align-items-center text-gray-dark">
             <div class="col-md-12 pl-md-5">
              @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsListPageBeforeItems })
   
-                <div class="news-items">
+                <div class="news-items text-gray-dark text-left bg-gray-light">
                     @foreach (var item in Model.NewsItems)
                     {
-                        <div class="col-sm-12 col-md-10 col-lg-12 news-body text-white news-body">
+                        <div class="col-sm-12 col-md-10 col-lg-12 news-body news-body">
                             <div class="news-head">
                                <h2> @item.Title </h2> 
                                 <span class="news-date">@item.CreatedOn.ToString("D")</span>
                             </div>   
                         </div>
 
-                        <div class="col-sm-12 col-md-10 col-lg-12 news-body text-white news-body" style="padding: 2em 1em;">
+                        <div class="col-sm-12 col-md-10 col-lg-12 news-body text-dark news-body" style="padding: 2em 1em;">
                             <div class="col-lg-9 col-md-6 text-center text-md-left" 
                                  style="padding-left: 0px; line-height: 2.125; letter-spacing: 0.048em; ">
                                 @Html.Raw(item.Short)   
@@ -50,7 +63,7 @@
 
                         <div class="col-sm-12 col-md-10 col-lg-12 news-body text-white news-body text-right">
                             <hr/>
-                            <a href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })" class="read-more btn btn-white btn-rounded">@T("News.MoreInfo")</a> 
+                            <a href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })" class="read-more btn btn-green btn-rounded">Read More</a> 
                         </div>
                     }
                 </div>

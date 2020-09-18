@@ -37,10 +37,10 @@
 
               <nav aria-label="breadcrumb">
                   <ol class="breadcrumb" style="padding: 1em;">
-                    <li class="breadcrumb-item" style="font-size: 1.75em;"><a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a></li>
-                    <li class="breadcrumb-item" style="font-size: 1.75em;"><a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a></li>
-                    <li class="breadcrumb-item active" style="font-size: 1.75em;" aria-current="page">
-                      <span style="padding-left: 0.25em; font-size: 1.5em;">@Model.PagingFilteringContext.Tag </span>
+                    <li class="breadcrumb-item"><a class="nav-link"  role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a></li>
+                    <li class="breadcrumb-item"><a class="nav-link" role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <span style="padding-left: 0.25em; font-size: 2.25em;">@Model.PagingFilteringContext.Tag </span>
                     </li>
                   </ol>
               </nav>

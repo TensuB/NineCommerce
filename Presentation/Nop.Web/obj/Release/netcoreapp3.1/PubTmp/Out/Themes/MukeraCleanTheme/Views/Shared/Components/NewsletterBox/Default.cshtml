@@ -5,26 +5,21 @@
     var ebookTitle = string.Empty;
     var buttonLabel = string.Empty;
 
-    signUpMessage = "Sign up for our free newsletter";   
+    signUpMessage = "Subscribe to our Newsletter";   
 }
 
 <section class="component universalPageFooter" 
-         style="background-color: #840606c4;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 1.75em 0em;
-        padding-bottom: 5em;
-    ">
+         style="background-color: #840606c4; width: 100% !important; max-width: 100% !important; padding: 1.75em 0em; padding-bottom: 5em;">
     <div class="container">
         <div class="row justify-content-center">
 
         <div class="form-group newsletter-subscribe" id="newsletter-subscribe-block">
             <div class="newsletter-email">
-                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center" style="margin-bottom: 1em;">
                     <h2 class="title" style="color: aliceblue;">@signUpMessage</h2>
-                    <p class="lead">To receive all the latest news and articles</p>
+                    <p class="lead">And receive articles and latest news from our Plant-based Community</p>
                 </div>
-                <div class="col-sm-12 col-md-0 col-lg-1" style="padding-top:1.5em;"> &nbsp; </div>
+                <div class="col-sm-12 col-md-0 col-lg-1" style="padding-top:1.5em;"><p>&nbsp;</p> </div>
 
                 <div class="col-sm-10 col-md-6 col-lg-4 text-sm-left" style="padding-top:1.5em;">
                    <div class="input-group" style="display:inline-flex !important;">
@@ -52,8 +47,7 @@
         <div class="col-sm-10 col-md-6 col-lg-2 text-sm-left" style="padding-top:1.5em;">
                 <input type="button" value="@T(Model.AllowToUnsubscribe ? "Newsletter.Options.Send" :"Newsletter.Options.Subscribe")"   
                     aria-label="@T("Newsletter.Subscribe")" id="newsletter-subscribe-button" 
-                    class="newsletter-subscribe-button btn-light-green btn-rounded" 
-                    style="padding: 0.25em 1.5em; background-color: #ad2000 !important; border: 3px solid #8c220a; color: #d6d6d6;"/>
+                    class="newsletter-subscribe-button btn-light-green btn-rounded" />
         </div>
 
 

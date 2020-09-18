@@ -134,7 +134,8 @@
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
-    <Content Remove="Themes\MukeraCleanTheme\Content\css\custom_theme_styles_sheet.css" />
+    <Content Remove="Themes\MukeraCleanTheme\Content\css\addu_custom_theme_styles_sheet.css" />
+    <Content Remove="Themes\MukeraCleanTheme\Content\css\rd-nav-bar-styles.css" />
     <None Remove="compilerconfig.json.defaults" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\print.css" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\styles.css" />

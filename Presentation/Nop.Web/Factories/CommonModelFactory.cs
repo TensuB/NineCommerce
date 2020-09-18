@@ -247,7 +247,7 @@ namespace Nop.Web.Factories
                     //use default logo
                     var pathBase = _httpContextAccessor.HttpContext.Request.PathBase.Value ?? string.Empty;
                     var storeLocation = _mediaSettings.UseAbsoluteImagePath ? _webHelper.GetStoreLocation() : $"{pathBase}/";
-                    logo = $"{storeLocation}Themes/{_themeContext.WorkingThemeName}/Content/images/logo.png";
+                    logo = $"{storeLocation}Themes/{_themeContext.WorkingThemeName}/Content/images/logos/new-logo-2.png";
                 }
 
                 return logo;

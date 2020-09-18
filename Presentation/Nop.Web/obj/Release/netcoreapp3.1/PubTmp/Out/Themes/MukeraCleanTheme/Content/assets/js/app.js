@@ -200,7 +200,7 @@
 
         var options = {
           nav: nav || false,
-          loop: loop || false,
+          loop: loop || true,
           dots: dots || false,
           center: center || false,
           autoplay: autoplay || false,

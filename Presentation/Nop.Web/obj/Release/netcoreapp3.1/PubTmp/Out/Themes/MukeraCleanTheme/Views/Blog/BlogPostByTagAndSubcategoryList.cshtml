@@ -33,24 +33,24 @@
           <div class="col-sm-12 col-md-12 col-lg-12 text-black-50 text-center">
 
               <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb" style="padding: 1.5em;">
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item" >
                       <a class="nav-link"   role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a>
                     </li>
 
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
+                    <li class="breadcrumb-item">
                       <a class="nav-link"   role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a>
                     </li>
 
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
+                    <li class="breadcrumb-item" >
                         <a class="nav-link"   role="button" 
                            href="@Url.RouteUrl("BlogTagBySubcategory", new { tag =  @Model.PagingFilteringContext.Tag })"> 
                            @Model.PagingFilteringContext.Tag 
                         </a>
                     </li>
 
-                    <li class="breadcrumb-item active" style="font-size: 1.65em;" aria-current="page">
-                      <span style="padding-left: 0.25em; font-size: 1.25em;">@Model.PagingFilteringContext.Subcategory </span>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <span style="padding-left: 0.25em; font-size: 2.25em;">@Model.PagingFilteringContext.Subcategory </span>
                     </li>
                   </ol>
               </nav>
@@ -94,7 +94,13 @@
                         <div class="col-sm-12 col-md-10 col-lg-12 text-white text-right" style=" margin-top:1em; :0px; padding-right:0px;"> 
                             <hr class="text-gray-dark"/>
                         <div class="buttons" style="float:right; padding-right:1em;">
-                           <a href="@Url.RouteUrl("BlogPost", new {SeName = item.SeName})" 
+                           <a href="@Url.RouteUrl("BlogPost", 
+                                                    new {
+                                                            SeName = item.SeName, 
+                                                            blogPostId = item.Id,
+                                                            tag = Model.PagingFilteringContext.Tag,
+                                                            subcategory = Model.PagingFilteringContext.Subcategory
+                                                        })" 
                               class="btn btn-green btn-rounded">Read More</a>                            
                         </div>                    
                     </div>                     

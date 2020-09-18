@@ -112,7 +112,7 @@ namespace Nop.Web.Infrastructure
                 new { controller = "Product", action = "NewProducts" });
 
             //blog tags list - categories of tags used to filter writing entries
-            endpointRouteBuilder.MapControllerRoute("BlogsByTagList", $"{pattern}blog",
+            endpointRouteBuilder.MapControllerRoute("BlogsByTagList", $"{pattern}writing",
                 new { controller = "Blog", action = "BlogTagsList" });
 
             //blog
@@ -409,8 +409,9 @@ namespace Nop.Web.Infrastructure
                 new { controller = "Download", action = "GetOrderNoteFile" });
 
             //Customer FAQs
-            endpointRouteBuilder.MapControllerRoute("CustomerFaqs", $"{pattern}customer/faqs",                
+            endpointRouteBuilder.MapControllerRoute("CustomerFaqs", $"{pattern}faqs",
                 new { controller = "Common", action = "Faqs" });
+
 
             //contact vendor
             endpointRouteBuilder.MapControllerRoute("ContactVendor",

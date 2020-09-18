@@ -17,16 +17,16 @@
 @{
          var themeName = themeContext.WorkingThemeName;
 
+    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/script.js");
+    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/core.min.js");  
 
     Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/assets/js/app.js");
     Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/assets/js/vendor.js");
-    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/bootstrap.min.js");
-
-    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/script.js");
-    Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/core.min.js");
 
 
-    
+
+  <!--  Html.AppendScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/bootstrap.min.js"); -->
+
     Html.AppendScriptParts(ResourceLocation.Footer, "~/js/public.countryselect.js");
     Html.AppendScriptParts(ResourceLocation.Footer, "~/js/public.ajaxcart.js");
     Html.AppendScriptParts(ResourceLocation.Footer, "~/js/public.common.js");  
@@ -46,7 +46,15 @@
 
     Html.AppendScriptParts(ResourceLocation.Footer, "~/lib/jquery-validate/jquery.validate-v1.19.1/jquery.validate.min.js"); 
 
-    Html.AppendScriptParts(ResourceLocation.Footer, "~/lib/jquery/jquery-3.4.1.min.js");  
+    <!-- Popper JS -->
+    Html.AppendScriptParts(ResourceLocation.Footer, "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"); 
+
+    <!-- Latest compiled JavaScript -->
+     Html.AppendScriptParts(ResourceLocation.Footer, "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"); 
+
+     <!-- jQuery library -->
+     Html.AppendScriptParts(ResourceLocation.Footer, "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
+
 
     //custom tag(s);
     if (!string.IsNullOrEmpty(seoSettings.CustomHeadTags))

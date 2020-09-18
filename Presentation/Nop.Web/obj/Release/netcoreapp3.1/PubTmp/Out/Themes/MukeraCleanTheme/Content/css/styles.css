@@ -1027,14 +1027,12 @@ label, label + * {
 }
 .newsletter-subscribe-button {	
 	float: left;
-	height: 45px;
 	width: auto !important;
 	border: none;
 	background-color: #4ab2f1;
 	padding: 0.5em 1.5em;
 	text-align: center;
 	color: #fff;
-	letter-spacing: 0.18em;
 	font-size: 1.25em;
 }
 
@@ -1292,7 +1290,7 @@ label, label + * {
 .breadcrumb li * {
 	display: inline-block;
 	margin: 0 5px;
-	font-size: 14px; /*reset zeroing*/
+	font-size: 16px; /*reset zeroing*/
 	line-height: 32px;
 }
 .breadcrumb strong {

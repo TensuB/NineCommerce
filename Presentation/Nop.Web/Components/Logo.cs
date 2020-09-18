@@ -17,6 +17,6 @@ namespace Nop.Web.Components
         {
             var model = _commonModelFactory.PrepareLogoModel();
             return View(model);
-        }
+        }            
     }
 }

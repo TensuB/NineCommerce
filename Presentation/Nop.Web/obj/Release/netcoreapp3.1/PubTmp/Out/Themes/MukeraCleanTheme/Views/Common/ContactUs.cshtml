@@ -12,12 +12,16 @@
          style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/connect-page-header-background-22.png');">
     <div class="container">
         <div class="row justify-content-left" >
-             <div class="col-12 text-center text-dark page-title-container" 
-                    style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">
+             <div class="col-12 text-center text-white" 
+                    style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">              
+                 <div class="col-12">
                     <h1><b>@T("PageTitle.ContactUs")</b></h1>
-                <div class="col-lg-5"></div> <div class="col-lg-2"><hr/></div> <div class="col-lg-5"></div> 
-                <div class="col-lg-12">         
-                   <h3>Ask Question <icon class="fa-circle subheadingseparator"></icon> Social Media Links</h3>            
+                </div> 
+                <div class="col-md-5"></div> 
+                <div class="col-md-2"><p>&nbsp;</p><hr/></div> 
+                <div class="col-md-5"></div> 
+                <div class="col-md-12">         
+                    <h3>Ask Question <icon class="fa-circle subheadingseparator"></icon> Social Media Links</h3>              
                 </div> 
             </div>
         </div>
@@ -27,25 +31,33 @@
 <section class="bg-light separator-top section-cover">
     <div class="container"> 
     <div class="row justify-content-center">
-        <div class="col-sm-10 col-md-7 col-lg-4 text-gray-dark text-center">
-            <h2 style="margin-bottom: 0.5em;">
-                <b>Get in touch</b>                      
-            </h2>
-            <hr style="border-top: 2px solid #99a5944d;"/>
-            <h3>Sub heading</h3>
-        </div>
+
+            <div class="col-12 text-center">     
+                <h2 style="margin-bottom: 0.5em; color:brown !important;">
+                    <b>Get in touch</b>                      
+                </h2>
+            </div>
+
+            <div class="col-md-5"></div> 
+                <div class="col-md-2">                   
+                    <hr class="header-accent-hr" /> 
+                </div> 
+            <div class="col-md-5"></div> 
+
+            <div class="col-12 text-center">     
+                <h3>Contact us directly using the form below. </h3>
+                <p>&nbsp;</p>
+            </div>
     </div>
 
-    <div class="row align-items-cente" >
+    <div class="row align-items-center" >
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })
 
     <!-- contact us page Intro -->
-    <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
-    <div class="col-sm-12 col-md-10 col-lg-10 text-left">
+    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
         <hr/>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
 
-        <p>Aenean id ornare eros. Nulla feugiat libero ipsum, quis blandit nisl lacinia eu. Aenean rutrum posuere metus id vehicula. Aenean pellentesque nunc mauris, at egestas ipsum egestas a. Mauris sed commodo magna, sit amet ultricies sapien. Ut euismod metus in turpis convallis rhoncus nec nec lacus. Nulla maximus est dolor, a mattis sapien posuere nec. </p>
         <p>&nbsp;</p>
         <hr/>
     </div>
@@ -116,7 +128,6 @@
             </div>
            </div>
                <div class="col-sm-12 col-md-10 col-lg-6">&nbsp;</div>
-               <div class="col-sm-12 col-md-12 col-lg-12"><hr/></div>
                <div class="col-sm-12 col-md-12 col-lg-12">
 
                 <div class="form-group text-right">
@@ -139,22 +150,30 @@
     <div class="container">
 
     <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-10 col-lg-6 text-gray-dark text-center">
-            <h2 style="margin-bottom: 0.5em;">
-                <b>Join Us on Social Media</b>                      
-            </h2>
-            <hr style="border-top: 2px solid #99a5944d;"/>
-            <h3>Sub heading</h3>
-        </div>
+        
+            <div class="col-12 text-center">     
+                <h2 style="margin-bottom: 0.5em; color:brown !important;">
+                    <b>Join Us on Social Media</b>                      
+                </h2>
+            </div>
+
+            <div class="col-md-5"></div> 
+                <div class="col-md-2">                   
+                    <hr class="header-accent-hr" /> 
+                </div> 
+            <div class="col-md-5"></div> 
+
+            <div class="col-12 text-center">     
+                <h3>Connect with us on social media.</h3>           
+            </div>
     </div>
 
         <div class="row justify-content-center" >
-            <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
 
-            <div class="col-sm-12 col-md-10 col-lg-10 text-left">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
                 <hr/>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
-                <p>Aenean id ornare eros. Nulla feugiat libero ipsum, quis blandit nisl lacinia eu. Aenean rutrum posuere metus id vehicula. Aenean pellentesque nunc mauris, at egestas ipsum egestas a. Mauris sed commodo magna, sit amet ultricies sapien. Ut euismod metus in turpis convallis rhoncus nec nec lacus. Nulla maximus est dolor, a mattis sapien posuere nec. </p>
+
                 <div>&nbsp;</div>
                     <hr style="width:initial;"/>
                </div>

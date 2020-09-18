@@ -34,29 +34,30 @@
           <div class="col-sm-12 col-md-12 col-lg-12 text-black-50 text-center">
 
               <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb" style="padding: 1.5em;">
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
-                      <a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a class="nav-link" role="button" href="@Url.RouteUrl("Homepage")">@T("Homepage") </a>
                     </li>
 
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
-                      <a class="nav-link" style="font-size: 1.5em;" role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a>
+                    <li class="breadcrumb-item">
+                      <a class="nav-link" role="button" href="@Url.RouteUrl("BlogsByTagList")"> Writing </a>
                     </li>
 
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
-                        <a class="nav-link" style="font-size: 1.5em;" role="button"
+                    <li class="breadcrumb-item">
+                        <a class="nav-link" role="button"
                            href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = @Model.TopCategory })">
                             @Model.TopCategory
                         </a>
                     </li>
-                    <li class="breadcrumb-item" style="font-size: 1.75em;">
-                        <a class="nav-link" style="font-size: 1.5em;" role="button" 
-                           href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = @Model.SubCategory })"> 
+                    <li class="breadcrumb-item">
+                        <a class="nav-link" role="button" 
+                           href="\writing\@Model.TopCategory\@Model.SubCategory"
+                           > 
                           @Model.SubCategory
                         </a>
                     </li>
-                    <li class="breadcrumb-item active" style="font-size: 1.75em;" aria-current="page">
-                      <span style="padding-left: 0.25em; font-size: 1.5em;">@Model.Title </span>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <span style="padding-left: 0.25em; font-size: 2.25em;">@Model.Title </span>
                     </li>
                   </ol>
               </nav>

@@ -186,8 +186,11 @@ namespace Nop.Web.Controllers
             return new RssActionResult(feed, _webHelper.GetThisPageUrl(false));
         }
 
-        public virtual IActionResult BlogPost(int blogPostId, BlogPagingFilteringModel command)
+        public virtual IActionResult BlogPost(int blogPostId, string tag, string subcategory)
         {
+
+            var teststop = string.Empty;
+
             if (!_blogSettings.Enabled)
                 return RedirectToRoute("Homepage");
 
@@ -212,8 +215,8 @@ namespace Nop.Web.Controllers
             var stop = string.Empty;
 
             var model = new BlogPostModel();
-                model.TopCategory = command.Tag;
-                model.SubCategory = command.Subcategory;
+                model.TopCategory = tag;
+                model.SubCategory = subcategory;
 
             _blogModelFactory.PrepareBlogPostModel(model, blogPost, true);
 

@@ -22,7 +22,9 @@ namespace Nop.Web.Infrastructure
         /// <param name="endpointRouteBuilder">Route builder</param>
         public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
         {
-            var pattern = "{SeName}";
+            //var pattern = "{SeName}";
+            var pattern = string.Empty;
+
             if (DataSettingsManager.DatabaseIsInstalled)
             {
                 var localizationSettings = endpointRouteBuilder.ServiceProvider.GetRequiredService<LocalizationSettings>();
@@ -66,7 +68,7 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("BlogPost", pattern, 
                 new { controller = "Blog", action = "BlogPost" });*/
 
-            endpointRouteBuilder.MapControllerRoute("BlogPost", pattern,
+            endpointRouteBuilder.MapControllerRoute("BlogPost", "writing/{tag}/{subcategory}/{blogPostId}",
                 new { controller = "Blog", action = "BlogPost" });
 
 

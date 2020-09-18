@@ -38,7 +38,9 @@ namespace Nop.Web.Models.Common
 
         public IList<SelectListItem> SubjectAreaList { 
             get { return new List<SelectListItem>() 
-                 {new SelectListItem(){ Text ="Plant-based Blueprint", Value="Plant-based Blueprint" },
+                 {
+                  new SelectListItem(){ Text ="Select subject ...", Value="Select subject ...", Selected = true },
+                  new SelectListItem(){ Text ="Plant-based Blueprint", Value="Plant-based Blueprint" },
                   new SelectListItem(){ Text ="Writing", Value="Writing" },
                   new SelectListItem(){ Text ="speaking - Media apperances", Value="speaking - Media apperances" },
                   new SelectListItem(){ Text ="speaking - Lectures and presentations", Value="speaking - Lectures and presentations" },
