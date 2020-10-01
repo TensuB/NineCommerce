@@ -9,18 +9,18 @@
 }
 
 <section class="bg-light-dark text-gray-dark" 
-         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/connect-page-header-background-22.png');">
+         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/Connect-page-header-background-bright-green.png');">
     <div class="container">
         <div class="row justify-content-left" >
              <div class="col-12 text-center text-white" 
                     style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">              
-                 <div class="col-12">
+                 <div class="col-12" data-aos="fade-left">
                     <h1><b>@T("PageTitle.ContactUs")</b></h1>
                 </div> 
                 <div class="col-md-5"></div> 
                 <div class="col-md-2"><p>&nbsp;</p><hr/></div> 
                 <div class="col-md-5"></div> 
-                <div class="col-md-12">         
+                <div class="col-md-12" data-aos="fade-right">         
                     <h3>Ask Question <icon class="fa-circle subheadingseparator"></icon> Social Media Links</h3>              
                 </div> 
             </div>
@@ -32,35 +32,27 @@
     <div class="container"> 
     <div class="row justify-content-center">
 
-            <div class="col-12 text-center">     
+            <div class="col-12 text-center" data-aos="fade-left">     
                 <h2 style="margin-bottom: 0.5em; color:brown !important;">
                     <b>Get in touch</b>                      
                 </h2>
             </div>
 
             <div class="col-md-5"></div> 
-                <div class="col-md-2">                   
+                <div class="col-md-2" data-aos="fade-right">                   
                     <hr class="header-accent-hr" /> 
                 </div> 
             <div class="col-md-5"></div> 
 
-            <div class="col-12 text-center">     
+            <div class="col-12 text-center" data-aos="fade-left">     
                 <h3>Contact us directly using the form below. </h3>
                 <p>&nbsp;</p>
             </div>
     </div>
 
     <div class="row align-items-center" >
-    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })
 
     <!-- contact us page Intro -->
-    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-        <hr/>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
-
-        <p>&nbsp;</p>
-        <hr/>
-    </div>
     <div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
     <!-- Contact us page - contact form -->
     <div class="col-sm-12 col-md-2 col-lg-2">&nbsp;</div>
@@ -71,7 +63,7 @@
         }
         else
         {
-           <form asp-route="ContactUs" method="post" id="connect_form">
+           <form asp-route="ContactUs" method="post" id="connect_form" data-aos="fade-right">
            <div class="col-sm-12 col-md-10 col-lg-10"><div asp-validation-summary="ModelOnly" class="message-error"></div> </div>
 
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
@@ -98,23 +90,11 @@
                 </div>  
             </div>
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                <div style="display: flex !important;">
-                     <!--<input asp-for="Subject" placeholder="@T("ContactUs.Subject.Hint")" class="form-control" type="text" id="Subject"/> -->
-                  
-                @Html.DropDownListFor(model => model.Subject, Model.SubjectAreaList,  new { @class = "form-control subject-select-list", id="Subject", @required = true, @placehodler ="Select subject area" } )  
-                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
-                </div>  
+                @Html.DropDownListFor(d=>d.Subject, Model.SubjectAreaList, new {@class="form-control", id="Subject" })            
             </div>
            <div class="col-sm-12 col-md-12 col-lg-12">
-            @if(Model.SubjectEnabled)
-            {
-                <div class="form-group">
-                    <textarea asp-for="Subject" class="subject form-control" placeholder="@T("ContactUs.Subject.Hint")" id="Subject" rows="3"></textarea>
-                    <span asp-validation-for="Subject"></span>
-                </div>
-            }
 
-            <div class="form-group">
+            <div class="form-group"  data-aos="fade-left">
                 <div style="display: flex !important;">
                     <textarea asp-for="Enquiry" class="subject form-control" placeholder="@T("ContactUs.Enquiry.Hint")" id="Enquiry" rows="3"></textarea>
                     <nop-required />
@@ -130,7 +110,7 @@
                <div class="col-sm-12 col-md-10 col-lg-6">&nbsp;</div>
                <div class="col-sm-12 col-md-12 col-lg-12">
 
-                <div class="form-group text-right">
+                <div class="form-group text-right"  data-aos="fade-right">
                     <button type="submit" name="send-email" class="btn btn-green btn-rounded">@T("ContactUs.Button")</button>
                 </div>
 
@@ -142,53 +122,47 @@
      </div>
     </div>    
 
-    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsBottom })
+
     
 </section>
 
 <section class="bg-gray-darkest separator-top section-cover text-white" >
     <div class="container">
 
-    <div class="row justify-content-center">
-        
-            <div class="col-12 text-center">     
-                <h2 style="margin-bottom: 0.5em; color:brown !important;">
-                    <b>Join Us on Social Media</b>                      
-                </h2>
-            </div>
+    <div class="row justify-content-center">        
+        <div class="col-12 text-center">     
+            <h2 style="margin-bottom: 0.5em; color:brown !important;">
+                <b>Join Us on Social Media</b>                      
+            </h2>
+        </div>
 
-            <div class="col-md-5"></div> 
-                <div class="col-md-2">                   
-                    <hr class="header-accent-hr" /> 
-                </div> 
-            <div class="col-md-5"></div> 
+        <div class="col-md-5"></div> 
+            <div class="col-md-2">                   
+                <hr class="header-accent-hr" /> 
+            </div> 
+        <div class="col-md-5"></div> 
 
-            <div class="col-12 text-center">     
-                <h3>Connect with us on social media.</h3>           
-            </div>
+        <div class="col-12 text-center">     
+            <h3>Connect with us on social media.</h3>           
+        </div>
     </div>
 
-        <div class="row justify-content-center" >
+    <div class="row justify-content-center" >
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
 
-            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-                <hr/>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel turpis non sem gravida eleifend. Nullam eget interdum massa. Etiam pharetra lorem quam, interdum suscipit mi cursus sollicitudin. Donec erat enim, tristique rhoncus ornare vel, tempor at metus. </p>
-
-                <div>&nbsp;</div>
-                    <hr style="width:initial;"/>
-               </div>
-
-            <div class="col-sm-12 col-md-10 col-lg-10 text-center">
-                    <ul class="socials">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/barry.toole.146" class="icon-facebook text-facebook fs-20"></a></li>
-                        <li class="list-inline-item"><a href="" class="icon-instagram text-instagram fs-20"></a></li>
-                        <li class="list-inline-item"><a href="" class="icon-twitter text-twitter fs-20"></a></li>
-                        <li class="list-inline-item"><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
-                        <li class="list-inline-item"><a href="" class="icon-pinterest-square text-pinterest fs-20"></a></li>   
-                    </ul>
-            </div>
-
-            <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
+        <div class="col-sm-12 col-md-10 col-lg-10 text-center">
+                <ul class="socials">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/barry.toole.146" class="icon-facebook text-facebook fs-20"></a></li>
+                    <li class="list-inline-item"><a href="" class="icon-instagram text-instagram fs-20"></a></li>
+                    <li class="list-inline-item"><a href="" class="icon-twitter text-twitter fs-20"></a></li>
+                    <li class="list-inline-item"><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
+                    <li class="list-inline-item"><a href="" class="icon-pinterest-square text-pinterest fs-20"></a></li>   
+                </ul>
         </div>
+
+        <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
+    </div>
+    </div>
+
     </div>
 </section>

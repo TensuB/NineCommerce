@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 namespace Nop.Web
 {
     public class Program
-    {
+    { 
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -18,8 +18,8 @@ namespace Nop.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder
-                        .UseStartup<Startup>()
-                        .UseIIS();
+                    .UseStartup<Startup>()
+                    .UseIIS();
                 });
         }
     }

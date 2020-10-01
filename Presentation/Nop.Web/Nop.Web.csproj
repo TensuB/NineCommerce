@@ -134,7 +134,7 @@
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
-    <Content Remove="Themes\MukeraCleanTheme\Content\css\addu_custom_theme_styles_sheet.css" />
+    <Content Remove="Themes\MukeraCleanTheme\Content\css\custom_theme_styles_sheet.css" />
     <Content Remove="Themes\MukeraCleanTheme\Content\css\rd-nav-bar-styles.css" />
     <None Remove="compilerconfig.json.defaults" />
     <None Remove="Themes\MukeraCleanTheme\Content\css\print.css" />
@@ -495,5 +495,7 @@
       More details here: https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals#concurrent-garbage-collection-->
     <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
   </PropertyGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties package_1json__JsonSchema="https://json.schemastore.org/package.manifest" /></VisualStudio></ProjectExtensions>
 
 </Project>

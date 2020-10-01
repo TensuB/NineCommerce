@@ -16,5 +16,6 @@ namespace Nop.Web.Models.Blogs
         public IList<BlogPostModel> BlogPosts { get; set; }
         public IList<KeyValuePair<string, int>> BlogPostSubCategoriesByCount { get; set; } 
         public string CurrentPostTag { get; set; }
+        public string HeaderBackgroundUrl { get; set; }
     }
 }

@@ -6,11 +6,14 @@
     Html.AddTitleParts(T("PageTitle.Blog").Text);
     //page class
     Html.AppendPageCssClassParts("html-blog-page");
+    var pageHeaderBackgroundUrl = "/Themes/MukeraCleanTheme/Content/images/header-backgrounds/"+ 
+                                  Model.PagingFilteringContext.Tag.ToLowerInvariant().Replace(' ', '-') + 
+                                  "-page-header-background.png"; 
 }
 
 <!-- blog -->
 <section class="bg-gray-dark separator-top text-white" 
-         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/writing-page-header-background.png');
+         style="background-image: url(@pageHeaderBackgroundUrl);
                 background-blend-mode: soft-light;">
   <div class="container">
        <div class="row justify-content-left" >

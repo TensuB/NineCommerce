@@ -36,19 +36,19 @@
         <div class="container">
 
             <div class="row justify-content-center text-white text-center">                                         
-                <div class="col-12 text-center">     
+                <div class="col-12 text-center" data-aos="fade-left">     
                     <h2 style="margin-bottom: 0.5em;">
                         <b>Writing</b>                      
                     </h2>
                 </div>
 
                 <div class="col-md-5"></div> 
-                <div class="col-md-2 header-accent-hr-container">                   
+                <div class="col-md-2 header-accent-hr-container" data-aos="fade-right">                   
                     <hr class="header-accent-hr" /> 
                 </div> 
                 <div class="col-md-5"></div> 
 
-                <div class="col-12 text-center">     
+                <div class="col-12 text-center" data-aos="fade-right">     
                     <h4>Discover the benefits of plant-based nutrition, health and lifestyle.</h4>
                     <p>&nbsp;</p>
                 </div>
@@ -57,20 +57,23 @@
             <div class="row">
                 <div class="col">
                     <ul class="masonry row gutter-1" id="writingsList">
-                        <li class="col-md-4" data-aos="fade-up">
+                        <li class="col-md-4" data-aos="fade-right">
                             <article class="tile">
                                 <div class="tile-image"
-                                     style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-nutrition.png)"></div>
-                                <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "Food and Diet" })" class="tile-content">
+                                     style="background-image: url(Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/food-and-diet-promotion-2.png)"></div>
+                                <a href="@Url.RouteUrl("BlogTagBySubcategory", 
+                                        new { 
+                                                tag = "Food and Diet",                                               
+                                            })" class="tile-content">
                                     <div class="tile-footer">                                        
                                         <h3 title="Plant-Based Food & Diet">Food and Diet</h3>
                                     </div>
                                 </a>
                             </article>
                         </li>
-                        <li class="col-md-4" data-aos="fade-up">
+                        <li class="col-md-4" data-aos="fade-down">
                             <article class="tile tile-long">
-                                <div class="tile-image" style="background-image:url(Themes/MukeraCleanTheme/Content/images/writings-diet.png)"></div>
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/nutrition-homepage-promotion.png)"></div>
                                 <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "Nutrition" })" class="tile-content">
                                     <div class="tile-footer">                                        
                                         <h3 title="Plant-Based Nutrition">Nutrition</h3>
@@ -78,9 +81,9 @@
                                 </a>
                             </article>
                         </li>
-                        <li class="col-md-4" data-aos="fade-up">
+                        <li class="col-md-4" data-aos="fade-left">
                             <article class="tile">
-                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-aging.png)"></div>
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/health-and-wellbeing-promotion-2.png)"></div>
                                 <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "Health and Wellbeing" })" class="tile-content">
                                     <div class="tile-footer">                                       
                                         <h3 title="Plant-Based Health and Welbeing">Health and Wellbeing</h3>
@@ -88,9 +91,9 @@
                                 </a>
                             </article>
                         </li>
-                        <li class="col-md-4" data-aos="fade-up">
+                        <li class="col-md-4" data-aos="fade-right">
                             <article class="tile tile-long">
-                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-life-style.png)"></div>
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/Lifestyle-promotion.png)"></div>
                                 <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "Lifestyle" })" class="tile-content">
                                     <div class="tile-footer">                                   
                                         <h3 title="Plant-Based Life Style">Lifestyle</h3>
@@ -100,7 +103,7 @@
                         </li>
                         <li class="col-md-4" data-aos="fade-up">
                             <article class="tile tile-long">
-                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-medical-conditions.png)"></div>
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/For-health-professionals.png)"></div>
                                 <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "For Health Professionals" })" class="tile-content">
                                     <div class="tile-footer">                
                                         <h3 title="Plant-Based For Health Professionals">For Health Professionals</h3>
@@ -108,9 +111,9 @@
                                 </a>
                             </article>
                         </li>
-                        <li class="col-md-4" data-aos="fade-up">
+                        <li class="col-md-4" data-aos="fade-left">
                             <article class="tile">
-                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/writings-health.png)"></div>
+                                <div class="tile-image" style="background-image: url(Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/recipes-promotion.png)"></div>
                                 <a href="@Url.RouteUrl("BlogTagBySubcategory", new { tag = "Recipes" })" class="tile-content">
                                     <div class="tile-footer">                                 
                                         <h3 title="Plant-Based Recipes" id="">Recipes</h3>
@@ -123,7 +126,7 @@
             </div>
              <div class="col-12 text-center" style="padding:0em;">
                    <div class="boxed bg-lightest p-5 text-dark"  style="border: 1px solid rgb(0 0 0 / 5%);">
-                      <div class="row justify-content-between align-items-center text-center">
+                      <div class="row justify-content-between align-items-center text-center" data-aos="fade-right">
                         <div class="col-md-9">
                             <h3 style="color:brown; font-weight:bolder;">Plant-based questions:</h3>
                             <h4 style="font-weight:400;"><span id="typed"></span></h4>
@@ -139,7 +142,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3 mt-1 mt-md-0 text-lg-right">
+                        <div class="col-md-3 mt-1 mt-md-0 text-lg-right" data-aos="fade-left">
                             <a href="/blog" class="btn btn-green btn-rounded px-5">Read More</a>
                         </div>
                       </div>
@@ -157,19 +160,19 @@
         <div class="container">
             <div class="row justify-content-center text-gray-dark text-cente">
 
-                    <div class="col-12 text-center">     
+                    <div class="col-12 text-center" data-aos="fade-left">     
                         <h2 style="margin-bottom: 0.5em;">
                             <b>Speaking</b>                      
                         </h2>
                     </div>
 
                     <div class="col-sm-5"></div> 
-                    <div class="col-sm-2 text-cente header-accent-hr-container">                   
+                    <div class="col-sm-2 text-cente header-accent-hr-container" data-aos="fade-right">                   
                         <hr class="header-accent-hr"/> 
                     </div> 
                     <div class="col-sm-5"></div> 
 
-                    <div class="col-12 text-center">     
+                    <div class="col-12 text-center" data-aos="fade-right">     
                         <h4>Let's have a conversation – live presentations, podcasts, and interviews</h4> 
                         <p>&nbsp;</p>
                     </div>
@@ -182,7 +185,7 @@
                         style="margin-bottom: 5px; padding-left:0px; padding-right:0px;">
                     <div class="card card-price-1 rising" >
                         <div class="image image-zoom image-overlay-dark" 
-                                style="background-image: url(/Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/Lectures-and-Presentations.png)">
+                                style="background-image: url(/Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/Live-Lectures-and-Presentations.png)">
                         </div>
                         <div class="caption text-white" data-swiper-parallax="-100%">              
                             <div class="row align-items-center justify-content-center vh-40">
@@ -203,7 +206,7 @@
                         style="margin-bottom: 5px; padding-left:0px; padding-right:0px;">
                     <div class="card card-price-1 rising" >
                         <div class="image image-zoom image-overlay-dark" 
-                                style="background-image: url(/Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/Media-Apperances.png)">
+                                style="background-image: url(/Themes/MukeraCleanTheme/Content/images/homepage-promo-pictures/Media-Apperances-2.png)">
                         </div>
                         <div class="caption text-white" data-swiper-parallax="-100%">    
                             <div class="row align-items-center justify-content-center vh-40">
@@ -231,19 +234,19 @@
         <div class="container">
 
             <div class="row justify-content-center text-gray-dark text-center">
-                <div class="col-12 text-center">  
+                <div class="col-12 text-center" data-aos="fade-left">  
                     <h2 style="margin-bottom: 0.5em;">
                         <b>Latest News</b>                      
                     </h2>
                 </div>
 
                         <div class="col-md-5"></div> 
-                        <div class="col-md-2 header-accent-hr-container">                   
+                        <div class="col-md-2 header-accent-hr-container" data-aos="fade-right">                   
                             <hr class="header-accent-hr" /> 
                         </div> 
                         <div class="col-md-5"></div> 
 
-                <div class="col-12 text-center">     
+                <div class="col-12 text-center" data-aos="fade-right">     
                     <h4>Keep up to date with the latest news, events and developments from our plant-based team</h4>                  
                 </div>
             </div>

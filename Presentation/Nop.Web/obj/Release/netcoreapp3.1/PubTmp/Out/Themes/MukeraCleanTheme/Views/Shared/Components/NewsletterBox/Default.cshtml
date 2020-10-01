@@ -16,13 +16,13 @@
         <div class="form-group newsletter-subscribe" id="newsletter-subscribe-block">
             <div class="newsletter-email">
                 <div class="col-sm-12 col-md-12 col-lg-12 text-center" style="margin-bottom: 1em;">
-                    <h2 class="title" style="color: aliceblue;">@signUpMessage</h2>
-                    <p class="lead">And receive articles and latest news from our Plant-based Community</p>
+                    <h2 class="title" style="color: aliceblue;" data-aos="fade-left">@signUpMessage</h2>
+                    <p class="lead" data-aos="fade-right">And receive articles and latest news from our Plant-based Community</p>
                 </div>
                 <div class="col-sm-12 col-md-0 col-lg-1" style="padding-top:1.5em;"><p>&nbsp;</p> </div>
 
                 <div class="col-sm-10 col-md-6 col-lg-4 text-sm-left" style="padding-top:1.5em;">
-                   <div class="input-group" style="display:inline-flex !important;">
+                   <div class="input-group" style="display:inline-flex !important;"  data-aos="fade-left">
                    <input asp-for="NewsletterSubscriberName" id="newsletter-subscriber-name" type="text" class="form-control form-control input"  
                           placeholder="First name" aria-label="name" aria-describedby="basic-name" 
                           style="background-color: #47070700 !important;
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="col-sm-10 col-md-6 col-lg-4 text-sm-left" style="padding-top:1.5em;">
-                    <div class="input-group" style="display:inline-flex !important;">
+                    <div class="input-group" style="display:inline-flex !important;" data-aos="fade-right">
                     <input asp-for="NewsletterEmail" id="newsletter-email" type="email" class="form-control form-control input" 
                            placeholder="Email" aria-label="email" aria-describedby="basic-email" 
                            style="background-color: #47070700 !important;
@@ -44,7 +44,7 @@
                   </div>
                 </div>
 
-        <div class="col-sm-10 col-md-6 col-lg-2 text-sm-left" style="padding-top:1.5em;">
+        <div class="col-sm-10 col-md-6 col-lg-2 text-sm-left" style="padding-top:1.5em;" data-aos="fade-down">
                 <input type="button" value="@T(Model.AllowToUnsubscribe ? "Newsletter.Options.Send" :"Newsletter.Options.Subscribe")"   
                     aria-label="@T("Newsletter.Subscribe")" id="newsletter-subscribe-button" 
                     class="newsletter-subscribe-button btn-light-green btn-rounded" />
