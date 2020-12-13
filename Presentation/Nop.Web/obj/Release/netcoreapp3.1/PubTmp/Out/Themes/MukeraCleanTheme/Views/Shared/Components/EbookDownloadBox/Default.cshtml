@@ -64,8 +64,7 @@
 
                     <div class="col-sm-12 col-md-6 col-lg-2" style="padding-top:1.5em;" data-aos="fade-down">
                          <input type="button" value=@buttonLabel id="ebook-download-button" 
-                                class="ebook-download-request-button btn-light-green btn-rounded" 
-                                style="padding: 0.25em 1.5em;"/>
+                                class="btn btn-green btn-rounded px-5" />
                     </div>
 
                     <div class="newsletter-validation col-sm-12 col-md-12 col-lg-12">
@@ -102,7 +101,7 @@
         $.ajax({
             cache: false,
             type: "POST",
-            url: "@(Url.RouteUrl("SubscribeNewsletter"))",
+            url: "@(Url.RouteUrl("RequestEbookDownload"))",
             data: postData,
             success: function (data, textStatus, jqXHR) {
                 $("#ebook-download-result-block").html(data.Result);

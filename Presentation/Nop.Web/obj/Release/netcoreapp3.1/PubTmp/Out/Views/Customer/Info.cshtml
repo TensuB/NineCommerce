@@ -2,7 +2,7 @@
 @model CustomerInfoModel
 @inject Nop.Core.IWebHelper webHelper
 @{
-    Layout = "_ColumnsTwo";
+    Layout = "_ColumnsOne";
 
     //title
     Html.AddTitleParts(T("PageTitle.Account").Text);
@@ -11,12 +11,27 @@
     Html.AppendPageCssClassParts("html-customer-info-page");
 }
 
+<section class="bg-gray-dark separator-top text-white" 
+         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/writing-page-header-background-new.png');
+        background-blend-mode: soft-light;">
+    <div class="container">
+        <div class="row justify-content-left" >
+            <div class="col-12 text-center text-dark" 
+                    style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">
+                    <h1 data-aos="fade-left"><b>@T("Account.MyAccount")</b></h1>
+                <div class="col-lg-5"></div> <div class="col-lg-2" data-aos="fade-right"><hr/></div> <div class="col-lg-5"></div> 
+                <div class="col-lg-12" data-aos="fade-down">         
+                    <h3>@T("Account.CustomerInfo")</h3>                
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="bg-light separator-top section-cover">
     <div class="container">
         <div class="row justify-content-left" >
-            <div class="col-12 mt-10 text-center">
-                 <h1>@T("Account.MyAccount") - @T("Account.CustomerInfo")</h1>              
-            </div>
+
             <div class="col-lg-4">
                 @await Component.InvokeAsync("CustomerNavigation", new { selectedTabId = CustomerNavigationEnum.Info })
             </div>
@@ -31,7 +46,7 @@
                         @if (Model.GenderEnabled)
                         {
                             <div class="inputs">
-                                <label>@T("Account.Fields.Gender"):</label>
+                                <label><b>@T("Account.Fields.Gender"): </b></label>
                                 <div class="gender">
                                     <span class="male">
                                         <input type="radio" asp-for="Gender" value="M" checked="@(Model.Gender == "M")" id="gender-male" />
@@ -39,7 +54,7 @@
                                     </span>
                                     <span class="female">
                      <input type="radio" asp-for="Gender" value="F" checked="@(Model.Gender == "F")" id="gender-female" />
-                                        <label class="forcheckbox" for="gender-female">@T("Account.Fields.Gender.Female")</label>
+                     <label class="forcheckbox" for="gender-female">@T("Account.Fields.Gender.Female")</label>
                                     </span>
                                 </div>
                             </div>
@@ -47,7 +62,8 @@
                         @if(Model.FirstNameEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="FirstName" asp-postfix=":"></label>
+                                <label style="font-weight:bold;" asp-for="FirstName" asp-postfix=":"></label>
+                            <div style="display: flex !important;">
                                 <input asp-for="FirstName" />
                                 @if (Model.FirstNameRequired)
                                 {
@@ -55,11 +71,15 @@
                                 }
                                 <span asp-validation-for="FirstName"></span>
                             </div>
+
+                            </div>
                         }
                         @if (Model.LastNameEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="LastName" asp-postfix=":"></label>
+                                <label style="font-weight:bold;" asp-for="LastName" asp-postfix=":"></label>
+
+                            <div style="display: flex !important;">
                                 <input asp-for="LastName" />
                                 @if (Model.LastNameRequired)
                                 {
@@ -67,11 +87,12 @@
                                 }
                                 <span asp-validation-for="LastName"></span>
                             </div>
+                            </div>
                         }
                         @if (Model.DateOfBirthEnabled)
                         {
-                            <div class="inputs date-of-birth">
-                                <label>@T("Account.Fields.DateOfBirth"):</label>
+                            <div id="registerFormDatepicker" class="inputs date-of-birth">
+                                <label><b>@T("Account.Fields.DateOfBirth"):</b></label>                               
                                 <nop-date-picker asp-day-name="@Html.NameFor(x => x.DateOfBirthDay)"
                                                  asp-month-name="@Html.NameFor(x => x.DateOfBirthMonth)"
                                                  asp-year-name="@Html.NameFor(x => x.DateOfBirthYear)"
@@ -79,7 +100,7 @@
                                                  asp-end-year="@(DateTime.Now.Year)"
                                                  asp-selected-day="@Model.DateOfBirthDay"
                                                  asp-selected-month="@Model.DateOfBirthMonth"
-                                                 asp-selected-year="@Model.DateOfBirthYear" />
+                                                 asp-selected-year="@Model.DateOfBirthYear" style="display: flex !important;"/>
                                 @if (Model.DateOfBirthRequired)
                                 {
                                     <nop-required />
@@ -91,9 +112,11 @@
                         }
                         <div class="inputs">
                             <label asp-for="Email" asp-postfix=":"></label>
-                            <input asp-for="Email" />
-                            <nop-required />
-                            <span asp-validation-for="Email"></span>
+                            <div style="display: flex !important;">
+                                <input asp-for="Email" class="form-control"/>
+                                <nop-required />
+                                <span asp-validation-for="Email"></span>
+                            </div>
                         </div>
                         @if (!string.IsNullOrEmpty(Model.EmailToRevalidate))
                         {
@@ -130,6 +153,9 @@
                         }
                     </div>
                 </div>
+                <!--
+                    
+                //company info
                 @if (Model.CompanyEnabled || Model.DisplayVatNumber)
                 {
                     <div class="fieldset">
@@ -163,6 +189,8 @@
                         </div>
                     </div>
                 }
+                -->
+
                 @if (Model.StreetAddressEnabled ||
             Model.StreetAddress2Enabled ||
             Model.ZipPostalCodeEnabled ||
@@ -457,7 +485,6 @@
                 <div class="buttons">
                     <input type="submit" id="save-info-button" value="@T("Common.Save")" name="save-info-button" class="button-1 save-customer-info-button btn btn-green btn-rounded" />
                 </div>
-
 
             </form>
             </div>

@@ -22,8 +22,8 @@ namespace Nop.Web.Infrastructure
         /// <param name="endpointRouteBuilder">Route builder</param>
         public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
         {
-            //var pattern = "{SeName}";
-            var pattern = string.Empty;
+            var pattern = "{SeName}";
+            //var pattern = string.Empty;
 
             if (DataSettingsManager.DatabaseIsInstalled)
             {

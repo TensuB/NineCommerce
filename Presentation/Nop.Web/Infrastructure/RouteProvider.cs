@@ -249,6 +249,10 @@ namespace Nop.Web.Infrastructure
             endpointRouteBuilder.MapControllerRoute("SubscribeNewsletter", $"{pattern}subscribenewsletter",
                 new { controller = "Newsletter", action = "SubscribeNewsletter" });
 
+            //Request EbookDownload 
+            endpointRouteBuilder.MapControllerRoute("RequestEbookDownload", $"{pattern}ebookdownloadrequest",
+                new { controller = "EbookDownload", action = "EbookDownloadRequest" });
+            
 
             //email wishlist
             endpointRouteBuilder.MapControllerRoute("EmailWishlist", $"{pattern}emailwishlist",

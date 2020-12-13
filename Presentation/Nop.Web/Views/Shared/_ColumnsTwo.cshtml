@@ -35,11 +35,12 @@
     } 
 }
 <div class="side-2">
-    <p>zenegnaw</p>
+
     @if (IsSectionDefined("left"))
     {
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.LeftSideColumnBefore })
         @RenderSection("left", false)
+        
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.LeftSideColumnAfter })
     }
     else

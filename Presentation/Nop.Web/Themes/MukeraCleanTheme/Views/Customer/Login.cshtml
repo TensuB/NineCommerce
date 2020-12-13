@@ -105,8 +105,8 @@
                             <span asp-validation-for="Password"></span>
                         </div>
                         <div class="inputs reversed">
-                            <input asp-for="RememberMe"/>
-                            <label asp-for="RememberMe"></label>
+                            <input  type="checkbox" asp-for"RememberMe" style="margin:0;"/>
+                            <label style="width:100%;" asp-for="RememberMe"></label>
                             <span class="forgot-password">
                                 <a asp-route="PasswordRecovery">@T("Account.Login.ForgotPassword")</a>
                             </span>

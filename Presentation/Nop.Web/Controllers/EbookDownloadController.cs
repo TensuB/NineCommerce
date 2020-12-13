@@ -37,7 +37,7 @@ namespace Nop.Web.Controllers
         [CheckAccessClosedStore(true)]
         [HttpPost]
         [IgnoreAntiforgeryToken]
-        public virtual IActionResult RequestEbookDownloadLink(string email, bool subscribe, string name = "test")
+        public virtual IActionResult EbookDownloadRequest(string email, bool subscribe, string name = "test")
         {
             string result;
             var success = false;

@@ -1,19 +1,24 @@
 ﻿@model TopMenuModel
-    <div class="container" style=" padding-bottom: 1.05em !important;" >
+
+    <div class="container" style="padding-left:0px; padding-right:0px;" >
         <nav class="mb-1 navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="burger"><span></span></span>
             </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="col-sm-12 col-md-6 col-lg-3 text-xs-center text-md-right" style="height:8em;" >              
+            <div class="col-sm-12 col-md-6 col-lg-3 text-xs-center text-md-right logo-container" >              
             <!-- Logo / business name -->
             @await Component.InvokeAsync("Logo")
             </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <div class="col-sm-12 col-md-6 col-lg-3 text-xs-center text-md-right" style="height:8em;" >              
+            Logo / business name 
+            await Component.InvokeAsync("Logo")
+            </div>-->
             <div class="col-sm-12 col-md-6 col-lg-9"> 
             <!-- Top Menu Links List -->
-            <ul class="navbar-nav align-items-center mr-auto" style="margin-top: 1.5em !important;">
+            <ul class="navbar-nav align-items-center mr-auto" style="margin-top: 0em !important;">
             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
 
             @if (Model.DisplayHomepageMenuItem)
@@ -72,8 +77,8 @@
 
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
         </ul>
+
             </div>
         </div>
         </nav>
     </div>
-

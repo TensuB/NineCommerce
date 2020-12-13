@@ -21,62 +21,67 @@
     </div>
 </section>
 
-<section class="bg-dark separator-top section-cover">
+<section class="bg-gray-darkest">
     <div class="container">
-         <div class="row justify-content-between align-items-center">
-            <div class="col-12 col-md-12 pl-md-5">
-                <div class="col-12 text-left text-white" style="padding-left:0px;">
-                    <h2 style="margin:0px 0px 10px 0px;">@Model.Title</h2>                      
-                </div>
-
-                <div class="news-date">               
-                @Model.CreatedOn.ToString("D")
-                </div>
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.NewsItemPageBeforeBody, additionalData = Model })
-
-
-            <div class="col-sm-12 col-md-10 col-lg-8 news-body text-white" style="padding-left: 0px;">
-                @Html.Raw(Model.Full)
-            </div>
-             <div class="col-sm-8 col-md-3 col-lg-2 align-items-center" data-aos="zoom-in">
-                <div class="presentation-circle">
-                    <figure style="background-image: url('../Themes/MukeraCleanTheme/Content/assets/images/demo/learning/plant-based-program-image-4.png')"></figure>
-                </div>
-            </div>
-      
-               <div class="col-sm-12 col-md-12 col-lg-12 text-left">
-                   <div>&nbsp;</div>
-                   <hr/>
-               </div>
-
-            <div class="col-sm-12 col-md-10 col-lg-12 text-center" >
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item">
-                        <a href="#"><i class="icon-facebook-square fs-20"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="icon-linkedin-square fs-20"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="icon-twitter-square fs-20"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="icon-instagram fs-20"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#"><i class="icon-pinterest-square fs-20"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-               <div class="col-sm-12 col-md-12 col-lg-12 text-right">
-                   <div>&nbsp;</div>
-                   <hr/>
-                   <div>&nbsp;</div>
-                    <a class="nav-link btn btn-white btn-rounded" href="@Url.RouteUrl("NewsArchive")">Back to News Items</a>
-                </div>               
-            </div>          
+        <div class="row justify-content-left" >
+              
+        <div class="col-lg-12 text-white text-center">
+            <h2><b>@Model.Title</b></h2>
+            <div class="col-lg-5"></div> <div class="col-lg-2"><hr/></div> <div class="col-lg-5"></div>               
         </div>
-     </div>
-</section>
 
+        <div class="col-sm-12 col-md-12 col-lg-9 bg-gray-light text-gray-dark" style="padding: 2.5em 3em; margin-top:1em;">
+                <div class="post-date">
+                    @Model.CreatedOn.ToString("D")
+                </div>
+                @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogPostPageBeforeBody, additionalData = Model })
+                <div class="post-body">
+                    @Html.Raw(Model.Full)
+                </div>
+                <hr/>
+                @{ /*
+                if (Model.Tags.Count > 0)
+                {
+                    <div class="tags">
+                        <label>@T("Blog.Tags"):</label>
+                        <ul>
+                            @for (var i = 0; i < Model.Tags.Count; i++)
+                            {
+                                var tag = Model.Tags[i];
+                                <li><a href="@Url.RouteUrl("BlogByTag", new {tag = tag})">@tag</a></li>
+                                if (i != Model.Tags.Count - 1)
+                                {
+                                    <li class="separator">,</li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                }
+            */}
+                @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BlogPostPageBeforeComments, additionalData = Model })
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-3 bg-gray text-gray-dark" style="margin-top: 1em;" >
+             <p>tag list here </p>
+            </div>           
+
+            <div class="col-sm-12 col-md-10 col-lg-10 text-center text-white" style="margin-top:3em;">
+                    <ul class="socials">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/barry.toole.146" class="icon-facebook text-facebook fs-20"></a></li>
+                        <li class="list-inline-item"><a href="" class="icon-instagram text-instagram fs-20"></a></li>
+                        <li class="list-inline-item"><a href="" class="icon-twitter text-twitter fs-20"></a></li>
+                        <li class="list-inline-item"><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
+                        <li class="list-inline-item"><a href="" class="icon-pinterest-square text-pinterest fs-20"></a></li>   
+                    </ul>
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-12 text-white text-right" style="padding-left:0px; padding-right:0px;">
+                <div>&nbsp;</div>
+                <hr/>
+                 <div>&nbsp;</div>
+                <div class="buttons" style="float:right;">       
+                    <a class="btn btn-white btn-rounded btn-block" href="@Url.RouteUrl("NewsArchive")">Back to News Items</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

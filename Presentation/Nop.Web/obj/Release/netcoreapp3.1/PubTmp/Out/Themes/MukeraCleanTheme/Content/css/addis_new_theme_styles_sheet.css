@@ -2502,7 +2502,7 @@ output {
     font-size: 14px;
     line-height: 1.57143;
     color: #212121;
-    background-color: #fff;
+    background-color: #f7f3f3;
     background-image: none;
     border: 1px solid #b1b1b1;
     border-radius: 0;
@@ -2523,6 +2523,10 @@ output {
 
     input.form-control:focus {
         background-color: #999 !important;
+    }
+
+    input.SearchTerm:focus {
+        background-color: #e8e8e8 !important;
     }
 
     .form-control::-moz-placeholder {
@@ -27178,6 +27182,8 @@ textarea.form-control {
     min-height: 54px;
     max-height: 370px;
     resize: vertical;
+    border: 0em;
+    border-bottom: 1px solid #c5bcbc !important;
 }
 
 .form-control {
@@ -44240,11 +44246,10 @@ padding:0em !important;
     background-color: #4d9407f7 !important;
     opacity: 0.999 !important;
     border-bottom: 5px solid #2e5f02;
-    max-height: 25em;
+    max-height: 32em;
 }
 
 #writingsList article div.tile-footer {
-    position: initial;
     text-align: center;
     padding: 2em 1em;
 }
@@ -44477,8 +44482,8 @@ footer .nav {
 }
 
 .btn-green {
-    background-color: #1b4702 !important;
-    border: 2px solid #2d6d01;
+    background-color: #3a8e0b !important;
+    border: 1px solid #56ab1dcc;
     color: white;
 }
 .btn-light-green {
@@ -44487,10 +44492,21 @@ footer .nav {
     color: white;
 }
 
-.btn-green:hover, .btn-light-green:hover {
-    background-color: #6bdc2a !important;
-    border: 2px solid #349200;
-    color: #2f2828;
+    .btn-green:hover, .btn-light-green:hover {
+        background-color: #91ef23bf !important;
+        border: 1px solid #a1c78c;
+        color: #1a2b16;
+    }
+
+.newsletter-subscrption-btn {
+    background-color: #D9D621 !important;
+    border: 2px solid #6b6903;
+    color: #545252;
+}
+.newsletter-subscrption-btn:hover {
+    background-color: #D9D621 !important;
+    border: 2px solid #6b6903;
+    color: #1a2b16;
 }
 
 .btn-cilantro {
@@ -44523,7 +44539,7 @@ footer .nav {
 
 .dropdown-item:hover {
     color: #999;
-    background-color: #4910c1b8;
+    background-color: #367700e6;
 }
 
 @media (max-width: 767.02px) {
@@ -44600,7 +44616,7 @@ div#registerFormDatepicker .selectric-open .selectric-items {
 }
 
 div#registerFormDatepicker .selectric .label {
-    padding: 1.9375rem 1.9375rem !important;
+    padding: 2.9375rem 2.5rem !important;
 }
 
 .nivo-caption {
@@ -44743,8 +44759,9 @@ div.page-title-container {
 }
 
 input[type="text"], textarea, input[type="email"], .selectric {
-    border: 1px solid #f3f3f3 !important;
-    padding:2em;
+    border-bottom: 1px solid #c5bcbc !important;
+    border: 0px;
+    padding: 2em;
 }
 
 section.bg-lighter .tile-content img {
@@ -44782,10 +44799,10 @@ section.bg-gray-darkest .tile-content img {
    padding: 0% 5.66%;
 }
 
-    div.selectric {
-        height: 36px;
-        background-color: white;
-    }
+div.selectric {
+    height: 36px;
+    background-color: #f7f3f3;
+}
 .selectric .label {
     color: #272626e6;
     font-weight: normal;
@@ -44831,9 +44848,9 @@ div#biography-list-container .card-body {
 
 .newsletter-subscribe-button, input#ebook-download-button {
     letter-spacing: normal !important;
-    padding: 0.2em 1.5em;
-    background-color: #068406 !important;
-    border: 3px solid #037903;
+   /*padding: 0.2em 1.5em;
+     background-color: #068406 !important;
+    border: 3px solid #037903;*/
     color: #ffffff;
     font-family: "Rubik", sans-serif;
 }
@@ -44869,4 +44886,8 @@ h2.writing-top-category-header {
 
 .newsletter-validation, .newsletter-result {
     color:white;
+}
+
+.socials li.list-inline-item {
+    background-color: lightsteelblue;
 }

@@ -7,28 +7,18 @@
     //page class
     Html.AppendPageCssClassParts("html-contact-page");
 }
-
-<section class="bg-light-dark text-gray-dark" 
-         style="background-image: url('../Themes/MukeraCleanTheme/Content/images/header-backgrounds/Connect-page-header-background-bright-green.png');">
+<section class="bg-light-dark text-gray-dark">
     <div class="container">
-        <div class="row justify-content-left" >
-             <div class="col-12 text-center text-white" 
-                    style="background-color:brown; padding:1em; padding-bottom:4em; opacity:0.85; border-radius:4px;">              
-                 <div class="col-12" data-aos="fade-left">
-                    <h1><b>@T("PageTitle.ContactUs")</b></h1>
-                </div> 
-                <div class="col-md-5"></div> 
-                <div class="col-md-2"><p>&nbsp;</p><hr/></div> 
-                <div class="col-md-5"></div> 
-                <div class="col-md-12" data-aos="fade-right">         
-                    <h3>Ask Question <icon class="fa-circle subheadingseparator"></icon> Social Media Links</h3>              
-                </div> 
+        <div class="row justify-content-left text-gray-dark" >
+             <div class="col-12 text-center " >
+                <h1 style="margin-top:0px;"><b>@T("PageTitle.ContactUs")</b></h1>                               
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-light separator-top section-cover">
+
+<section class="bg-light section-cover">
     <div class="container"> 
     <div class="row justify-content-center">
 
@@ -69,7 +59,7 @@
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <div style="display: flex !important;">
                     <input asp-for="FirstName" placeholder="@T("ContactUs.FirstName.Hint")" class="firstName form-control" 
-                            id="firstname"/>
+                            id="firstname" />
                     <nop-required />
                     <span asp-validation-for="FirstName"></span> 
                 </div>     
@@ -84,7 +74,7 @@
            </div>
             <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <div style="display: flex !important;">
-                     <input asp-for="Email" placeholder="@T("ContactUs.Email.Hint")" class="email form-control" type="email" id="email"/>
+                     <input asp-for="Email" placeholder="@T("ContactUs.Email.Hint")" class="email form-control" type="email" id="email" style="padding:2.35em;"/>
                     <nop-required />
                     <span asp-validation-for="Email"></span> 
                 </div>  
@@ -93,7 +83,7 @@
                 @Html.DropDownListFor(d=>d.Subject, Model.SubjectAreaList, new {@class="form-control", id="Subject" })            
             </div>
            <div class="col-sm-12 col-md-12 col-lg-12">
-
+               <div>&nbsp;</div>
             <div class="form-group"  data-aos="fade-left">
                 <div style="display: flex !important;">
                     <textarea asp-for="Enquiry" class="subject form-control" placeholder="@T("ContactUs.Enquiry.Hint")" id="Enquiry" rows="3"></textarea>
@@ -128,41 +118,35 @@
 
 <section class="bg-gray-darkest separator-top section-cover text-white" >
     <div class="container">
+        <div class="row justify-content-center">        
+            <div class="col-12 text-center">     
+                <h2 style="margin-bottom: 0.5em; color:brown !important;">
+                    <b>Join Us on Social Media</b>                      
+                </h2>
+            </div>
 
-    <div class="row justify-content-center">        
-        <div class="col-12 text-center">     
-            <h2 style="margin-bottom: 0.5em; color:brown !important;">
-                <b>Join Us on Social Media</b>                      
-            </h2>
+            <div class="col-md-5"></div> 
+                <div class="col-md-2">                   
+                    <hr class="header-accent-hr" /> 
+                </div> 
+            <div class="col-md-5"></div> 
+
         </div>
 
-        <div class="col-md-5"></div> 
-            <div class="col-md-2">                   
-                <hr class="header-accent-hr" /> 
-            </div> 
-        <div class="col-md-5"></div> 
+        <div class="row justify-content-center" >
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
 
-        <div class="col-12 text-center">     
-            <h3>Connect with us on social media.</h3>           
+            <ul class="socials">
+                <li class="list-inline-item"><a href="https://www.facebook.com/barry.toole.146" class="icon-facebook text-facebook fs-20"></a></li>
+                <li class="list-inline-item"><a href="" class="icon-instagram text-instagram fs-20"></a></li>
+                <li class="list-inline-item"><a href="" class="icon-twitter text-twitter fs-20"></a></li>
+                <li class="list-inline-item"><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
+                <li class="list-inline-item"><a href="" class="icon-pinterest-square text-pinterest fs-20"></a></li>   
+            </ul>      
+
+            <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
+
+            </div>
         </div>
-    </div>
-
-    <div class="row justify-content-center" >
-        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-
-        <div class="col-sm-12 col-md-10 col-lg-10 text-center">
-                <ul class="socials">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/barry.toole.146" class="icon-facebook text-facebook fs-20"></a></li>
-                    <li class="list-inline-item"><a href="" class="icon-instagram text-instagram fs-20"></a></li>
-                    <li class="list-inline-item"><a href="" class="icon-twitter text-twitter fs-20"></a></li>
-                    <li class="list-inline-item"><a href="" class="icon-linkedin text-linkeding fs-20"></a></li>
-                    <li class="list-inline-item"><a href="" class="icon-pinterest-square text-pinterest fs-20"></a></li>   
-                </ul>
-        </div>
-
-        <div class="col-sm-12 col-md-1 col-lg-1">&nbsp;</div>
-    </div>
-    </div>
-
     </div>
 </section>

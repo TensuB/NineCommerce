@@ -42,7 +42,7 @@ namespace Nop.Web.Controllers
             string result;
             var success = false;
 
-            if (!CommonHelper.IsValidEmail(email))
+            if(!CommonHelper.IsValidEmail(email))
             {
                 result = _localizationService.GetResource("Newsletter.Email.Wrong");
             }
@@ -78,7 +78,7 @@ namespace Nop.Web.Controllers
                         NewsLetterSubscriptionGuid = Guid.NewGuid(),
                         Email = email,
                         Name = name,
-                        Active = true,
+                        Active = false,
                         IsEbookRequest = isEbookDownloadRequest,
                         StoreId = _storeContext.CurrentStore.Id,
                         CreatedOnUtc = DateTime.UtcNow
